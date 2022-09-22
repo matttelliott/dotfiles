@@ -13,6 +13,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Install dependencies rosetta, nix, stow, and git
 sudo softwareupdate --install-rosetta --agree-to-license
 sh <(curl -L https://nixos.org/nix/install)
+export PATH=$PATH:/nix/var/nix/profiles/default/bin
 nix-env -i git
 nix-env -i stow
 # clone main repo
