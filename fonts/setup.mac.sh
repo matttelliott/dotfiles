@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-stow fonts
+$HOME/.nix-profile/bin/stow fonts
 
 nix-env -i dejavu-fonts
 nix-env -i font-awesome
