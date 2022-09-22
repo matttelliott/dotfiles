@@ -120,7 +120,6 @@ zstyle ':prezto:module:editor' ps-context 'yes'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-echo 'set prompt paradox'
 zstyle ':prezto:module:prompt' theme 'paradox'
 
 # Set the working directory prompt display length.
