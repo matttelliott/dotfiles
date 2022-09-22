@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+cd $HOME/dotfiles
+stow fonts
+
 brew install font-dejavu-sans-mono-for-powerline
 brew install font-dejavu-sans-mono-nerd-font
 brew install font-awesome-terminal-fonts
