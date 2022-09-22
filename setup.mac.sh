@@ -10,6 +10,7 @@ cd dotfiles
 # run setup scripts
 bash homebrew/setup.mac.sh
 bash git/setup.mac.sh
+bash stow/setup.mac.sh
 bash neovim/setup.mac.sh
 bash tmux/setup.mac.sh
 bash zsh/setup.mac.sh
