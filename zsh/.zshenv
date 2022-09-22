@@ -68,4 +68,3 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 
 export PATH=/usr/local/lib/ruby/gems/2.7.0/bin:/opt/homebrew/lib/ruby/gems/2.7.0/bin:/Users/matt/bin:/Users/matt/.npm-packages/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/sbin:/Users/matt/.local/share/nvim/site/pack/packer/start/fzf/bin:/usr/local/bin
-. "$HOME/.cargo/env"

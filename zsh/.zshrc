@@ -22,6 +22,7 @@ fi
 # set PATH so it includes rust bin if it exists
 if [ -d "$HOME/.cargo/bin" ] ; then
     PATH="$HOME/.cargo/bin:$PATH"
+    . "$HOME/.cargo/env"
 fi
 
 # set PATH so it includes user's private bin if it exists
@@ -132,7 +133,7 @@ if [ -f '/tmp/google-cloud-sdk/completion.zsh.inc' ]; then . '/tmp/google-cloud-
 # if [ $( grep -m1 -ao '[0-4]' /dev/urandom | sed s/0/10/ | head -n1 ) -eq 10 ]; then ycheck; fi
 # 2022-02-07 disabled in favor of cron
 
-source <(kubectl completion zsh)
+# source <(kubectl completion zsh)
 
 # eval "$(rbenv init -)"
 
