@@ -3,7 +3,7 @@
 # Install dependencies rosetta, homebrew, stow, and git
 sudo softwareupdate --install-rosetta --agree-to-license
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-/bin/bash -c "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 brew install git
 brew install stow
 # clone main repo
