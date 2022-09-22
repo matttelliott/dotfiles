@@ -2,10 +2,10 @@
 cd $HOME/dotfiles
 stow fonts
 
-brew install font-dejavu-sans-mono-for-powerline
-brew install font-dejavu-sans-mono-nerd-font
-brew install font-awesome-terminal-fonts
-brew install font-fontawesome
+nix-env -i dejavu-fonts
+nix-env -i font-awesome
+nix-env -i nerdfonts
+nix-env -i powerline-fonts
 
 cp $HOME/.local/share/fonts/* /Library/Fonts 
 fc-cache -f -v

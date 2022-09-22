@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#vim: set filetype=sh
+
+# convert $1 .m3u8 path or url and save to $2 output path
+
+input=$1
+if [[ -n $2 ]]; then
+  output=$2
+else
+  output=`date +'%F-%H%M%S'`.mp4
+fi
+ffmpeg -i "$input" -c copy -bsf:a aac_adtstoasc "$output"

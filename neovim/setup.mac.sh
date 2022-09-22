@@ -3,4 +3,4 @@ echo "********************Setup Neovim********************"
 cd $HOME/dotfiles
 stow neovim
 
-brew install neovim
+nix-env -i neovim

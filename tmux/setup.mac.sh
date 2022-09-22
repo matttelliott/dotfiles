@@ -2,4 +2,4 @@
 echo "********************Setup Tmux********************"
 cd $HOME/dotfiles
 stow tmux
-brew install tmux
+nix-env -i tmux

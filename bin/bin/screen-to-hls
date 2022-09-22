@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# vim: set filetype=sh
+
+# record primary display to hls vod stream
+if [[ -n $1 ]]; then
+  output=$1
+else
+  output=$HOME/Videos/screen-recordings/screen_`date +'%F-%H%M%S'`
+fi
+if [[ -n $2 ]]; then
+  filename=$2
+else
+  filename=stream.m3u8
+fi
+
+mkdir $output
+pushd $output
+
+display=$(xrandr | grep "[^dis]connected" | fzf | awk '{ print $4 }')
+resolution=$(echo $display | cut -d'+' -f1)
+xoffset=$(echo $display | cut -d'+' -f2)
+yoffset=$(echo $display | cut -d'+' -f3)
+
+ffmpeg \
+  -f x11grab -s $resolution -i :0.0+$xoffset,$yoffset \
+  -f alsa -i default \
+  -c:v h264 -flags +cgop \
+  -g 30 \
+  -hls_time 1 \
+  -hls_playlist_type vod\
+  $filename
+popd

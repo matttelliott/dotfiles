@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# vim: set filetype=sh
+
+# record primary display to .mp4 file
+if [[ -n $1 ]]; then
+  output=$1
+else
+  output=$HOME/Videos/screen-recordings/screen_`date +'%F-%H%M%S'`.mp4
+fi
+
+display=$(xrandr | grep "[^dis]connected" | fzf | awk '{ print $4 }')
+resolution=$(echo $display | cut -d'+' -f1)
+xoffset=$(echo $display | cut -d'+' -f2)
+yoffset=$(echo $display | cut -d'+' -f3)
+
+ffmpeg \
+  -f x11grab -s $resolution -i :0.0+$xoffset,$yoffset \
+  -f alsa -i default \
+  $output

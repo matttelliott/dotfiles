@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# vim: set filetype=sh
+files=$(ls | grep $1)
+
+for file in $files; do
+  target=$(echo $file | sed s/$1/$2/g)
+  mv $file $target
+done

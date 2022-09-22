@@ -2,4 +2,4 @@
 echo "********************Setup Stow********************"
 cd $HOME/dotfiles
 stow stow
-brew install stow
+nix-env -i stow

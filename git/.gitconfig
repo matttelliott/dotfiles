@@ -1,0 +1,7 @@
+[user]
+	email = git@matttelliott.com
+	name = matt
+[init]
+	defaultBranch = master
+[pull]
+	rebase = false

@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# vim: set filetype=sh
+if [ "$1" == "" ]
+then
+  echo "You forgot an IP address"
+  echo "Syntax ipsweep 192.168[.1][.1]"
+else
+
+  octet_separator_count=$(grep -o "\." <<<"$1" | wc -l)
+
+  if [ $octet_separator_count == 1 ]; then
+    for ipa in `seq 0 255`; do
+      for ipb in `seq 0 255`; do
+        ping -c 1 $1.$ipa.$ipb | grep "time=" | cut -d " " -f 4 | tr -d ":" &
+      done
+    done
+  elif [ $octet_separator_count == 2 ]; then
+    for ip in `seq 0 255`; do
+      ping -c 1 $1.$ip | grep "time=" | cut -d " " -f 4 | tr -d ":" &
+    done
+  else
+    ping -c 1 $1 | grep "time=" | cut -d " " -f 4 | tr -d ":" &
+  fi
+
+fi
