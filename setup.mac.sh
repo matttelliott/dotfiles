@@ -27,3 +27,4 @@ bash neovim/setup.mac.sh
 bash tmux/setup.mac.sh
 bash zsh/setup.mac.sh
 bash fonts/setup.mac.sh
+bash iterm/setup.mac.sh
