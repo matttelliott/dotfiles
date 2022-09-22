@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cd $HOME/dotfiles
+cd "$HOME/dotfiles"
 stow fonts
 
 nix-env -i dejavu-fonts

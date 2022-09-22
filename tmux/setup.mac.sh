@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 echo "********************Setup Tmux********************"
-cd $HOME/dotfiles
+cd "$HOME/dotfiles"
 stow tmux
 nix-env -i tmux

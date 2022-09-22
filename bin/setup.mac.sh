@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 echo "********************Setup local bin********************"
-cd $HOME/dotfiles
+cd "$HOME/dotfiles"
 stow bin

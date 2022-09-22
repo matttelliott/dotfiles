@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 echo "********************Setup Zsh********************"
-cd $HOME/dotfiles
+cd "$HOME/dotfiles"
 stow zsh
 cd $HOME
