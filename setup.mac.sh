@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Install rosetta, homebrew, and git
-sudo softwareupdate --install-rosetta
+sudo softwareupdate --install-rosetta --agree-to-license
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install git
 # clone main repo
