@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
-# Install rosetta, homebrew, and git
+# Install dependencies rosetta, homebrew, stow, and git
 sudo softwareupdate --install-rosetta --agree-to-license
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install git
+brew install stow
 # clone main repo
 git clone https://gitlab.com/matttelliott/dotfiles-stow.git dotfiles
 cd dotfiles
