@@ -2,6 +2,7 @@ require("user.options")
 -- local clipboard = require("user.clipboard") error, not working
 -- local greeter = require('user.greeter') --disabled: not useful, sometimes lingers
 local colors = require("user.colors")
+local colortils = require("user.colortils")
 -- local comment = require("user.comment") -- not working
 local completion = require("user.completion")
 local database = require("user.database")
@@ -25,6 +26,7 @@ local vimwiki = require("user.vimwiki")
 
 local modules = {
 	colors,
+	colortils,
 	http,
 	vimwiki,
 	environment,
