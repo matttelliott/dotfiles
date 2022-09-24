@@ -83,4 +83,4 @@ bash iterm/setup.mac.sh
 # echo '********************Setup Containers********************'
 # bash docker/setup.mac.sh
 # bash kubernetes/setup.mac.sh
-# bash nix/setup.mac.sh
+# # bash nix/setup.mac.sh # come back to this later
