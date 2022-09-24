@@ -3,7 +3,7 @@ $username\
 $directory\
 $git_branch\
 $git_status\
-[](fg:#FCA17D bg:#86BBD8)\
+[](fg:#7aa2f7 bg:#3b4261)\
 $c\
 $elixir\
 $elm\
@@ -14,9 +14,9 @@ $julia\
 $nodejs\
 $nim\
 $rust\
-[](fg:#86BBD8 bg:#06969A)\
+[](bg:#7aa2f7 fg:#3b4261)\
 $docker_context\
-[](fg:#06969A bg:#33658A)\
+[](fg:#7aa2f7 bg:none)\
 $line_break\
 $time
 """
@@ -32,30 +32,33 @@ disabled = false
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
-style_user = "bg:#24283b"
-style_root = "bg:#24283b"
+style_user = "bg:#7aa2f7 fg:#3b4261"
+style_root = "bg:#7aa2f7 fg:#3b4261"
 format = """
 [ $user ]($style)\
-[](bg:#292e42 fg:#24283b)\
+[](bg:#3b4261 fg:#7aa2f7)\
 """
 
 [battery]
 
 [[battery.display]]
-style = "green"
+style = "fg:#3b4261"
 threshold = 100
 [[battery.display]]
-style = "yellow"
-threshold = 50
+style = "fg:#41a6b5"
+threshold = 80
 [[battery.display]]
-style = "red"
-threshold = 25
+style = "fg:#e0af68"
+threshold = 40
+[[battery.display]]
+style = "fg:#db4b4b"
+threshold = 20
 
 [directory]
-style = "bg:#292e42"
+style = "fg:#7aa2f7 bg:#3b4261"
 format = """
 [ $path ]($style)\
-[](fg:#292e42 bg:#414868)\
+[](bg:#7aa2f7 fg:#3b4261)\
 """
 truncation_length = 3
 truncation_symbol = "…/"
@@ -80,7 +83,7 @@ format = '[ $symbol ($version) ]($style)'
 
 [docker_context]
 symbol = " "
-style = "bg:#06969A"
+style = "bg:#7aa2f7 fg:#3b4261"
 format = '[ $symbol $context ]($style) $path'
 
 [elixir]
@@ -95,56 +98,212 @@ format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
 symbol = ""
-style = "bg:#FCA17D"
+style = "bg:#7aa2f7 fg:#3b4261"
 format = """
 [ $symbol $branch ]($style)\
 """
 
 [git_status]
-style = "bg:#FCA17D"
+style = "bg:#7aa2f7 fg:#3b4261"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
 symbol = " "
-style = "bg:#86BBD8"
+style = "fg:#7aa2f7 bg:#3b4261"
 format = '[ $symbol ($version) ]($style)'
 
 [haskell]
 symbol = " "
-style = "bg:#86BBD8"
+style = "fg:#7aa2f7 bg:#3b4261"
 format = '[ $symbol ($version) ]($style)'
 
 [java]
 symbol = " "
-style = "bg:#86BBD8"
+style = "fg:#7aa2f7 bg:#3b4261"
 format = '[ $symbol ($version) ]($style)'
 
 [julia]
 symbol = " "
-style = "bg:#86BBD8"
+style = "fg:#7aa2f7 bg:#3b4261"
 format = '[ $symbol ($version) ]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:#86BBD8"
+style = "fg:#7aa2f7 bg:#3b4261"
 format = '[ $symbol ($version) ]($style)'
 
 [nim]
 symbol = " "
-style = "bg:#86BBD8"
+style = "fg:#7aa2f7 bg:#3b4261"
 format = '[ $symbol ($version) ]($style)'
 
 [rust]
 symbol = ""
-style = "bg:#86BBD8"
+style = "fg:#7aa2f7 bg:#3b4261"
 format = '[ $symbol ($version) ]($style)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "fg:#DA627D"
-format = '[$time]($style)'
+style = "fg:#73daca"
+format = '[$time  ]($style)'
 
 
 
 # Colors
+# local util = require("tokyonight.util")
+
+# local M = {}
+
+# ---@class Palette
+# M.default = {
+  # none = "NONE",
+  # bg_dark = "#1f2335",
+  # bg = "#24283b",
+  # bg_highlight = "#292e42",
+  # terminal_black = "#414868",
+  # fg = "#c0caf5",
+  # fg_dark = "#a9b1d6",
+  # fg_gutter = "#3b4261",
+  # dark3 = "#545c7e",
+  # comment = "#565f89",
+  # dark5 = "#737aa2",
+  # blue0 = "#3d59a1",
+  # blue = "#7aa2f7",
+  # cyan = "#7dcfff",
+  # blue1 = "#2ac3de",
+  # blue2 = "#0db9d7",
+  # blue5 = "#89ddff",
+  # blue6 = "#b4f9f8",
+  # blue7 = "#394b70",
+  # magenta = "#bb9af7",
+  # magenta2 = "#ff007c",
+  # purple = "#9d7cd8",
+  # orange = "#ff9e64",
+  # yellow = "#e0af68",
+  # green = "#9ece6a",
+  # green1 = "#73daca",
+  # green2 = "#41a6b5",
+  # teal = "#1abc9c",
+  # red = "#f7768e",
+  # red1 = "#db4b4b",
+  # git = { change = "#6183bb", add = "#449dab", delete = "#914c54" },
+  # gitSigns = {
+    # add = "#266d6a",
+    # change = "#536c9e",
+    # delete = "#b2555b",
+  # },
+# }
+
+# M.night = {
+  # bg = "#1a1b26",
+  # bg_dark = "#16161e",
+# }
+# M.day = M.night
+
+# M.moon = function()
+  # local ret = {
+    # none = "NONE",
+    # bg_dark = "#1e2030", --
+    # bg = "#222436", --
+    # bg_highlight = "#2f334d", --
+    # terminal_black = "#444a73", --
+    # fg = "#c8d3f5", --
+    # fg_dark = "#828bb8", --
+    # fg_gutter = "#3b4261",
+    # dark3 = "#545c7e",
+    # comment = "#7a88cf", --
+    # dark5 = "#737aa2",
+    # blue0 = "#3e68d7", --
+    # blue = "#82aaff", --
+    # cyan = "#86e1fc", --
+    # blue1 = "#65bcff", --
+    # blue2 = "#0db9d7",
+    # blue5 = "#89ddff",
+    # blue6 = "#b4f9f8", --
+    # blue7 = "#394b70",
+    # purple = "#fca7ea", --
+    # magenta2 = "#ff007c",
+    # magenta = "#c099ff", --
+    # orange = "#ff966c", --
+    # yellow = "#ffc777", --
+    # green = "#c3e88d", --
+    # green1 = "#4fd6be", --
+    # green2 = "#41a6b5",
+    # teal = "#4fd6be", --
+    # red = "#ff757f", --
+    # red1 = "#c53b53", --
+  # }
+  # ret.git = {
+    # change = util.blend(ret.blue, ret.bg, "ee"),
+    # add = util.blend(ret.green, ret.bg, "ee"),
+    # delete = util.blend(ret.red, ret.bg, "dd"),
+  # }
+  # ret.gitSigns = {
+    # change = util.blend(ret.blue, ret.bg, "66"),
+    # add = util.blend(ret.green, ret.bg, "66"),
+    # delete = util.blend(ret.red, ret.bg, "aa"),
+  # }
+  # return ret
+# end
+# 
+# ---@return ColorScheme
+# function M.setup(opts)
+  # opts = opts or {}
+  # local config = require("tokyonight.config")
+# 
+  # local palette = M[config.options.style] or {}
+  # if type(palette) == "function" then
+    # palette = palette()
+  # end
+# 
+  # -- Color Palette
+  # ---@class ColorScheme: Palette
+  # local colors = vim.tbl_deep_extend("force", M.default, palette)
+# 
+  # util.bg = colors.bg
+  # util.day_brightness = config.options.day_brightness
+# 
+  # colors.diff = {
+    # add = util.darken(colors.green2, 0.15),
+    # delete = util.darken(colors.red1, 0.15),
+    # change = util.darken(colors.blue7, 0.15),
+    # text = colors.blue7,
+  # }
+# 
+  # colors.git.ignore = colors.dark3
+  # colors.black = util.darken(colors.bg, 0.8, "#000000")
+  # colors.border_highlight = colors.blue0
+  # colors.border = colors.black
+# 
+  # -- Popups and statusline always get a dark background
+  # colors.bg_popup = colors.bg_dark
+  # colors.bg_statusline = colors.bg_dark
+# 
+  # -- Sidebar and Floats are configurable
+  # colors.bg_sidebar = config.options.styles.sidebars == "transparent" and colors.none
+    # or config.options.styles.sidebars == "dark" and colors.bg_dark
+    # or colors.bg
+# 
+  # colors.bg_float = config.options.styles.floats == "transparent" and colors.none
+    # or config.options.styles.floats == "dark" and colors.bg_dark
+    # or colors.bg
+# 
+  # colors.bg_visual = util.darken(colors.blue0, 0.7)
+  # colors.bg_search = colors.blue0
+  # colors.fg_sidebar = colors.fg_dark
+# 
+  # colors.error = colors.red1
+  # colors.warning = colors.yellow
+  # colors.info = colors.blue2
+  # colors.hint = colors.teal
+# 
+  # config.options.on_colors(colors)
+  # if opts.transform and config.is_day() then
+    # util.invert_colors(colors)
+  # end
+# 
+  # return colors
+# end
+
+# return M
