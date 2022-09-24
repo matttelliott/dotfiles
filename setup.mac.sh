@@ -23,6 +23,7 @@ brew install git
 brew install svn
 brew install stow
 
+mv $HOME/dotfiles $HOME/dotfiles-`date -I seconds`
 git clone $REPO dotfiles
 cd dotfiles
 
