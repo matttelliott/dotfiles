@@ -36,7 +36,7 @@ bash node/setup.mac.sh
 bash python/setup.mac.sh
 bash ruby/setup.mac.sh
 bash rust/setup.mac.sh
-bash go/setup.mac.sh
+bash golang/setup.mac.sh
 bash php/setup.mac.sh
 
 echo '********************Setup Environment********************'
@@ -44,40 +44,42 @@ bash zsh/setup.mac.sh
 bash fonts/setup.mac.sh
 bash prompt/setup.mac.sh
 bash tmux/setup.mac.sh
-bash neovim/setup.mac.sh
+bash vim/setup.mac.sh
 bash mac/setup.mac.sh
 bash iterm/setup.mac.sh
-bash spotify/setup.mac.sh
-bash virtualbox/setup.mac.sh
-bash vagrant/setup.mac.sh
 
-echo '********************Setup Tools********************'
-bash ag/setup.mac.sh
-bash ripgrep/setup.mac.sh
-bash entr/setup.mac.sh
-bash ffmpeg/setup.mac.sh
-bash fzf/setup.mac.sh
-bash lazygit/setup.mac.sh
-bash ranger/setup.mac.sh
-bash vifm/setup.mac.sh
-bash htop/setup.mac.sh
-bash jq/setup.mac.sh
-bash pandoc/setup.mac.sh
-bash w3m/setup.mac.sh
-bash watch/setup.mac.sh
-bash youtube-dl/setup.mac.sh
-bash mpv/setup.mac.sh
-bash vlc/setup.mac.sh
-bash obsidian/setup.mac.sh
-bash vscodium/setup.mac.sh
 
-echo '********************Setup Browsers********************'
-bash chromium/setup.mac.sh
-bash firefox/setup.mac.sh
-bash vivaldi/setup.mac.sh
-bash opera/setup.mac.sh
+# bash spotify/setup.mac.sh
+# bash virtualbox/setup.mac.sh
+# bash vagrant/setup.mac.sh
 
-echo '********************Setup Containers********************'
-bash docker/setup.mac.sh
-bash kubernetes/setup.mac.sh
-bash nix/setup.mac.sh
+# echo '********************Setup Tools********************'
+# bash ag/setup.mac.sh
+# bash ripgrep/setup.mac.sh
+# bash entr/setup.mac.sh
+# bash ffmpeg/setup.mac.sh
+# bash fzf/setup.mac.sh
+# bash lazygit/setup.mac.sh
+# bash ranger/setup.mac.sh
+# bash vifm/setup.mac.sh
+# bash htop/setup.mac.sh
+# bash jq/setup.mac.sh
+# bash pandoc/setup.mac.sh
+# bash w3m/setup.mac.sh
+# bash watch/setup.mac.sh
+# bash youtube-dl/setup.mac.sh
+# bash mpv/setup.mac.sh
+# bash vlc/setup.mac.sh
+# bash obsidian/setup.mac.sh
+# bash vscodium/setup.mac.sh
+
+# echo '********************Setup Browsers********************'
+# bash chromium/setup.mac.sh
+# bash firefox/setup.mac.sh
+# bash vivaldi/setup.mac.sh
+# bash opera/setup.mac.sh
+
+# echo '********************Setup Containers********************'
+# bash docker/setup.mac.sh
+# bash kubernetes/setup.mac.sh
+# bash nix/setup.mac.sh

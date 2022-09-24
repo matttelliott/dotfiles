@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-echo "********************Setup Neovim********************"
+echo "********************Setup Vim********************"
 cd "$HOME/dotfiles"
-stow neovim
+stow vim
 
 brew install neovim
 nvim +PackerSync +qa
