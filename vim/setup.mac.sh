@@ -5,7 +5,7 @@ stow vim
 
 brew install neovim
 
-nvim +PackerInstall -c qa
-nvim +PackerInstall -c qa
+nvim +PackerSync +qa!
+nvim +PackerSync +qa!
 
 
