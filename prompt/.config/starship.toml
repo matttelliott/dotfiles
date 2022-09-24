@@ -3,6 +3,7 @@ $username\
 $directory\
 $git_branch\
 $git_status\
+$git_state\
 [](fg:#7aa2f7 bg:#3b4261)\
 $c\
 $elixir\
@@ -66,10 +67,11 @@ truncation_symbol = "…/"
 # Here is how you can shorten some long paths by text replacement
 # similar to mapped_locations in Oh My Posh:
 [directory.substitutions]
-"Documents" = " "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
+"Documents" = "  Documents"
+"Downloads" = "  Downloads"
+"Music" = " ﱘ Music"
+"Pictures" = "  Pictures"
+"Projects" = "  Projects"
 # Keep in mind that the order matters. For example:
 # "Important Documents" = "  "
 # will not be replaced, because "Documents" was already substituted before.
@@ -106,6 +108,9 @@ format = """
 [git_status]
 style = "bg:#7aa2f7 fg:#3b4261"
 format = '[$all_status$ahead_behind ]($style)'
+
+[git_state]
+style = "bg:#7aa2f7 fg:#3b4261"
 
 [golang]
 symbol = " "
