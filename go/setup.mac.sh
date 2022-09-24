@@ -1,3 +1,2 @@
-echo "********************Setup Python********************"
-brew install python
-brew install python3
+echo "********************Setup Go********************"
+brew install golang

@@ -12,20 +12,24 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until bootstrap has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# Install dependencies rosetta, nix, stow, and git
+echo '********************Setup Dependencies********************'
 sudo softwareupdate --install-rosetta --agree-to-license
-sh <(curl -L https://nixos.org/nix/install)
-export PATH=$PATH:/nix/var/nix/profiles/default/bin
-export PATH=$PATH:$HOME/.nix-profile/bin
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+export PATH=$PATH:/opt/homebrew/bin
+brew update
 brew tap homebrew/cask-versions
+
 brew install git
 brew install svn
 brew install stow
 
-# clone main repo
 git clone $REPO dotfiles
 cd dotfiles
-# run setup scripts
+
+bash git/setup.mac.sh
+bash stow/setup.mac.sh
+bash homebrew/setup.mac.sh
+bash svn/setup.mac.sh
 
 echo '********************Setup Languages********************'
 bash node/setup.mac.sh
@@ -35,9 +39,19 @@ bash rust/setup.mac.sh
 bash go/setup.mac.sh
 bash php/setup.mac.sh
 
+echo '********************Setup Environment********************'
+bash zsh/setup.mac.sh
+bash fonts/setup.mac.sh
+bash prompt/setup.mac.sh
+bash tmux/setup.mac.sh
+bash neovim/setup.mac.sh
+bash mac/setup.mac.sh
+bash iterm/setup.mac.sh
+bash spotify/setup.mac.sh
+bash virtualbox/setup.mac.sh
+bash vagrant/setup.mac.sh
+
 echo '********************Setup Tools********************'
-bash git/setup.mac.sh
-bash stow/setup.mac.sh
 bash ag/setup.mac.sh
 bash ripgrep/setup.mac.sh
 bash entr/setup.mac.sh
@@ -56,17 +70,6 @@ bash mpv/setup.mac.sh
 bash vlc/setup.mac.sh
 bash obsidian/setup.mac.sh
 bash vscodium/setup.mac.sh
-
-echo '********************Setup Environment********************'
-bash fonts/setup.mac.sh
-bash tmux/setup.mac.sh
-bash zsh/setup.mac.sh
-bash neovim/setup.mac.sh
-bash mac/setup.mac.sh
-bash iterm/setup.mac.sh
-bash spotify/setup.mac.sh
-bash virtualbox/setup.mac.sh
-bash vagrant/setup.mac.sh
 
 echo '********************Setup Browsers********************'
 bash chromium/setup.mac.sh

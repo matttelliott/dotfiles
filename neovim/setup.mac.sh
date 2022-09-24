@@ -3,4 +3,6 @@ echo "********************Setup Neovim********************"
 cd "$HOME/dotfiles"
 stow neovim
 
-nix-env -i neovim
+brew install neovim
+nvim +PackerSync +qa
+nvim +PackerSync +qa
