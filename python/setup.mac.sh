@@ -8,3 +8,4 @@ pip3 install neovim
 pip3 install pynvim
 pip3 install black
 pip3 install flake8
+stow python

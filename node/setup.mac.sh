@@ -11,3 +11,4 @@ nvm use stable
 
 npm install -g neovim
 npm install -g prettier
+stow node
