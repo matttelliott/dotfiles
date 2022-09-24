@@ -1,9 +1,6 @@
 format = """
-[](#9A348E)\
 $username\
-[](bg:#DA627D fg:#9A348E)\
 $directory\
-[](fg:#DA627D bg:#FCA17D)\
 $git_branch\
 $git_status\
 [](fg:#FCA17D bg:#86BBD8)\
@@ -20,23 +17,46 @@ $rust\
 [](fg:#86BBD8 bg:#06969A)\
 $docker_context\
 [](fg:#06969A bg:#33658A)\
-$time\
-[ ](fg:#33658A)\
+$line_break\
+$time
 """
 
+right_format = """
+$battery
+"""
+[line_break]
+disabled = false
 # Disable the blank line at the start of the prompt
 # add_newline = false
 
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
-style_user = "bg:#9A348E"
-style_root = "bg:#9A348E"
-format = '[$user ]($style)'
+style_user = "bg:#24283b"
+style_root = "bg:#24283b"
+format = """
+[ $user ]($style)\
+[](bg:#292e42 fg:#24283b)\
+"""
+
+[battery]
+
+[[battery.display]]
+style = "green"
+threshold = 100
+[[battery.display]]
+style = "yellow"
+threshold = 50
+[[battery.display]]
+style = "red"
+threshold = 25
 
 [directory]
-style = "bg:#DA627D"
-format = "[ $path ]($style)"
+style = "bg:#292e42"
+format = """
+[ $path ]($style)\
+[](fg:#292e42 bg:#414868)\
+"""
 truncation_length = 3
 truncation_symbol = "…/"
 
@@ -76,7 +96,9 @@ format = '[ $symbol ($version) ]($style)'
 [git_branch]
 symbol = ""
 style = "bg:#FCA17D"
-format = '[ $symbol $branch ]($style)'
+format = """
+[ $symbol $branch ]($style)\
+"""
 
 [git_status]
 style = "bg:#FCA17D"
@@ -120,5 +142,9 @@ format = '[ $symbol ($version) ]($style)'
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#33658A"
-format = '[ ♥ $time ]($style)'
+style = "fg:#DA627D"
+format = '[$time]($style)'
+
+
+
+# Colors

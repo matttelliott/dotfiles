@@ -1,4 +1,4 @@
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
-zstyle ':prezto:module:prompt' theme 'paradox'
+# zstyle ':prezto:module:prompt' theme 'paradox'
 

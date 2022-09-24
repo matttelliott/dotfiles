@@ -144,4 +144,3 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 
-[ -f ~/prompt.zsh ] && source ~/prompt.zsh
