@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-$HOME/.nix-profile/bin/stow fonts
+stow fonts
 
-nix-env -i dejavu-fonts
-nix-env -i font-awesome
-nix-env -i nerdfonts
-nix-env -i powerline-fonts
+brew tap homebrew/cask-fonts
 
-cp $HOME/.local/share/fonts/* /Library/Fonts 
+brew install font-dejavu-sans-mono-for-powerline
+brew install font-dejavu-sans-mono-nerd-font
+brew install font-hack-nerd-font
+brew install font-awesome-terminal-fonts
+brew install font-fontawesome
+
+cp $HOME/.local/share/fonts/* /Library/Fonts/
 fc-cache -f -v
