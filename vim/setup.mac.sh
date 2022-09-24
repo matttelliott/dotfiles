@@ -4,5 +4,8 @@ cd "$HOME/dotfiles"
 stow vim
 
 brew install neovim
-nvim +PackerSync +qa
-nvim +PackerSync +qa
+
+nvim +PackerInstall -c qa
+nvim +PackerInstall -c qa
+
+
