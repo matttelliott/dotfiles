@@ -1,6 +1,10 @@
 format = """
+$status$cmd_duration$line_break\
+$line_break\
 $username\
+[](bg:#3b4261 fg:#7aa2f7)\
 $directory\
+[](bg:#7aa2f7 fg:#3b4261)\
 $git_branch\
 $git_commit\
 $git_status\
@@ -39,29 +43,43 @@ style_user = "bg:#7aa2f7 fg:#3b4261"
 style_root = "bg:#7aa2f7 fg:#3b4261"
 format = """
 [ $user ]($style)\
-[](bg:#3b4261 fg:#7aa2f7)\
 """
 
+[status]
+disabled = false
+style = "fg:#3b4261"
+success_symbol = ""
+format = '[\[$symbol$common_meaning$signal_name$maybe_int\]]($style)'
+
+[cmd_duration]
+min_time = 0
+show_milliseconds = true
+style = "fg:#3b4261"
+format = "[ took $duration]($style)"
+
 [battery]
+
+
+[[battery.display]]
+style = "fg:#db4b4b"
+threshold = 20
+
+[[battery.display]]
+style = "fg:#e0af68"
+threshold = 40
+
+[[battery.display]]
+style = "fg:#41a6b5"
+threshold = 80
 
 [[battery.display]]
 style = "fg:#3b4261"
 threshold = 100
-[[battery.display]]
-style = "fg:#41a6b5"
-threshold = 80
-[[battery.display]]
-style = "fg:#e0af68"
-threshold = 40
-[[battery.display]]
-style = "fg:#db4b4b"
-threshold = 20
 
 [directory]
 style = "fg:#7aa2f7 bg:#3b4261"
 format = """
 [ $path ]($style)\
-[](bg:#7aa2f7 fg:#3b4261)\
 """
 truncation_length = 3
 truncation_symbol = "…/"
