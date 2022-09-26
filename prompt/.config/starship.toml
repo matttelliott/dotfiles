@@ -1,6 +1,6 @@
 # https://starship.rs/config/#prompt
 format = """
-[$status$cmd_duration$time](fg:#3b4261)\
+[$status$cmd_duration](fg:#3b4261)\
 $line_break\
 [$username ](fg:#3b4261 bg:#7aa2f7)[](bg:#3b4261 fg:#7aa2f7)\
 [$directory](fg:#7aa2f7 bg:#3b4261)[](bg:#7aa2f7 fg:#3b4261)\

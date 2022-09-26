@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 
 commitmessage='auto - '`whoami`@`hostname`
-/usr/local/bin/yadm status -s  | awk '{print $2}'| xargs /usr/local/bin/yadm add
-/usr/local/bin/yadm add ~/.config/yadm
-/usr/local/bin/yadm commit -m "$commitmessage"
-/usr/local/bin/yadm push origin
-/usr/local/bin/yadm push github
-/usr/local/bin/yadm push gitlab
-/usr/local/bin/yadm push gittea
-/usr/local/bin/yadm push --all
-/usr/local/bin/yadm pull
+cd $HOME/dotfiles
+/usr/bin/env git status -s  | awk '{print $2}'| xargs git add
+/usr/bin/env git add ~/.config/yadm
+/usr/bin/env git commit -m "$commitmessage"
+/usr/bin/env git push origin
+/usr/bin/env git push github
+/usr/bin/env git push gitlab
+/usr/bin/env git push gittea
+/usr/bin/env git push --all
+/usr/bin/env git pull

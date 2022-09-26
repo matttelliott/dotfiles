@@ -1,2 +1,4 @@
 echo '********************Setup Crontab********************'
-stow crontab
+cd "$HOME/dotfiles/"
+
+crontab
