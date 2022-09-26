@@ -1,16 +1,10 @@
 # https://starship.rs/config/#prompt
 format = """
-$status$cmd_duration$line_break\
+[$status$cmd_duration$time](fg:#3b4261)\
 $line_break\
-$username\
-[](bg:#3b4261 fg:#7aa2f7)\
-$directory\
-[](bg:#7aa2f7 fg:#3b4261)\
-$git_branch\
-$git_commit\
-$git_status\
-$git_state\
-[](fg:#7aa2f7 bg:#3b4261)\
+[$username ](fg:#3b4261 bg:#7aa2f7)[](bg:#3b4261 fg:#7aa2f7)\
+[$directory](fg:#7aa2f7 bg:#3b4261)[](bg:#7aa2f7 fg:#3b4261)\
+[$git_branch $git_commit ](fg:#3b4261 bg:#7aa2f7)[$git_status](fg:#b2555b bg:#7aa2f7 bold)[](fg:#7aa2f7 bg:#3b4261)\
 $c\
 $elixir\
 $elm\
@@ -42,21 +36,17 @@ disabled = false
 show_always = true
 style_user = "bg:#7aa2f7 fg:#3b4261"
 style_root = "bg:#7aa2f7 fg:#3b4261"
-format = """
-[ $user ]($style)\
-"""
+format = " $user "
 
 [status]
 disabled = false
-style = "fg:#3b4261"
 success_symbol = ""
-format = '[\[$symbol$common_meaning$signal_name$maybe_int\]]($style)'
+format = '\[$symbol$common_meaning$signal_name$maybe_int\]'
 
 [cmd_duration]
 min_time = 0
 show_milliseconds = true
-style = "fg:#3b4261"
-format = "[ took $duration]($style)"
+format = " took $duration"
 
 [battery]
 
@@ -78,10 +68,7 @@ style = "fg:#3b4261"
 threshold = 100
 
 [directory]
-style = "fg:#7aa2f7 bg:#3b4261"
-format = """
-[ $path ]($style)\
-"""
+format = " $path "
 truncation_length = 3
 truncation_symbol = "…/"
 
@@ -120,23 +107,18 @@ style = "bg:#86BBD8"
 format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
-symbol = ""
-style = "bg:#7aa2f7 fg:#3b4261"
-format = "[ $symbol $branch ]($style)"
+symbol = " "
+format = "$symbol $branch"
 
 [git_commit]
 commit_hash_length = 4
 only_detached = false
 tag_disabled = false
-style = "bg:#7aa2f7 fg:#3b4261"
-format = "[\\($hash$tag\\)]($style)"
+format = "\\($hash$tag\\)"
 
 [git_status]
 style = "bg:#7aa2f7 fg:#3b4261"
-format = '[$all_status$ahead_behind ]($style)'
-
-[git_state]
-style = "bg:#7aa2f7 fg:#3b4261"
+format = '$all_status$ahead_behind'
 
 [jobs]
 threshold = 1
@@ -180,9 +162,8 @@ format = '[ $symbol ($version) ]($style)'
 
 [time]
 disabled = false
-time_format = "%R" # Hour:Minute Format
-style = "fg:#73daca"
-format = '[$time]($style)'
+time_format = "%T"
+format = '$time'
 
 
 
