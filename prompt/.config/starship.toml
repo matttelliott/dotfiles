@@ -1,3 +1,4 @@
+# https://starship.rs/config/#prompt
 format = """
 $status$cmd_duration$line_break\
 $line_break\
@@ -121,21 +122,20 @@ format = '[ $symbol ($version) ]($style)'
 [git_branch]
 symbol = ""
 style = "bg:#7aa2f7 fg:#3b4261"
-format = """
-[ $symbol $branch ]($style)\
-"""
+format = "[ $symbol $branch ]($style)"
+
+[git_commit]
+commit_hash_length = 4
+only_detached = false
+tag_disabled = false
+style = "bg:#7aa2f7 fg:#3b4261"
+format = "[\\($hash$tag\\)]($style)"
 
 [git_status]
 style = "bg:#7aa2f7 fg:#3b4261"
 format = '[$all_status$ahead_behind ]($style)'
 
 [git_state]
-style = "bg:#7aa2f7 fg:#3b4261"
-
-[git_commit]
-commit_hash_length = 4
-only_detatched = false
-tag_disabled = false
 style = "bg:#7aa2f7 fg:#3b4261"
 
 [jobs]
