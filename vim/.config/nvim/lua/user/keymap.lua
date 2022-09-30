@@ -48,13 +48,12 @@ keymap.leader = {
 	["%"] = { ":let @+=@%<CR>", "copy current Path to clipboard" },
 	-- reminder: register "%	Contains the name of the current file. see :help registers
 	["."] = { ":tabnew ~/.config/nvim/init.lua<CR>", "Open neovim config" },
-	["/"] = { ":Telescope live_grep<CR>", "grep" },
 	["m"] = { ":Telescope man_pages<CR><c-w>T", "search Man pages" },
 	["s"] = { "z=", "Spellcheck Suggestions" },
 	["f"] = { ":lua vim.lsp.buf.formatting()<CR>", "Format current file" },
 	["j"] = { ":cn<CR>", "quickfix next" },
 	["k"] = { ":cp<CR>", "quickfix previous" },
-	["o"] = { ":Telescope find_files<CR>", "Open file" },
+  ["o"] = { ":Telescope find_files hidden=true<CR>", "Open file" },
 	["w"] = { ":wa<CR>", "Write all buffers" },
 }
 
