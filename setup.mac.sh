@@ -45,6 +45,7 @@ bash zsh/setup.mac.sh
 bash fonts/setup.mac.sh
 bash prompt/setup.mac.sh
 bash tmux/setup.mac.sh
+bash neovim/setup.mac.sh
 bash vim/setup.mac.sh
 bash mac/setup.mac.sh
 bash iterm/setup.mac.sh
@@ -55,8 +56,9 @@ bash iterm/setup.mac.sh
 # bash vagrant/setup.mac.sh
 
 # echo '********************Setup Tools********************'
-# bash ag/setup.mac.sh
-# bash ripgrep/setup.mac.sh
+bash wget/setup.mac.sh
+bash ag/setup.mac.sh
+bash ripgrep/setup.mac.sh
 # bash entr/setup.mac.sh
 # bash ffmpeg/setup.mac.sh
 # bash fzf/setup.mac.sh
