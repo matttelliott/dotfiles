@@ -3,7 +3,7 @@ require("user.options")
 -- local greeter = require('user.greeter') --disabled: not useful, sometimes lingers
 local colors = require("user.colors")
 local colortils = require("user.colortils")
--- local comment = require("user.comment") -- not working
+local comment = require("user.comment") -- not working
 local completion = require("user.completion")
 local database = require("user.database")
 local explorer = require("user.explorer")
