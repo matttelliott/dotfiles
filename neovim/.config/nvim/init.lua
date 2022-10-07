@@ -10,7 +10,7 @@ local explorer = require("user.explorer")
 local http = require("user.http")
 local formatting = require("user.formatting")
 local git = require("user.git")
--- local highlighting = require("user.highlighting") -- causing errors
+local highlighting = require("user.highlighting") -- causing errors
 local htop = require("user.htop")
 local keymap = require("user.keymap")
 local lsp = require("user.lsp")
@@ -31,6 +31,8 @@ local modules = {
 	vimwiki,
 	environment,
 	completion,
+	comment,
+  highlighting,
 	database,
 	explorer,
 	formatting,

@@ -7,6 +7,7 @@ M.plugins = {
   ,"tamago324/nlsp-settings.nvim" -- language server settings defined in json for
   ,"jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   ,"antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
+,"jose-elias-alvarez/typescript.nvim"
 }
 local status_ok, _ = pcall(require, "lspconfig")
 if not status_ok then
