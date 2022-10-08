@@ -82,6 +82,8 @@ home_symbol = "  ~ "
 "Music" = " ﱘ Music"
 "Pictures" = "  Pictures"
 "Projects" = "  Projects"
+"dotfiles" = "  dotfiles"
+
 # Keep in mind that the order matters. For example:
 # "Important Documents" = "  "
 # will not be replaced, because "Documents" was already substituted before.
