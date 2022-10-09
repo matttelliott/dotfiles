@@ -61,6 +61,8 @@ bash iterm/setup.mac.sh
 bash wget/setup.mac.sh
 bash ag/setup.mac.sh
 bash ripgrep/setup.mac.sh
+bash sqlite/setup.mac.sh
+bash postgres/setup.mac.sh
 # bash entr/setup.mac.sh
 # bash ffmpeg/setup.mac.sh
 bash fzf/setup.mac.sh
