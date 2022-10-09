@@ -34,6 +34,7 @@ vim.opt.wildmenu=true --show autocomple for commands
 vim.opt.wrap=false --don't wrap automatically
 vim.opt.mouse='a'--use mouse in all modes
 vim.opt.swapfile=false--don't use swapfiles
+vim.opt.shada='NONE'--don't use shada
 
 vim.cmd([[
     set clipboard+=unnamedplus
