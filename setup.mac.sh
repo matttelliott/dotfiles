@@ -55,8 +55,6 @@ bash vim/setup.mac.sh
 bash mac/setup.mac.sh
 bash iterm/setup.mac.sh
 
-# bash spotify/setup.mac.sh
-
 # echo '********************Setup CLI Tools********************'
 bash wget/setup.mac.sh
 bash ag/setup.mac.sh
@@ -82,6 +80,7 @@ bash youtube-dl/setup.mac.sh
 # bash vlc/setup.mac.sh
 # bash obsidian/setup.mac.sh
 # bash vscodium/setup.mac.sh
+# bash spotify/setup.mac.sh
 
 # echo '********************Setup Browsers********************'
 # bash chromium/setup.mac.sh
