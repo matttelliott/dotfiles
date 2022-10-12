@@ -75,7 +75,7 @@ bash jq/setup.mac.sh
 # bash pandoc/setup.mac.sh
 # bash w3m/setup.mac.sh
 # bash watch/setup.mac.sh
-# bash youtube-dl/setup.mac.sh
+bash youtube-dl/setup.mac.sh
 
 # echo '********************Setup GUI Tools********************'
 # bash mpv/setup.mac.sh
