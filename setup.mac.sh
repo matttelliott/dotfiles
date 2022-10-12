@@ -70,7 +70,7 @@ bash shfmt/setup.mac.sh
 bash lazygit/setup.mac.sh
 # bash ranger/setup.mac.sh
 # bash vifm/setup.mac.sh
-# bash htop/setup.mac.sh
+bash htop/setup.mac.sh
 bash jq/setup.mac.sh
 # bash pandoc/setup.mac.sh
 # bash w3m/setup.mac.sh
