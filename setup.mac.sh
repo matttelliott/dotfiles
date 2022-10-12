@@ -57,6 +57,7 @@ bash iterm/setup.mac.sh
 
 # echo '********************Setup CLI Tools********************'
 bash wget/setup.mac.sh
+bash bat/setup.mac.sh
 bash ag/setup.mac.sh
 bash ripgrep/setup.mac.sh
 bash sqlite/setup.mac.sh
