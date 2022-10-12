@@ -1,4 +1,4 @@
 echo '********************Setup Crontab********************'
 cd "$HOME/dotfiles/"
 
-crontab
+crontab cron/tabs/crontab.macbook
