@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bat README.md
+bat sqlite/README.md
 stow sqlite
 brew install sqlite
