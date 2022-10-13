@@ -1,1 +1,2 @@
-# ripgrep -- rust based alternative to grep
+# ripgrep 
+## rust based alternative to grep
