@@ -1,0 +1,1 @@
+# prompt for terminal/zsh
