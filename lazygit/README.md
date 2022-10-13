@@ -1,0 +1,1 @@
+# lazygit - terminal git client
