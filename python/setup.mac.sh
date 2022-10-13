@@ -1,4 +1,7 @@
+#!/usr/bin/env bash
+cd "$HOME/dotfiles"
 echo "********************Setup Python********************"
+bat python/README.md
 brew install python3
 pip3 install --upgrade pip
 pip3 install virtualenv

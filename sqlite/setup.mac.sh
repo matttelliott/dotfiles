@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-echo "********************Setup sqlite********************"
 cd "$HOME/dotfiles"
+echo "********************Setup sqlite********************"
+bat README.md
 stow sqlite
 brew install sqlite

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-echo "********************Setup Rust********************"
 cd "$HOME/dotfiles"
+echo "********************Setup Rust********************"
 bat rust/README.md
 stow rust
 brew install rust

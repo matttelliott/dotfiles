@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-echo "********************Setup rg - RipGrep********************"
 cd "$HOME/dotfiles"
+echo "********************Setup rg - RipGrep********************"
+bat ripgrep/README.md
 stow ripgrep
 brew install ripgrep

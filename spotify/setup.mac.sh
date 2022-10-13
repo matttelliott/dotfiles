@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-echo "********************Setup Spotify********************"
 cd "$HOME/dotfiles"
+echo "********************Setup Spotify********************"
+bat README.md
 stow spotify
 brew install spotify

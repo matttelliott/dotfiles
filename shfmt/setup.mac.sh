@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-echo "********************Setup shfmt********************"
 cd "$HOME/dotfiles"
+echo "********************Setup shfmt********************"
+bat shfmt/README.md
 stow shfmt
 brew install shfmt

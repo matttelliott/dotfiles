@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-echo "********************Setup Ruby********************"
 cd "$HOME/dotfiles"
+echo "********************Setup Ruby********************"
 bat ruby/README.md
 brew install ruby
 stow ruby
