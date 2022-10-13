@@ -1,2 +1,4 @@
+.local/share/stow/*
+.local/state/stow/*
 setup.*.sh
 README.md
