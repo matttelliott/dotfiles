@@ -1,1 +1,2 @@
-# Vim - the working mans editor
+# Vim 
+## The working man's text editor
