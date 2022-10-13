@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-echo "********************Setup postgres********************"
 cd "$HOME/dotfiles"
+echo "********************Setup postgres********************"
+bat postgres/README.md
 stow postgres
 brew install postgresql@14

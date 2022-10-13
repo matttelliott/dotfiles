@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-echo "********************Setup MacOS********************"
 cd "$HOME/dotfiles"
+echo "********************Setup MacOS********************"
+bat mac/README.md
 stow mac
 cd $HOME
 bash .macos

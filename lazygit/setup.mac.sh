@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-echo "********************Setup lazygit********************"
 cd "$HOME/dotfiles"
+echo "********************Setup lazygit********************"
+bat lazygin/README.md
 stow lazygit
 brew install lazygit

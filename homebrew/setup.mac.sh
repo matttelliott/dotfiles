@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-echo "********************Setup Homebrew********************"
 cd "$HOME/dotfiles"
+echo "********************Setup Homebrew********************"
+bat homebrew/README.md
 stow homebrew
 brew update
 brew tap homebrew/cask-versions
-
-# nix already installed as core dependency

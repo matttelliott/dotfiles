@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-echo "********************Setup jq********************"
 cd "$HOME/dotfiles"
+echo "********************Setup jq********************"
+bat jq/README.md
 stow jq
 brew install jq

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-echo "********************Setup Git********************"
 cd "$HOME/dotfiles"
+echo "********************Setup Git********************"
+bat git/README.md
 stow git
 brew install git

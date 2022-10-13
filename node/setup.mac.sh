@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-
+cd "$HOME/dotfiles"
 echo '********************Setup Node********************'
+bat node/README.md
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 export NVM_DIR="$HOME/.nvm"
