@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-echo "********************Setup Vim********************"
 cd "$HOME/dotfiles"
+echo "********************Setup Vim********************"
+bat vim/README.md
 stow vim
 
 brew install vim

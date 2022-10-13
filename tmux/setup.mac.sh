@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-echo "********************Setup Tmux********************"
 cd "$HOME/dotfiles"
+echo "********************Setup Tmux********************"
+bat tmux/README.md
 stow tmux
 brew install tmux
