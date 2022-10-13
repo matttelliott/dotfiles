@@ -1,2 +1,0 @@
-ERR 2022-10-13T16:44:44.155 nvim.92234.0 libuv_process_spawn:84: uv_spawn(/opt/homebrew/bin/git) failed: too many open files
-ERR 2022-10-13T16:44:44.225 nvim.92234.0 libuv_process_spawn:84: uv_spawn(/opt/homebrew/bin/git) failed: too many open files

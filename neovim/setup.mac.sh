@@ -7,8 +7,6 @@ stow neovim
 rm -rf $HOME/.local/share/nvim
 rm -rf $HOME/.local/state/nvim
 brew install neovim
-nvim +PackerSync
-nvim +PackerSync
 nvim +PackerSync +qa!
 
 
