@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-echo "********************Setup local bin********************"
 cd "$HOME/dotfiles"
+echo "********************Setup local bin********************"
+bat bin/README.md
 stow bin

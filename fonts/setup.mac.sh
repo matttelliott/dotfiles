@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
+echo "********************Setup entr********************"
+bat fonts/README.md
 stow fonts
 
 brew tap homebrew/cask-fonts

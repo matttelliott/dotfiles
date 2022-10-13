@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-echo "********************Setup entr********************"
 cd "$HOME/dotfiles"
+echo "********************Setup entr********************"
+bat entr/README.md
 stow entr
 brew install entr

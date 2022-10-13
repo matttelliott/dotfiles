@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-echo "********************Setup FZF********************"
 cd "$HOME/dotfiles"
-brew install fzf
+echo "********************Setup FZF********************"
+bat fzf/README.md
 stow fzf
+brew install fzf

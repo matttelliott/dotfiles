@@ -25,6 +25,7 @@ brew update
 brew tap homebrew/cask-versions
 
 brew install git
+brew install bat
 brew install svn
 brew install stow
 
