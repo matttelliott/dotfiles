@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-echo "********************Setup Chromium********************"
 bat chromium/README.md
 stow chromium
 brew install eloston-chromium

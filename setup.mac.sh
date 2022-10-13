@@ -39,7 +39,7 @@ bash homebrew/setup.mac.sh
 bash svn/setup.mac.sh
 
 echo '********************Setup Languages********************'
-bash node/setup.mac.sh
+bash nodejs/setup.mac.sh
 bash python/setup.mac.sh
 bash ruby/setup.mac.sh
 bash rust/setup.mac.sh

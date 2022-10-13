@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-echo "********************Setup bat - better cat********************"
+brew install bat
 bat bat/README.md
 stow bat
-brew install bat

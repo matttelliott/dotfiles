@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-echo '********************Setup Node********************'
-bat node/README.md
+bat nodejs/README.md
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 export NVM_DIR="$HOME/.nvm"
@@ -12,4 +11,4 @@ nvm use stable
 
 npm install -g neovim
 npm install -g prettier
-stow node
+stow nodejs
