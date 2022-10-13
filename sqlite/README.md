@@ -1,1 +1,2 @@
-# sqlite -- sql everywhere
+# sqlite 
+## SQL everywhere
