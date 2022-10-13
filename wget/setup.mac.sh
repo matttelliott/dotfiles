@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-echo "********************Setup wget********************"
 cd "$HOME/dotfiles"
+echo "********************Setup wget********************"
+bat wget/README.md
 stow wget
 brew install wget
