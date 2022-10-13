@@ -1,9 +1,9 @@
-Configuration Files
+Zsh Configuration Files
 ===================
 
 Zsh has several system-wide and user-local configuration files.
 
-Prezto has one user-local configuration file.
+[Prezto](Prezto) has one user-local configuration file.
 
 System-wide configuration files are installation-dependent but are installed
 in */etc* by default.
