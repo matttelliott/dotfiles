@@ -76,6 +76,7 @@ bash jq/setup.mac.sh
 # bash w3m/setup.mac.sh
 # bash watch/setup.mac.sh
 bash youtube-dl/setup.mac.sh
+bash cron/setup.mac.sh
 
 # echo '********************Setup GUI Tools********************'
 # bash mpv/setup.mac.sh
@@ -97,4 +98,3 @@ bash youtube-dl/setup.mac.sh
 # echo '********************Setup Containers********************'
 # bash docker/setup.mac.sh
 # bash kubernetes/setup.mac.sh
-# # bash nix/setup.mac.sh # come back to this later
