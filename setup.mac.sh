@@ -88,3 +88,5 @@ bash virtualbox/setup.mac.sh
 bash vagrant/setup.mac.sh
 bash docker/setup.mac.sh
 bash kubernetes/setup.mac.sh
+
+nvim +PackerInstall +qa!
