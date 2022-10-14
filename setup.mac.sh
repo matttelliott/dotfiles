@@ -30,6 +30,8 @@ brew install svn
 brew install stow
 
 mv $HOME/dotfiles $HOME/dotfiles-$(date -I seconds)
+mv $HOME/.local $HOME/.local-$(date -I seconds)
+mv $HOME/.config $HOME/.config-$(date -I seconds)
 git clone $REPO dotfiles
 cd dotfiles
 
