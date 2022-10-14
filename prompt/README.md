@@ -1,3 +1,3 @@
 # prompt for terminal/zsh
-## Starship
+## built with Starship
 https://starship.rs

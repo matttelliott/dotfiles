@@ -1,3 +1,3 @@
 # stow
-## create symlinks
-**Core Utility -- required for setup**
+## it sucks
+https://www.gnu.org/software/stow/

@@ -1,5 +1,7 @@
 Zsh Configuration Files
 ===================
+https://www.zsh.org
+https://github.com/sorin-ionescu/prezto
 
 Zsh has several system-wide and user-local configuration files.
 

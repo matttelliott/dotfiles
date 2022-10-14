@@ -1,1 +1,3 @@
-# homebrew - macOS package manager
+# homebrew
+## macOS package manager
+https://brew.sh

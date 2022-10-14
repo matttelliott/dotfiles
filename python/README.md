@@ -1,2 +1,3 @@
 # python 
-## basic scripting
+## basic ssscripting
+https://www.python.org

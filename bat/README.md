@@ -1,2 +1,3 @@
-# bat - a `cat` clone with wings
+# bat
+## a `cat` clone with wings
 https://github.com/sharkdp/bat

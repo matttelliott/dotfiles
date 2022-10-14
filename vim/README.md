@@ -1,2 +1,3 @@
 # Vim 
-## The working man's text editor
+## The ubiquitous text editor
+https://www.vim.org

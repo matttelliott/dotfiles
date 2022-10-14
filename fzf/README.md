@@ -1,1 +1,3 @@
-# fzf - fuzzy finder
+# fzf
+## command line fuzzy finder
+https://github.com/junegunn/fzf
