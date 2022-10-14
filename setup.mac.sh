@@ -90,4 +90,4 @@ bash docker/setup.mac.sh
 bash kubernetes/setup.mac.sh
 
 nvim +PackerInstall +qa!
-sudo reboot -i
+sudo reboot
