@@ -38,7 +38,6 @@ bash git/setup.mac.sh
 bash svn/setup.mac.sh
 bash stow/setup.mac.sh
 bash homebrew/setup.mac.sh
-bash svn/setup.mac.sh
 bash nodejs/setup.mac.sh
 bash python/setup.mac.sh
 bash ruby/setup.mac.sh
@@ -67,8 +66,8 @@ bash imagemagick/setup.mac.sh
 bash fzf/setup.mac.sh
 bash shfmt/setup.mac.sh
 bash lazygit/setup.mac.sh
-# bash ranger/setup.mac.sh
-# bash vifm/setup.mac.sh
+bash ranger/setup.mac.sh
+bash vifm/setup.mac.sh
 bash htop/setup.mac.sh
 bash jq/setup.mac.sh
 # bash pandoc/setup.mac.sh
