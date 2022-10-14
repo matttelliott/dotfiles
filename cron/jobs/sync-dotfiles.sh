@@ -3,8 +3,8 @@
 commitmessage='auto - '`whoami`@`hostname`
 cd $HOME/dotfiles
 /usr/bin/env git status -s  | awk '{print $2}'| xargs git add
-/usr/bin/env git add ~/.config/yadm
 /usr/bin/env git commit -m "$commitmessage"
+/usr/bin/env git push
 /usr/bin/env git push origin
 /usr/bin/env git push github
 /usr/bin/env git push gitlab
