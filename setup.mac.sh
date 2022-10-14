@@ -55,6 +55,7 @@ bash neovim/setup.mac.sh
 bash vim/setup.mac.sh
 bash mac/setup.mac.sh
 bash iterm/setup.mac.sh
+bash 1password/setup.mac.sh
 
 # echo '********************Setup CLI Tools********************'
 bash wget/setup.mac.sh
