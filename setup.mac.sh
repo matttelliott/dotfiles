@@ -84,9 +84,7 @@ bash chromium/setup.mac.sh
 bash firefox/setup.mac.sh
 bash vivaldi/setup.mac.sh
 bash opera/setup.mac.sh
-
-# bash virtualbox/setup.mac.sh
-# bash vagrant/setup.mac.sh
-
-# bash docker/setup.mac.sh
-# bash kubernetes/setup.mac.sh
+bash virtualbox/setup.mac.sh
+bash vagrant/setup.mac.sh
+bash docker/setup.mac.sh
+bash kubernetes/setup.mac.sh
