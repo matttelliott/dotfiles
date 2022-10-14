@@ -70,13 +70,12 @@ bash ranger/setup.mac.sh
 bash vifm/setup.mac.sh
 bash htop/setup.mac.sh
 bash jq/setup.mac.sh
-# bash pandoc/setup.mac.sh
-# bash w3m/setup.mac.sh
-# bash watch/setup.mac.sh
+bash pandoc/setup.mac.sh
+bash w3m/setup.mac.sh
+bash watch/setup.mac.sh
 bash youtube-dl/setup.mac.sh
 bash cron/setup.mac.sh
-
-# bash mpv/setup.mac.sh
+bash mpv/setup.mac.sh
 # bash vlc/setup.mac.sh
 # bash obsidian/setup.mac.sh
 # bash vscodium/setup.mac.sh
