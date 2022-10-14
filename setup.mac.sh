@@ -82,8 +82,8 @@ bash vscodium/setup.mac.sh
 bash spotify/setup.mac.sh
 bash chromium/setup.mac.sh
 bash firefox/setup.mac.sh
-# bash vivaldi/setup.mac.sh
-# bash opera/setup.mac.sh
+bash vivaldi/setup.mac.sh
+bash opera/setup.mac.sh
 
 # bash virtualbox/setup.mac.sh
 # bash vagrant/setup.mac.sh
