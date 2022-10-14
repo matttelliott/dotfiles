@@ -76,13 +76,12 @@ bash watch/setup.mac.sh
 bash youtube-dl/setup.mac.sh
 bash cron/setup.mac.sh
 bash mpv/setup.mac.sh
-# bash vlc/setup.mac.sh
-# bash obsidian/setup.mac.sh
-# bash vscodium/setup.mac.sh
-# bash spotify/setup.mac.sh
-
-# bash chromium/setup.mac.sh
-# bash firefox/setup.mac.sh
+bash vlc/setup.mac.sh
+bash obsidian/setup.mac.sh
+bash vscodium/setup.mac.sh
+bash spotify/setup.mac.sh
+bash chromium/setup.mac.sh
+bash firefox/setup.mac.sh
 # bash vivaldi/setup.mac.sh
 # bash opera/setup.mac.sh
 
