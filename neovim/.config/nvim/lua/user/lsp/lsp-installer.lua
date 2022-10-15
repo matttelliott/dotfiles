@@ -85,7 +85,7 @@ typescript.setup({
 
 require("lspconfig")["pyright"].setup({
 	disable_commands = false, -- prevent the plugin from creating Vim commands
-  on_attach = on_attach,
+	on_attach = on_attach,
 	debug = false, -- enable debug logging for commands
 	go_to_source_definition = {
 		fallback = true, -- fall back to standard LSP definition on failure
@@ -99,9 +99,22 @@ require("lspconfig")["pyright"].setup({
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 require("lspconfig")["cssls"].setup({
-  capabilities = capabilities,
+	capabilities = capabilities,
 	disable_commands = false, -- prevent the plugin from creating Vim commands
-  on_attach = on_attach,
+	on_attach = on_attach,
+	debug = false, -- enable debug logging for commands
+	go_to_source_definition = {
+		fallback = true, -- fall back to standard LSP definition on failure
+	},
+	server = { -- pass options to lspconfig's setup method
+		on_attach = on_attach,
+	},
+})
+
+require("lspconfig").html.setup({
+	capabilities = capabilities,
+	disable_commands = false, -- prevent the plugin from creating Vim commands
+	on_attach = on_attach,
 	debug = false, -- enable debug logging for commands
 	go_to_source_definition = {
 		fallback = true, -- fall back to standard LSP definition on failure
