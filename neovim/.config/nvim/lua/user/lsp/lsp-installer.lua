@@ -95,7 +95,11 @@ require("lspconfig")["pyright"].setup({
 	},
 })
 
+--Enable (broadcasting) snippet capability for completion
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 require("lspconfig")["cssls"].setup({
+  capabilities = capabilities,
 	disable_commands = false, -- prevent the plugin from creating Vim commands
   on_attach = on_attach,
 	debug = false, -- enable debug logging for commands
