@@ -39,6 +39,17 @@ end
 
 telescope.setup({
 	defaults = {
+		vimgrep_arguments = {
+          "rg",
+          "--hidden",
+          "--color=never",
+          "--no-heading",
+          "--with-filename",
+          "--line-number",
+          "--column",
+          "--smart-case"
+
+    },
 		mappings = {
 			i = { ["<c-q>"] = trouble.open_with_trouble },
 			n = { ["<c-q>"] = trouble.open_with_trouble },
