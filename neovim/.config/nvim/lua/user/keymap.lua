@@ -51,7 +51,7 @@ keymap.leader = {
 	["/"] = { ":Telescope live_grep<CR>", "grep" },
 	["m"] = { ":Telescope man_pages<CR><c-w>T", "search Man pages" },
 	["s"] = { "z=", "Spellcheck Suggestions" },
-	["f"] = { ":lua vim.lsp.buf.formatting()<CR>", "Format current file" },
+	["f"] = { ":lua vim.lsp.buf.format({async=true})<CR>", "Format current file" },
 	["j"] = { ":cn<CR>", "quickfix next" },
 	["k"] = { ":cp<CR>", "quickfix previous" },
   ["o"] = { ":Telescope find_files hidden=true<CR>", "Open file" },

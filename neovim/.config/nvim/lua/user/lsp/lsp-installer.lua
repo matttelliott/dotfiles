@@ -94,3 +94,15 @@ require("lspconfig")["pyright"].setup({
 		on_attach = on_attach,
 	},
 })
+
+require("lspconfig")["cssls"].setup({
+	disable_commands = false, -- prevent the plugin from creating Vim commands
+  on_attach = on_attach,
+	debug = false, -- enable debug logging for commands
+	go_to_source_definition = {
+		fallback = true, -- fall back to standard LSP definition on failure
+	},
+	server = { -- pass options to lspconfig's setup method
+		on_attach = on_attach,
+	},
+})
