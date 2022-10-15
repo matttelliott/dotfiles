@@ -25,7 +25,6 @@ brew tap homebrew/cask-versions
 
 brew install git
 brew install bat
-brew install svn
 brew install stow
 
 mv $HOME/dotfiles $HOME/dotfiles-$(date -I seconds)
@@ -40,6 +39,7 @@ bash stow/setup.mac.sh
 bash homebrew/setup.mac.sh
 bash nodejs/setup.mac.sh
 bash python/setup.mac.sh
+bash lua/setup.mac.sh
 bash ruby/setup.mac.sh
 bash rust/setup.mac.sh
 bash golang/setup.mac.sh

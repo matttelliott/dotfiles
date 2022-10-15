@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
+bash svn/setup.mac.sh
+cd "$HOME/dotfiles"
+
 bat fonts/README.md
 stow fonts
 
