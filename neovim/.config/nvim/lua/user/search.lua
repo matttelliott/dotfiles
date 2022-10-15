@@ -17,7 +17,7 @@ let g:fzf_action = {
 
 
 if executable('ag')
-let g:ackprg = 'ag --vimgrep --ignore-dir node_modules'
+let g:ackprg = 'ag --vimgrep --ignore-dir node_modules --hidden'
 endif
 ]])
 

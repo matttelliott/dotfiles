@@ -45,9 +45,10 @@ set_keymap("n", "<leader>", ":<c-u>WhichKey '<Space>'<CR>", options)
 
 local keymap = {}
 keymap.leader = {
-	["%"] = { ":let @+=@%<CR>", "copy current Path to clipboard" },
 	-- reminder: register "%	Contains the name of the current file. see :help registers
+	["%"] = { ":let @+=@%<CR>", "copy current Path to clipboard" },
 	["."] = { ":tabnew ~/.config/nvim/init.lua<CR>", "Open neovim config" },
+	["/"] = { ":Telescope live_grep<CR>", "grep" },
 	["m"] = { ":Telescope man_pages<CR><c-w>T", "search Man pages" },
 	["s"] = { "z=", "Spellcheck Suggestions" },
 	["f"] = { ":lua vim.lsp.buf.formatting()<CR>", "Format current file" },
