@@ -16,7 +16,7 @@ null_ls.setup({
 		formatting.black.with({ extra_args = { "--fast", "--line-length=79" } }),
 		formatting.stylua,
 		formatting.shfmt,
-		formatting.sqlformat,
+		formatting.sql_formatter,
     diagnostics.flake8,
     diagnostics.eslint_d,
 	},
