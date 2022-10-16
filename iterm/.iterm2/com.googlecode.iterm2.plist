@@ -365,6 +365,8 @@
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>IRMemory</key>
+	<integer>4</integer>
 	<key>NeverWarnAboutShortLivedSessions_CBE1E7A5-E64F-4CE5-9799-DF6CDFDF2AC4</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_CBE1E7A5-E64F-4CE5-9799-DF6CDFDF2AC4_selection</key>
@@ -1107,6 +1109,8 @@
 			<string>/Users/matt</string>
 		</dict>
 	</array>
+	<key>OpenTmuxWindowsIn</key>
+	<integer>0</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
