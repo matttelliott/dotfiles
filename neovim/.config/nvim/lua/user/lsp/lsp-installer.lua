@@ -2,6 +2,7 @@ local status_ok, lsp_installer = pcall(require, "nvim-lsp-installer")
 if not status_ok then
 	return
 end
+lsp_installer.setup()
 
 local function lsp_highlight_document(client)
 	-- Set autocommands conditional on server_capabilities
