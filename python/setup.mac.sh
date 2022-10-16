@@ -18,3 +18,11 @@ pip3 install pynvim
 pip3 install black
 pip3 install flake8
 stow python
+
+cd "$HOME"
+python3 -m venv python-neovim
+cd python-neovim
+source bin/activate
+pip install pynvim
+pip install black
+pip install flake8
