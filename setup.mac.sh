@@ -41,6 +41,7 @@ bash nodejs/setup.mac.sh
 bash python/setup.mac.sh
 bash lua/setup.mac.sh
 bash ruby/setup.mac.sh
+bash julia/setup.mac.sh
 bash rust/setup.mac.sh
 bash golang/setup.mac.sh
 bash php/setup.mac.sh
@@ -57,6 +58,7 @@ bash spectacle/setup.mac.sh
 bash wget/setup.mac.sh
 bash bat/setup.mac.sh
 bash ag/setup.mac.sh
+bash fd/setup.mac.sh
 bash ripgrep/setup.mac.sh
 bash sqlite/setup.mac.sh
 bash postgres/setup.mac.sh
