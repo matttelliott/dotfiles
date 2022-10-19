@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bat ag/README.md
-stow ag
-brew install ag
+bat fd/README.md
+stow fd
+brew install fd
