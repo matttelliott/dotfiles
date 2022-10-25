@@ -1,3 +1,4 @@
-#!/usr/bin/env zsh
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# fzf installer ensures this line is added to .zshrc
+# keep here for reference
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
