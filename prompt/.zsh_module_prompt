@@ -1,4 +1,5 @@
 #!/usr/bin/env zsh
 
+echo 'zsh_module_prompt'
 znap eval starship 'starship init zsh --print-full-init'
 

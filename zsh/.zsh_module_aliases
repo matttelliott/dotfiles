@@ -1,5 +1,4 @@
 #!/usr/bin/env zsh
-echo 'alias.zsh'
 alias e="$EDITOR"
 alias q=exit
 alias c=clear
