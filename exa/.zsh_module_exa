@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+echo 'zsh_module_exa'
+alias lst='exa -laghT --git'
+alias l='exa -lahg --git'
+alias ls='exa'
+alias lst='exa -laghT --git'
+echo 'zsh_module_exa done'

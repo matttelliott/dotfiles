@@ -5,3 +5,5 @@
 	defaultBranch = master
 [pull]
 	rebase = false
+[maintenance]
+	repo = /Users/matt/.zsh-plugins/zsh-snap

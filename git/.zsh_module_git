@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+alias gs="git status"
+alias g="git status"
+alias ga="git add"
+alias gc="git commit"
+alias gd="git diff"
+alias gdiff="git diff"
+alias gac="git add . && git commit"
+alias gacm="git add . && git commit -m"
+alias gpush="git push"
+alias gpull="git pull"

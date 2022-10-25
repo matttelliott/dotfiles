@@ -1,0 +1,5 @@
+#!/usr/bin/env zsh
+echo 'zsh_module_nodejs'
+znap source lukechilds/zsh-nvm
+echo 'zsh_module_nodejs -- done'
+
