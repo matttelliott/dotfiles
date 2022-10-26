@@ -12,7 +12,6 @@ znap source zsh-users/zsh-autosuggestions
 znap source zsh-users/zsh-syntax-highlighting
 
 for file in `ls -a $HOME | grep .zsh_module_`; do
-  echo $HOME/$file;
   source $HOME/$file;
 done;
 
