@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bat php/README.md
-stow php
-brew install php
-brew install composer
+bat julia/README.md
+stow julia
+brew install julia

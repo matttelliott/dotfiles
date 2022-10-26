@@ -37,12 +37,13 @@ bash git/setup.mac.sh
 bash svn/setup.mac.sh
 bash stow/setup.mac.sh
 bash homebrew/setup.mac.sh
+bash fzf/setup.mac.sh
 bash nodejs/setup.mac.sh
 bash python/setup.mac.sh
 bash clipboard/setup.mac.sh
 bash lua/setup.mac.sh
 bash ruby/setup.mac.sh
-bash julia/setup.mac.sh
+# bash julia/setup.mac.sh
 bash rust/setup.mac.sh
 bash golang/setup.mac.sh
 bash php/setup.mac.sh
@@ -67,7 +68,6 @@ bash postgres/setup.mac.sh
 bash entr/setup.mac.sh
 bash ffmpeg/setup.mac.sh
 bash imagemagick/setup.mac.sh
-bash fzf/setup.mac.sh
 bash shfmt/setup.mac.sh
 bash lazygit/setup.mac.sh
 bash ranger/setup.mac.sh

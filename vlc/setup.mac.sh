@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bat mpv/README.md
-stow mpv
-brew install mpv
+bat vlc/README.md
+stow vlc
+brew install vlc
