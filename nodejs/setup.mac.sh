@@ -2,7 +2,7 @@
 cd "$HOME/dotfiles"
 bat nodejs/README.md
 stow nodejs
-source .zsh_module_nodejs
+git clone https://github.com/nvm-sh/nvm.git $HOME/.nvm; . $HOME/.nvm/nvm.sh
 nvm install --lts
 nvm use --lts
 
