@@ -42,6 +42,7 @@ bash fonts/setup.mac.sh
 bash prompt/setup.mac.sh
 bash tmux/setup.mac.sh
 bash cron/setup.mac.sh
+bash bin/setup.mac.sh
 
 bash fzf/setup.mac.sh
 bash wget/setup.mac.sh
