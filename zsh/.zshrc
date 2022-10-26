@@ -6,8 +6,7 @@ znapFolder=$HOME/zsh/zsh-snap/
         https://github.com/marlonrichert/zsh-snap.git $znapFolder
 source $znapFolder/znap.zsh
 
-# `znap source` automatically downloads and starts your plugins.
-znap source marlonrichert/zsh-autocomplete
+
 znap source zsh-users/zsh-autosuggestions
 znap source zsh-users/zsh-syntax-highlighting
 
