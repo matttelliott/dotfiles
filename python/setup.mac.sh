@@ -2,6 +2,7 @@
 cd "$HOME/dotfiles"
 bat python/README.md
 brew install python3
+
 pip3 install --upgrade pip
 pip3 install virtualenv
 pip3 install setuptools
