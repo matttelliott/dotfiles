@@ -1,7 +1,5 @@
 # https://starship.rs/config/#prompt
 format = """
-[$status$cmd_duration](fg:#3b4261)\
-$line_break\
 [$username ](fg:#3b4261 bg:#7aa2f7)[](bg:#3b4261 fg:#7aa2f7)\
 [$directory](fg:#7aa2f7 bg:#3b4261)[](bg:#7aa2f7 fg:#3b4261)\
 [$git_branch $git_commit ](fg:#3b4261 bg:#7aa2f7)[$git_status](fg:#b2555b bg:#7aa2f7 bold)[](fg:#7aa2f7 bg:#3b4261)\
@@ -18,18 +16,23 @@ $rust\
 [](bg:#7aa2f7 fg:#3b4261)\
 $docker_context\
 [](fg:#7aa2f7 bg:none)\
+$fill\
+[$status$cmd_duration](fg:#3b4261)\
 $line_break\
 $time\
 [  ](fg:#73daca)
 """
 
-right_format = """
-$jobs $battery
-"""
+right_format = """$jobs $battery"""
+
+[fill]
+symbol = " "
+style = ""
+
 [line_break]
 disabled = false
 # Disable the blank line at the start of the prompt
-# add_newline = false
+add_newline = false
 
 # You can also replace your username with a neat symbol like  to save some space
 [username]
@@ -41,15 +44,15 @@ format = " $user "
 [status]
 disabled = false
 success_symbol = ""
-format = '\[$symbol$common_meaning$signal_name$maybe_int\]'
+format = '\[$symbol$common_meaning$signal_name$maybe_int\] '
 
 [cmd_duration]
 min_time = 0
 show_milliseconds = true
-format = " took $duration"
+format = "took $duration "
 
 [battery]
-
+format = "[$symbol$percentage]($style)"
 
 [[battery.display]]
 style = "fg:#db4b4b"
@@ -61,7 +64,7 @@ threshold = 40
 
 [[battery.display]]
 style = "fg:#41a6b5"
-threshold = 80
+threshold = 60
 
 [[battery.display]]
 style = "fg:#3b4261"
