@@ -55,6 +55,7 @@ bash fd/setup.mac.sh
 bash ripgrep/setup.mac.sh
 bash neovim/setup.mac.sh
 bash vim/setup.mac.sh
+bash wiki/setup.mac.sh
 
 bash nodejs/setup.mac.sh
 bash python/setup.mac.sh
