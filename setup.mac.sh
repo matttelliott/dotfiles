@@ -87,6 +87,7 @@ bash youtube-dl/setup.mac.sh
 bash ffmpeg/setup.mac.sh
 bash imagemagick/setup.mac.sh
 bash ranger/setup.mac.sh
+bash nmap/setup.mac.sh
 
 bash mpv/setup.mac.sh
 bash vlc/setup.mac.sh
