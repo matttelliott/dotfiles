@@ -42,6 +42,8 @@ configs.setup({
 		enable_autocmd = false,
 		config = {
 			sql = "-- %s",
+			ts = "// %s",
+			tsx = "// %s",
 		},
 	},
 	rainbow = {
