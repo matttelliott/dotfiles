@@ -27,9 +27,17 @@ brew install git
 brew install bat
 brew install stow
 
-mv $HOME/dotfiles $HOME/dotfiles-$(date -I seconds)
-mv $HOME/.local $HOME/.local-$(date -I seconds)
-mv $HOME/.config $HOME/.config-$(date -I seconds)
+date=$(date -I seconds)
+mv $HOME/dotfiles $HOME/dotfiles-$date
+mv $HOME/.local $HOME/.local-$date
+mv $HOME/.config $HOME/.config-$date
+mv $HOME/.profile $HOME/.profile-$date
+for file in $(ls -lash | awk '{ print $10 }' | grep '^.z' | grep -v '\d\d\d\d-\d\d-\d\d'); do
+  mv $HOME/$file $HOME/$file-$date
+done
+for file in $(ls -lash | awk '{ print $10 }' | grep '^.bash' | grep -v '\d\d\d\d-\d\d-\d\d'); do
+  mv $HOME/$file $HOME/$file-$date
+done
 git clone $REPO dotfiles
 cd dotfiles
 
@@ -55,13 +63,11 @@ bash fd/setup.mac.sh
 bash ripgrep/setup.mac.sh
 bash neovim/setup.mac.sh
 bash vim/setup.mac.sh
-bash wiki/setup.mac.sh
 
 bash nodejs/setup.mac.sh
 bash python/setup.mac.sh
 bash lua/setup.mac.sh
 bash ruby/setup.mac.sh
-# bash julia/setup.mac.sh
 bash rust/setup.mac.sh
 bash golang/setup.mac.sh
 bash php/setup.mac.sh
@@ -107,3 +113,9 @@ bash kubernetes/setup.mac.sh
 
 nvim +PackerInstall +qa!
 sudo reboot
+
+
+## Manual Install
+# bash julia/setup.mac.sh
+# bash wiki/setup.mac.sh
+# bash tf2/setup.mac.sh
