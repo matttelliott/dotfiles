@@ -63,6 +63,8 @@ bash fd/setup.mac.sh
 bash ripgrep/setup.mac.sh
 bash neovim/setup.mac.sh
 bash vim/setup.mac.sh
+bash neofetch/setup.mac.sh
+bash cowsay/setup.mac.sh
 
 bash nodejs/setup.mac.sh
 bash python/setup.mac.sh
@@ -71,16 +73,16 @@ bash ruby/setup.mac.sh
 bash rust/setup.mac.sh
 bash golang/setup.mac.sh
 bash php/setup.mac.sh
+bash shfmt/setup.mac.sh
+
+bash sqlite/setup.mac.sh
+bash postgres/setup.mac.sh
 
 bash mac/setup.mac.sh
 bash iterm/setup.mac.sh
 bash 1password/setup.mac.sh
 bash spectacle/setup.mac.sh
 
-bash sqlite/setup.mac.sh
-bash postgres/setup.mac.sh
-
-bash shfmt/setup.mac.sh
 bash entr/setup.mac.sh
 bash lazygit/setup.mac.sh
 bash vifm/setup.mac.sh
@@ -99,7 +101,6 @@ bash mpv/setup.mac.sh
 bash vlc/setup.mac.sh
 bash obsidian/setup.mac.sh
 bash vscodium/setup.mac.sh
-bash spotify/setup.mac.sh
 
 bash chromium/setup.mac.sh
 bash firefox/setup.mac.sh
@@ -111,6 +112,11 @@ bash vagrant/setup.mac.sh
 bash docker/setup.mac.sh
 bash kubernetes/setup.mac.sh
 
+
+neofetch
+cowsay "DONE!"
+sleep 15
+
 nvim +PackerInstall +qa!
 sudo reboot
 
@@ -119,3 +125,4 @@ sudo reboot
 # bash julia/setup.mac.sh
 # bash wiki/setup.mac.sh
 # bash tf2/setup.mac.sh
+# bash spotify/setup.mac.sh
