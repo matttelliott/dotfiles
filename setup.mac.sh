@@ -112,12 +112,10 @@ bash vagrant/setup.mac.sh
 bash docker/setup.mac.sh
 bash kubernetes/setup.mac.sh
 
-
 neofetch
 cowsay "DONE!"
 sleep 15
 
-nvim +PackerInstall +qa!
 sudo reboot
 
 
