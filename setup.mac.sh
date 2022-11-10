@@ -6,6 +6,7 @@ REPO=https://gitlab.com/matttelliott/dotfiles-stow
 # be run from within $HOME (assuming this is the root of your dotfiles)
 cd "$HOME"
 curl $REPO/-/raw/master/WARNING.md | cat
+sleep 10
 
 # Ask for the administrator password upfront
 sudo -v
