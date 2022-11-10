@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
-REPO=https://gitlab.com/matttelliott/dotfiles-stow.git
+REPO=https://gitlab.com/matttelliott/dotfiles-stow
 
 # Because Git submodule commands cannot operate without a work tree, they must
 # be run from within $HOME (assuming this is the root of your dotfiles)
 cd "$HOME"
+curl $REPO/-/raw/master/WARNING.md | cat
 
 # Ask for the administrator password upfront
 sudo -v
@@ -38,8 +39,8 @@ done
 for file in $(ls -lash | awk '{ print $10 }' | grep '^.bash' | grep -v '\d\d\d\d-\d\d-\d\d'); do
   mv $HOME/$file $HOME/$file-$date
 done
-git clone $REPO dotfiles
-cd dotfiles
+git clone $REPO $HOME/dotfiles
+cd $HOME/dotfiles
 
 bash git/setup.mac.sh
 bash svn/setup.mac.sh
