@@ -1,4 +1,3 @@
-
 local null_ls_status_ok, null_ls = pcall(require, "null-ls")
 if not null_ls_status_ok then
 	return
@@ -17,7 +16,7 @@ null_ls.setup({
 		formatting.stylua,
 		formatting.shfmt,
 		formatting.sql_formatter,
-    diagnostics.flake8,
-    diagnostics.eslint_d,
+		diagnostics.flake8,
+		diagnostics.eslint_d,
 	},
 })
