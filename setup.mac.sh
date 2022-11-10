@@ -85,6 +85,7 @@ bash iterm/setup.mac.sh
 bash 1password/setup.mac.sh
 bash spectacle/setup.mac.sh
 
+bash asciiquarium/setup.mac.sh
 bash entr/setup.mac.sh
 bash lazygit/setup.mac.sh
 bash vifm/setup.mac.sh
