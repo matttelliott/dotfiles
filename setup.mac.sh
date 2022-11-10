@@ -67,6 +67,7 @@ bash neovim/setup.mac.sh
 bash vim/setup.mac.sh
 bash neofetch/setup.mac.sh
 bash cowsay/setup.mac.sh
+bash github/setup.mac.sh
 
 bash nodejs/setup.mac.sh
 bash python/setup.mac.sh
