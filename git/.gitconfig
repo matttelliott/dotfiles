@@ -8,4 +8,4 @@
 [maintenance]
 	repo = /Users/matt/.zsh-plugins/zsh-snap
 [alias]
-  fcommig = commit --no-verify
+  fcommit = commit --no-verify
