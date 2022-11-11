@@ -140,26 +140,26 @@ end
 M.set_keymap = function(keymap)
 	keymap.leader["g"] = { ":<cmd>lua _lazygit_toggle()<CR><CR>", "lazygit" }
 	keymap.localleader["g"] = {
-		["name"] = "+[G]it",
+		["name"] = "+Git",
 		["h"] = {
-			["name"] = "+Git[h]ub",
+			["name"] = "+Github",
 			["<space>"] = { ":Octo actions<CR>", "Show all github actions (via Octo)" },
 			["i"] = {
 				["name"] = "+Issue",
-				["l"] = { ":Octo issue list<CR>", "[L]ist issues" },
+				["l"] = { ":Octo issue list<CR>", "List issues" },
 			},
 			["p"] = {
 				["name"] = "+Pull request",
-				["l"] = { ":Octo pr list<CR>", "[L]ist pull requests" },
+				["l"] = { ":Octo pr list<CR>", "List pull requests" },
 			},
 		},
 		["s"] = {
 			["name"] = "+Search",
-			["s"] = { ":Telescope git_status<CR>", "[S]tatus" },
-			["S"] = { ":Telescope git_stash<CR>", "[S]tash" },
-			["f"] = { ":Telescope git_files<CR>", "[F]iles" },
-			["c"] = { ":Telescope git_commits<CR>", "[C]ommits" },
-			["b"] = { ":Telescope git_branches<CR>", "[B]ranches" },
+			["s"] = { ":Telescope git_status<CR>", "Status" },
+			["S"] = { ":Telescope git_stash<CR>", "Stash" },
+			["f"] = { ":Telescope git_files<CR>", "Files" },
+			["c"] = { ":Telescope git_commits<CR>", "Commits" },
+			["b"] = { ":Telescope git_branches<CR>", "Branches" },
 		},
 		["l"] = { ":Gclog<CR>", "Log" },
 		["b"] = { ":Git blame<CR>", "Blame" },
@@ -171,7 +171,7 @@ M.set_keymap = function(keymap)
 		["c"] = {
 			["name"] = "+Commit",
 			["c"] = { ":Git commit", "Commit" },
-			["a"] = { ":call CommitAll()", "CommitAll" },
+			["a"] = { ":Git add . | Git commit<CR>", "commit All" },
 		},
 		["C"] = {
 			["name"] = "+Checkout",
