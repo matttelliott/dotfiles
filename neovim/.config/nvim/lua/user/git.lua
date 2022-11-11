@@ -118,7 +118,7 @@ local lazygit = terminal.Terminal:new({
 	cmd = "lazygit",
 	dir = "git_dir",
 	direction = "float",
-	close_on_exit = false,
+	close_on_exit = true,
 	float_opts = {
 		border = "double",
 	},
