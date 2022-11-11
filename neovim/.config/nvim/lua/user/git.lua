@@ -163,14 +163,19 @@ M.set_keymap = function(keymap)
 		},
 		["l"] = { ":Gclog<CR>", "Log" },
 		["b"] = { ":Git blame<CR>", "Blame" },
-		["B"] = { ":Gbrowse<CR>", "Browse" },
-		["p"] = { ":Gpush<CR>", "Push" },
-		["P"] = { ":Gpull<CR>", "Pull" },
+		["B"] = { ":GBrowse<CR>", "Browse" },
+		["p"] = { ":Git push<CR>", "Push" },
+		["P"] = { ":Git pull<CR>", "Pull" },
 		["r"] = { ":Gread<CR>", "Read" },
 		["w"] = { ":Gwrite<CR>", "Write" },
+		["a"] = {
+			["name"] = "+Add",
+			["a"] = { ":Git add .<CR>", "add All" },
+			["c"] = { ":Git add . | Git commit --no-verify<CR>", "add and Commit all" },
+    },
 		["c"] = {
 			["name"] = "+Commit",
-			["c"] = { ":Git commit", "Commit" },
+			["c"] = { ":Git commit<CR>", "Commit" },
 			["a"] = { ":Git add . | Git commit<CR>", "commit All" },
 		},
 		["C"] = {
