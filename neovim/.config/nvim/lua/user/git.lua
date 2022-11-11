@@ -151,6 +151,7 @@ M.set_keymap = function(keymap)
 			["p"] = {
 				["name"] = "+Pull request",
 				["l"] = { ":Octo pr list<CR>", "List pull requests" },
+				["c"] = { ":Octo pr checkout<CR>", "Checkout pull request" },
 			},
 		},
 		["s"] = {
