@@ -9,13 +9,13 @@ M.plugins = {
 			"nvim-lua/plenary.nvim",
 		},
 		config = function()
-      local _, module = pcall(require, "gitsigns")
-      if not module then
-        return
-      end
-      if not module.setup then
-        return
-      end
+			local _, module = pcall(require, "gitsigns")
+			if not module then
+				return
+			end
+			if not module.setup then
+				return
+			end
 
 			module.setup({
 				signs = {
@@ -26,7 +26,12 @@ M.plugins = {
 						numhl = "GitSignsChangeNr",
 						linehl = "GitSignsChangeLn",
 					},
-					delete = { hl = "GitSignsDelete", text = "_", numhl = "GitSignsDeleteNr", linehl = "GitSignsDeleteLn" },
+					delete = {
+						hl = "GitSignsDelete",
+						text = "_",
+						numhl = "GitSignsDeleteNr",
+						linehl = "GitSignsDeleteLn",
+					},
 					topdelete = {
 						hl = "GitSignsDelete",
 						text = "‾",
@@ -44,7 +49,7 @@ M.plugins = {
 				numhl = false, -- Toggle with `:Gitsigns toggle_numhl`
 				linehl = false, -- Toggle with `:Gitsigns toggle_linehl`
 				word_diff = false, -- Toggle with `:Gitsigns toggle_word_diff`
-          -- TODO: set these up
+				-- TODO: set these up
 				-- keymaps = {
 				-- 	-- Default keymap options
 				-- 	noremap = true,
@@ -113,7 +118,7 @@ local lazygit = terminal.Terminal:new({
 	cmd = "lazygit",
 	dir = "git_dir",
 	direction = "float",
-	close_on_exit = true,
+	close_on_exit = false,
 	float_opts = {
 		border = "double",
 	},
@@ -128,25 +133,33 @@ local lazygit = terminal.Terminal:new({
 })
 
 function _lazygit_toggle()
+	print("lazygit")
 	lazygit:toggle()
 end
 
 M.set_keymap = function(keymap)
 	keymap.leader["g"] = { ":<cmd>lua _lazygit_toggle()<CR><CR>", "lazygit" }
 	keymap.localleader["g"] = {
-		["name"] = "+Git",
+		["name"] = "+[G]it",
 		["h"] = {
-			["name"] = "+gitHub",
-			["u"] = { ":echo 'not implemented - open browser'<CR>", "open Url under cursor" },
-			["i"] = { ":echo 'not implemented - fetch issues -> telescope -> open browser'<CR>", "search issues" },
+			["name"] = "+Git[h]ub",
+			["<space>"] = { ":Octo actions<CR>", "Show all github actions (via Octo)" },
+			["i"] = {
+				["name"] = "+Issue",
+				["l"] = { ":Octo issue list<CR>", "[L]ist issues" },
+			},
+			["p"] = {
+				["name"] = "+Pull request",
+				["l"] = { ":Octo pr list<CR>", "[L]ist pull requests" },
+			},
 		},
 		["s"] = {
 			["name"] = "+Search",
-			["s"] = { ":Telescope git_status<CR>", "Status" },
-			["S"] = { ":Telescope git_stash<CR>", "Stash" },
-			["f"] = { ":Telescope git_files<CR>", "Files" },
-			["c"] = { ":Telescope git_commits<CR>", "Commits" },
-			["b"] = { ":Telescope git_branches<CR>", "Branches" },
+			["s"] = { ":Telescope git_status<CR>", "[S]tatus" },
+			["S"] = { ":Telescope git_stash<CR>", "[S]tash" },
+			["f"] = { ":Telescope git_files<CR>", "[F]iles" },
+			["c"] = { ":Telescope git_commits<CR>", "[C]ommits" },
+			["b"] = { ":Telescope git_branches<CR>", "[B]ranches" },
 		},
 		["l"] = { ":Gclog<CR>", "Log" },
 		["b"] = { ":Git blame<CR>", "Blame" },

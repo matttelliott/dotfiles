@@ -48,15 +48,6 @@ M.setup_plugins = function(modules)
 		use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
 		use("kyazdani42/nvim-web-devicons")
 
-		-- TODO: for some reason keymap throws an error when loaded like other modules?
-		local keymapplugins = {
-			"liuchengxu/vim-which-key",
-			"AckslD/nvim-whichkey-setup.lua",
-		}
-		for _, value in pairs(keymapplugins) do
-			use(value)
-		end
-
 		for _, module in pairs(modules) do
       if module.plugins then
         for _, value in pairs(module.plugins) do

@@ -67,4 +67,4 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
 
-export PATH=/usr/local/lib/ruby/gems/2.7.0/bin:/opt/homebrew/lib/ruby/gems/2.7.0/bin:/Users/matt/bin:/Users/matt/.npm-packages/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/sbin:/Users/matt/.local/share/nvim/site/pack/packer/start/fzf/bin:/usr/local/bin
+export PATH=/usr/local/lib/ruby/gems/2.7.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/homebrew/lib/ruby/gems/2.7.0/bin:$HOME/bin:$HOME/.npm-packages/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/sbin:$HOME/.local/share/nvim/site/pack/packer/start/fzf/bin:/usr/local/bin

@@ -10,6 +10,7 @@ local explorer = require("user.explorer")
 local http = require("user.http")
 local formatting = require("user.formatting")
 local git = require("user.git")
+local github = require("user.github")
 local highlighting = require("user.highlighting") -- causing errors
 local htop = require("user.htop")
 local keymap = require("user.keymap")
@@ -25,6 +26,7 @@ local undo = require("user.undo")
 local vimwiki = require("user.vimwiki")
 
 local modules = {
+  keymap,
 	colors,
 	colortils,
 	http,
@@ -37,6 +39,7 @@ local modules = {
 	explorer,
 	formatting,
 	git,
+	github,
 	highlighting,
 	htop,
 	lsp,
