@@ -1,16 +1,24 @@
 #!/usr/bin/env zsh
+alias ggui="lazygit"
+
 alias gstatus="git status"
 alias gst="git status"
 alias gs="git status"
 alias g="git status"
 
+alias gadd="git add"
 alias ga="git add"
+
+alias gcommit="git commit"
 alias gc="git commit"
+
+alias gcheckout="git checkout"
 alias gco="git checkout"
 
-alias gd="git diff"
 alias gdiff="git diff"
+alias gd="git diff"
 alias gdfiles="git diff --name-only"
+alias gdf="git diff --name-only"
 
 alias gac="git add . && git commit"
 alias gacm="git add . && git commit -m"
