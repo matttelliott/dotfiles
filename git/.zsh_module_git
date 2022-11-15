@@ -1,5 +1,7 @@
 #!/usr/bin/env zsh
+alias gitgui="lazygit"
 alias ggui="lazygit"
+alias gg="lazygit"
 
 alias gstatus="git status"
 alias gst="git status"
@@ -27,6 +29,7 @@ alias gpull="git pull"
 alias gp="git pull"
 
 alias gpush="git push"
+alias gPush="git push"
 alias gP="git push"
 
 alias gfetch="git fetch"
