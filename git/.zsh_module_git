@@ -1,16 +1,29 @@
 #!/usr/bin/env zsh
-alias g="git status"
-alias gs="git status"
+alias gstatus="git status"
 alias gst="git status"
+alias gs="git status"
+alias g="git status"
+
 alias ga="git add"
 alias gc="git commit"
 alias gco="git checkout"
+
 alias gd="git diff"
 alias gdiff="git diff"
+alias gdfiles="git diff --name-only"
+
 alias gac="git add . && git commit"
 alias gacm="git add . && git commit -m"
-alias gpush="git push"
+
 alias gpull="git pull"
+alias gp="git pull"
+
+alias gpush="git push"
+alias gP="git push"
+
 alias gfetch="git fetch"
 alias gf="git fetch"
+
+alias glog="git log --oneline --graph --decorate"
 alias glg="git log --oneline --graph --decorate"
+alias gl="git log --oneline --graph --decorate"
