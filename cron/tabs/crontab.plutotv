@@ -36,14 +36,8 @@
 # every 10 minutes . Go to home dir, commit dotfiles changes to yadm, and push
 # to remote
 # TODO: figure out why yadm isn't recongnized in path
-*/10 * * * * cd ~/.config/crontab/scripts/ && ./sync-dotfiles.sh
+*/10 * * * * cd ~/dotfiles/cron/jobs && ./sync-dotfiles
 
 # every minute update crontab with this file 
 # TODO: this doesnt seem to work, need to find a new way to sync these files
-*/1 * * * * crontab ~/.config/crontab/crontab.macbook
-
-# sync icloud every 15 min
-# */15 * * * * cd ~/.config/crontab/scripts/ && ./sync-icloud.sh
-
-# sync projects every 10 min
-# */10 * * * * cd ~/.config/crontab/scripts/ && ./sync-projects.sh
+*/1 * * * * crontab ~/dotfiles/cron/tabs/crontab.plutotv

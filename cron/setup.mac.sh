@@ -8,6 +8,7 @@ if [ $isMattsMacbook != "" ]; then
 	crontab cron/tabs/crontab.macbook
 elif [ $isMattsChromebook != "" ]; then
 	crontab cron/tabs/crontab.chromebook
-elif [ $isPlutoMacbook != "" ]; then
+#elif [ $isPlutoMacbook != "" ]; then
+else
 	crontab cron/tabs/crontab.plutotv
 fi

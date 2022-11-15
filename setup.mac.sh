@@ -1,5 +1,24 @@
 #!/usr/bin/env bash
 
+# check environment and set global env var
+if [ $(sw_vers -productName) = 'macOS' ]; then
+  echo 'macOS dotfiles setup';
+else
+  echo 'Error: Running macOS dotfiles setup on non-macOS device.';
+  exit 1
+fi
+
+isMattsMacbook=$(hostname | grep -i matt | grep -i macbook)
+isPlutoMacbook=$(hostname | grep -i plutotv)
+if [ $isMattsMacbook != "" ]; then
+	export DOTFILES_ENV='home-macbook'
+elif [ $isMattsChromebook != "" ]; then
+	crontab cron/tabs/crontab.chromebook
+#elif [ $isPlutoMacbook != "" ]; then
+else
+	crontab cron/tabs/crontab.plutotv
+fi
+
 REPO=https://gitlab.com/matttelliott/dotfiles-stow
 curl $REPO/-/raw/master/WARNING.md | cat
 
@@ -35,10 +54,10 @@ mv $HOME/.local $HOME/.local-$date
 mv $HOME/.config $HOME/.config-$date
 mv $HOME/.profile $HOME/.profile-$date
 for file in $(ls -lash | awk '{ print $10 }' | grep '^.z' | grep -v '\d\d\d\d-\d\d-\d\d'); do
-  mv $HOME/$file $HOME/$file-$date
+	mv $HOME/$file $HOME/$file-$date
 done
 for file in $(ls -lash | awk '{ print $10 }' | grep '^.bash' | grep -v '\d\d\d\d-\d\d-\d\d'); do
-  mv $HOME/$file $HOME/$file-$date
+	mv $HOME/$file $HOME/$file-$date
 done
 git clone $REPO $HOME/dotfiles
 cd $HOME/dotfiles
@@ -121,7 +140,6 @@ cowsay "DONE!"
 sleep 15
 
 sudo reboot
-
 
 ## Manual Install
 # bash julia/setup.mac.sh
