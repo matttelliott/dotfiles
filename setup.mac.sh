@@ -119,6 +119,8 @@ bash ffmpeg/setup.mac.sh
 bash imagemagick/setup.mac.sh
 bash ranger/setup.mac.sh
 bash nmap/setup.mac.sh
+bash bpytop/setup.mac.sh
+bash lolcat/setup.mac.sh
 
 bash mpv/setup.mac.sh
 bash vlc/setup.mac.sh
