@@ -10,7 +10,7 @@ source $znapFolder/znap.zsh
 znap source zsh-users/zsh-autosuggestions
 znap source zsh-users/zsh-syntax-highlighting
 
-for file in `ls -a $HOME | grep .zsh_module_`; do
+for file in `ls -a $HOME/.zsh_modules`; do
   source $HOME/$file;
 done;
 
