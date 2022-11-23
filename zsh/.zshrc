@@ -11,7 +11,7 @@ znap source zsh-users/zsh-autosuggestions
 znap source zsh-users/zsh-syntax-highlighting
 
 for file in `ls -a $HOME/.zsh_modules`; do
-  source $HOME/$file;
+  source $HOME/.zsh_modules/$file;
 done;
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
