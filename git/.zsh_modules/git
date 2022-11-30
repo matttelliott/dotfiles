@@ -1,7 +1,8 @@
 #!/usr/bin/env zsh
-alias gitgui="lazygit"
-alias ggui="lazygit"
-alias gg="lazygit"
+export GITGUI="lazygit"
+alias gitgui=$GITGUI
+alias ggui=$GITGUI
+alias gg=$GITGUI
 
 alias gstatus="git status"
 alias gst="git status"
@@ -18,6 +19,9 @@ alias gcheckout="git checkout"
 alias gco="git checkout"
 alias gcom="git checkout master"
 alias gcot="git checkout trunk"
+
+alias gmerge="git merge"
+alias gm="git merge"
 
 alias gdiff="git diff"
 alias gd="git diff"

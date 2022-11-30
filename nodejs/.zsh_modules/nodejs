@@ -1,3 +1,4 @@
 #!/usr/bin/env zsh
 znap source lukechilds/zsh-nvm
+[[ -f .nvmrc ]] && nvm use
 
