@@ -16,6 +16,8 @@ alias gc="git commit"
 
 alias gcheckout="git checkout"
 alias gco="git checkout"
+alias gcom="git checkout master"
+alias gcot="git checkout trunk"
 
 alias gdiff="git diff"
 alias gd="git diff"
