@@ -1,6 +1,6 @@
 [user]
-	email = git@matttelliott.com
-	name = matt
+	email = matt.elliott@pluto.tv
+	name = Matt Elliott
 [init]
 	defaultBranch = master
 [pull]
