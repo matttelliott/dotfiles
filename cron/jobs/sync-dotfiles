@@ -10,7 +10,7 @@ echo 'sync dotfiles pull?' >> ~/cron.log
 echo 'sync dotfiles push?' >> ~/cron.log
 echo 'y no push??? WAT' >> ~/cron.log
 whoami >> ~/cron.log
-/usr/bin/env git push
+/usr/bin/env git push >> ~/cron.log
 echo 'sync dotfiles push origin?' >> ~/cron.log
 /usr/bin/env git push origin
 echo 'sync dotfiles push github?' >> ~/cron.log
