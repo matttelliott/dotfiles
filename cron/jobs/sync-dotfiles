@@ -12,3 +12,4 @@ echo 'sync dotfiles' >> ~/cron.log
 /usr/bin/env git push gittea
 /usr/bin/env git push --all
 /usr/bin/env git pull
+echo 'sync dotfiles done' >> ~/cron.log
