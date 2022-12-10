@@ -2,6 +2,7 @@
 
 commitmessage='auto - '`whoami`@`hostname`
 cd $HOME/dotfiles
+echo 'sync dotfiles' >> ~/cron.log
 /usr/bin/env git status -s  | awk '{print $2}'| xargs git add
 /usr/bin/env git commit -m "$commitmessage"
 /usr/bin/env git push
