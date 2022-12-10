@@ -1,34 +1,15 @@
 #!/usr/bin/env bash
 
 commitmessage='auto - '`whoami`@`hostname`
-echo $commitmessage >> ~/cron.log
 cd $HOME/dotfiles
-echo 'wtf' >> ~/cron.log
-/usr/bin/env git push >> ~/cron.log
-echo 'push!!!' >> ~/cron.log
-git push 2>> ~/cron.log
-echo 'sync dotfiles' >> ~/cron.log
-/usr/bin/env git status -s  | awk '{print $2}'| xargs git add >> ~/cron.log
-/usr/bin/env git commit -m "$commitmessage" >> ~/cron.log
-echo 'sync dotfiles pull?' >> ~/cron.log
-/usr/bin/env git pull >> ~/cron.log
-echo 'whoami' >> ~/cron.log
-whoami >> ~/cron.log
-echo 'which git' >> ~/cron.log
-which git >> ~/cron.log
-echo 'sync dotfiles env push?' >> ~/cron.log
-/usr/bin/env git push >> ~/cron.log
-echo 'sync dotfiles push?' >> ~/cron.log
-git push >> ~/cron.log
-echo 'sync dotfiles push origin?' >> ~/cron.log
-/usr/bin/env git push origin >> ~/cron.log
-echo 'sync dotfiles push github?' >> ~/cron.log
-/usr/bin/env git push github >> ~/cron.log
-echo 'sync dotfiles push gitlab?' >> ~/cron.log
-/usr/bin/env git push gitlab >> ~/cron.log
-echo 'sync dotfiles push gitea?' >> ~/cron.log
-/usr/bin/env git push gittea >> ~/cron.log
-/usr/bin/env git push --all >> ~/cron.log
-echo 'sync dotfiles pull' >> ~/cron.log
-/usr/bin/env git pull >> ~/cron.log
-echo 'sync dotfiles done' >> ~/cron.log
+/usr/bin/env git push
+/usr/bin/env git status -s  | awk '{print $2}'| xargs git add
+/usr/bin/env git commit -m "$commitmessage"
+/usr/bin/env git pull
+/usr/bin/env git push
+/usr/bin/env git push origin
+/usr/bin/env git push github
+/usr/bin/env git push gitlab
+/usr/bin/env git push gittea
+/usr/bin/env git push --all
+/usr/bin/env git pull
