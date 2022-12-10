@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# TODO: need to update credentials to allow push from own machines.
 commitmessage='auto - '`whoami`@`hostname`
 cd $HOME/dotfiles
 /usr/bin/env git push
