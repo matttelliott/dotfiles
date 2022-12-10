@@ -6,7 +6,7 @@ cd $HOME/dotfiles
 echo 'wtf' >> ~/cron.log
 /usr/bin/env git push >> ~/cron.log
 echo 'push!!!' >> ~/cron.log
-git push >> ~/cron.log
+git push 2>> ~/cron.log
 echo 'sync dotfiles' >> ~/cron.log
 /usr/bin/env git status -s  | awk '{print $2}'| xargs git add >> ~/cron.log
 /usr/bin/env git commit -m "$commitmessage" >> ~/cron.log
