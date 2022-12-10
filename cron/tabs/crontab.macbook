@@ -33,10 +33,10 @@
 */10 * * * * cd ~/_wiki_ && ./sync
 
 # # autocommit .dotfiles changes
-# every 10 minutes . Go to home dir, commit dotfiles changes to yadm, and push
+# every 5 minutes . Go to home dir, commit dotfiles changes, and push
 # to remote
 # TODO: figure out why yadm isn't recongnized in path
-*/1 * * * * cd ~/dotfiles/cron/jobs/ && ./sync-dotfiles
+*/5 * * * * cd ~/dotfiles/cron/jobs/ && ./sync-dotfiles
 
 # every minute update crontab with this file 
 # TODO: this doesnt seem to work, need to find a new way to sync these files
