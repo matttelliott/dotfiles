@@ -17,6 +17,6 @@ null_ls.setup({
 		formatting.shfmt,
 		formatting.sql_formatter,
 		diagnostics.flake8,
-		diagnostics.eslint_d,
+		diagnostics.eslint,
 	},
 })
