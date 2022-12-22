@@ -141,8 +141,6 @@ neofetch
 cowsay "DONE!"
 sleep 15
 
-sudo reboot
-
 ## Manual Install
 # bash julia/setup.mac.sh
 # bash wiki/setup.mac.sh

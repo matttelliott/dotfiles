@@ -1,2 +1,4 @@
 #!/usr/bin/env zsh
 export PATH=$PATH:$HOME/lg-webos-cli/bin
+alias aresget-installed-apps="ares-install --list"
+alias areslist-installed-apps="ares-install --list"

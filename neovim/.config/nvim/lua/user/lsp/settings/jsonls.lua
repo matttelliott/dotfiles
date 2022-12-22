@@ -33,6 +33,7 @@ local schemas = {
   {
     description = "ESLint config",
     fileMatch = {
+      ".eslintrc.js",
       ".eslintrc.json",
       ".eslintrc",
     },
