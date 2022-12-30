@@ -30,7 +30,7 @@ set_keymap("i", "jK", "<esc>", options)
 -- navigate and delete buffers
 set_keymap("n", "gn", ":bn<cr>", options)
 set_keymap("n", "gp", ":bp<cr>", options)
-set_keymap("n", "gd", ":bd<cr>", options)
+set_keymap("n", "gX", ":bd<cr>", options)
 
 -- move vertically by visual line
 set_keymap("n", "j", "gj", options)
