@@ -8,16 +8,6 @@ else
   exit 1
 fi
 
-isMattsMacbook=$(hostname | grep -i matt | grep -i macbook)
-isPlutoMacbook=$(hostname | grep -i plutotv)
-if [ $isMattsMacbook != "" ]; then
-	export DOTFILES_ENV='home-macbook'
-elif [ $isMattsChromebook != "" ]; then
-	crontab cron/tabs/crontab.chromebook
-#elif [ $isPlutoMacbook != "" ]; then
-else
-	crontab cron/tabs/crontab.plutotv
-fi
 
 REPO=https://gitlab.com/matttelliott/dotfiles-stow
 curl $REPO/-/raw/master/WARNING.md | cat
