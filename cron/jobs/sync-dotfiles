@@ -14,3 +14,6 @@ cd $HOME/dotfiles
 /usr/bin/env git push gittea
 /usr/bin/env git push --all
 /usr/bin/env git pull
+echo 'synced dotfiles' >> ~/cron.log
+echo $commitmessage >> ~/cron.log
+/usr/bin/env git status -s  >> ~/cron.log
