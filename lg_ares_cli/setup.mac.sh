@@ -4,9 +4,10 @@ cd "$HOME/dotfiles"
 stow lg_ares_cli
 npm uninstall -g @webosose/ares-cli
 ares_path=$HOME/lg-webos-cli
-archive_path=$HOME/Downloads/webOS_TV_CLI_mac_1.12.3-j26.tgz
 cd $HOME/Downloads
+archive_path="webOS_TV_CLI_mac_1.12.3-j26.tar"
 rm -rf CLI
 rm -rf $ares_path
-tar -zxvf $archive_path && mv CLI/ $ares_path
+tar -xf $archive_path 
+mv CLI/ $ares_path
 
