@@ -10,4 +10,5 @@ rm -rf CLI
 rm -rf $ares_path
 tar -xf $archive_path 
 mv CLI/ $ares_path
+export PATH=$PATH:$ares_path
 
