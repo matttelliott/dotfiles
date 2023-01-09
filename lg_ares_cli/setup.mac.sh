@@ -8,5 +8,7 @@ archive_path=$HOME/Downloads/webOS_TV_CLI_mac_1.12.3-j26.tgz
 cd $HOME/Downloads
 open $archive_path
 mkdir -pv $ares_path
-mv CLI/bin/* $ares_path
+echo $ares_path
+ls CLI/bin
+mv CLI/bin $ares_path
 
