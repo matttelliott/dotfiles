@@ -54,11 +54,7 @@ local eslint_custom = h.make_builtin({
 		end,
 		use_cache = true,
 		on_output = handle_eslint_output,
-		dynamic_command = cmd_resolver.from_node_modules(),
-		cwd = h.cache.by_bufnr(function(params)
-			return u.root_pattern(
-				"package.json"			)(params.bufname)
-		end),
+		dynamic_command = cmd_resolver.from_node_modules()
 	},
 	factory = h.generator_factory,
 })
