@@ -1,4 +1,6 @@
 #!/usr/bin/env zsh
+#
+echo 'start' >> test.log
 # Download Znap, if it's not there yet.
 znapFolder=$HOME/zsh/zsh-snap/
 [[ -f $znapFolder/znap.zsh ]] ||
@@ -15,3 +17,4 @@ for file in `ls -a $HOME/.zsh_modules`; do
 done;
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+echo 'end' >> test.log
