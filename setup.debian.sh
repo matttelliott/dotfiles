@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # check environment and set global env var
-if [[n $(cat /etc/issue | grep -i debian) ]]; then
+if [[ -n $(cat /etc/issue | grep -i debian) ]]; then
   echo 'debian dotfiles setup';
 else
   echo 'Error: Running debian dotfiles setup on non-debian device.';
