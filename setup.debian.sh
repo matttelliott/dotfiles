@@ -57,8 +57,7 @@ bash bat/setup.debian.sh
 bash git/setup.debian.sh
 bash svn/setup.debian.sh
 bash stow/setup.debian.sh
-#bash homebrew/setup.debian.sh
-#bash zsh/setup.debian.sh
+bash zsh/setup.debian.sh
 #bash fonts/setup.debian.sh
 #bash prompt/setup.debian.sh
 #bash tmux/setup.debian.sh
