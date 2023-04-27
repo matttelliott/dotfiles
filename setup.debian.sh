@@ -17,10 +17,7 @@ REPO=https://gitlab.com/matttelliott/dotfiles-stow
 cd "$HOME"
 # sleep 10
 
-if [ $EUID != 0 ]; then
-    sudo "$0" "$@"
-    exit $?
-fi
+
 
 
 # Ask for the administrator password upfront
