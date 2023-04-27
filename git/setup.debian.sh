@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bat git/README.md
+batcat git/README.md
+sudo apt install git
 stow git
-brsudo apt install git
