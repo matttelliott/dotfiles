@@ -10,12 +10,12 @@ fi
 
 
 REPO=https://gitlab.com/matttelliott/dotfiles-stow
-curl $REPO/-/raw/master/WARNING.md | cat
+# curl $REPO/-/raw/master/WARNING.md | cat
 
 # Because Git submodule commands cannot operate without a work tree, they must
 # be run from within $HOME (assuming this is the root of your dotfiles)
 cd "$HOME"
-sleep 10
+# sleep 10
 
 # Ask for the administrator password upfront
 sudo -v
