@@ -38,9 +38,9 @@ sudo apt update -y
 sudo apt upgrade -y
 
 
-apt install git
-apt install bat
-apt install stow
+apt install -y git
+apt install -y bat
+apt install -y stow
 
 date=$(date -I seconds)
 mv $HOME/dotfiles $HOME/dotfiles-$date
