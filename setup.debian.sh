@@ -53,9 +53,10 @@ done
 git clone $REPO $HOME/dotfiles
 cd $HOME/dotfiles
 
+bash bat/setup.debian.sh
 bash git/setup.debian.sh
 bash svn/setup.debian.sh
-#bash stow/setup.debian.sh
+bash stow/setup.debian.sh
 #bash homebrew/setup.debian.sh
 #bash zsh/setup.debian.sh
 #bash fonts/setup.debian.sh
@@ -68,7 +69,6 @@ bash svn/setup.debian.sh
 #bash wget/setup.debian.sh
 #bash trash/setup.debian.sh
 #bash clipboard/setup.debian.sh
-#bash bat/setup.debian.sh
 #bash exa/setup.debian.sh
 #bash ag/setup.debian.sh
 #bash fd/setup.debian.sh
