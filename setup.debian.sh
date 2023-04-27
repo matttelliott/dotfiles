@@ -34,8 +34,8 @@ while true; do
 done 2>/dev/null &
 
 
-sudo apt update
-sudo apt upgrade
+sudo apt update -y
+sudo apt upgrade -y
 
 
 apt install git
