@@ -2,4 +2,4 @@
 cd "$HOME/dotfiles"
 bat svn/README.md
 stow svn
-sudo apt install svn
+sudo apt install subversion
