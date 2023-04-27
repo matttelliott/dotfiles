@@ -17,6 +17,12 @@ REPO=https://gitlab.com/matttelliott/dotfiles-stow
 cd "$HOME"
 # sleep 10
 
+if [ $EUID != 0 ]; then
+    sudo "$0" "$@"
+    exit $?
+fi
+
+
 # Ask for the administrator password upfront
 sudo -v
 
@@ -51,13 +57,13 @@ git clone $REPO $HOME/dotfiles
 cd $HOME/dotfiles
 
 bash git/setup.debian.sh
-# bash svn/setup.debian.sh
-# bash stow/setup.debian.sh
-# bash homebrew/setup.debian.sh
-# bash zsh/setup.debian.sh
-# bash fonts/setup.debian.sh
-# bash prompt/setup.debian.sh
-# bash tmux/setup.debian.sh
+#bash svn/setup.debian.sh
+#bash stow/setup.debian.sh
+#bash homebrew/setup.debian.sh
+#bash zsh/setup.debian.sh
+#bash fonts/setup.debian.sh
+#bash prompt/setup.debian.sh
+#bash tmux/setup.debian.sh
 #bash cron/setup.debian.sh
 #bash bin/setup.debian.sh
 
