@@ -27,16 +27,14 @@ while true; do
 	kill -0 "$$" || exit
 done 2>/dev/null &
 
-sudo softwareupdate --install-rosetta --agree-to-license
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-export PATH=$PATH:/opt/homebrew/bin
 
-brew update
-brew tap homebrew/cask-versions
+sudo apt update
+sudo apt upgrade
 
-brew install git
-brew install bat
-brew install stow
+
+apt install git
+apt install bat
+apt install stow
 
 date=$(date -I seconds)
 mv $HOME/dotfiles $HOME/dotfiles-$date
