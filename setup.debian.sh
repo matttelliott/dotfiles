@@ -50,87 +50,87 @@ done
 git clone $REPO $HOME/dotfiles
 cd $HOME/dotfiles
 
-bash git/setup.mac.sh
-bash svn/setup.mac.sh
-bash stow/setup.mac.sh
-bash homebrew/setup.mac.sh
-bash zsh/setup.mac.sh
-bash fonts/setup.mac.sh
-bash prompt/setup.mac.sh
-bash tmux/setup.mac.sh
-bash cron/setup.mac.sh
-bash bin/setup.mac.sh
+bash git/setup.debian.sh
+# bash svn/setup.debian.sh
+# bash stow/setup.debian.sh
+# bash homebrew/setup.debian.sh
+# bash zsh/setup.debian.sh
+# bash fonts/setup.debian.sh
+# bash prompt/setup.debian.sh
+# bash tmux/setup.debian.sh
+#bash cron/setup.debian.sh
+#bash bin/setup.debian.sh
 
-bash fzf/setup.mac.sh
-bash wget/setup.mac.sh
-bash trash/setup.mac.sh
-bash clipboard/setup.mac.sh
-bash bat/setup.mac.sh
-bash exa/setup.mac.sh
-bash ag/setup.mac.sh
-bash fd/setup.mac.sh
-bash ripgrep/setup.mac.sh
-bash neovim/setup.mac.sh
-bash vim/setup.mac.sh
-bash neofetch/setup.mac.sh
-bash cowsay/setup.mac.sh
-bash github/setup.mac.sh
+#bash fzf/setup.debian.sh
+#bash wget/setup.debian.sh
+#bash trash/setup.debian.sh
+#bash clipboard/setup.debian.sh
+#bash bat/setup.debian.sh
+#bash exa/setup.debian.sh
+#bash ag/setup.debian.sh
+#bash fd/setup.debian.sh
+#bash ripgrep/setup.debian.sh
+#bash neovim/setup.debian.sh
+#bash vim/setup.debian.sh
+#bash neofetch/setup.debian.sh
+#bash cowsay/setup.debian.sh
+#bash github/setup.debian.sh
 
-bash nodejs/setup.mac.sh
-bash python/setup.mac.sh
-bash lua/setup.mac.sh
-bash ruby/setup.mac.sh
-bash rust/setup.mac.sh
-bash golang/setup.mac.sh
-bash php/setup.mac.sh
-bash shfmt/setup.mac.sh
+#bash nodejs/setup.debian.sh
+#bash python/setup.debian.sh
+#bash lua/setup.debian.sh
+#bash ruby/setup.debian.sh
+#bash rust/setup.debian.sh
+#bash golang/setup.debian.sh
+#bash php/setup.debian.sh
+#bash shfmt/setup.debian.sh
 
-bash sqlite/setup.mac.sh
-bash postgres/setup.mac.sh
+#bash sqlite/setup.debian.sh
+#bash postgres/setup.debian.sh
 
-bash mac/setup.mac.sh
-bash iterm/setup.mac.sh
-bash 1password/setup.mac.sh
-bash spectacle/setup.mac.sh
+#bash mac/setup.debian.sh
+#bash iterm/setup.debian.sh
+#bash 1password/setup.debian.sh
+#bash spectacle/setup.debian.sh
 
-bash asciiquarium/setup.mac.sh
-bash entr/setup.mac.sh
-bash lazygit/setup.mac.sh
-bash vifm/setup.mac.sh
-bash htop/setup.mac.sh
-bash jq/setup.mac.sh
-bash pandoc/setup.mac.sh
-bash w3m/setup.mac.sh
-bash watch/setup.mac.sh
-bash youtube-dl/setup.mac.sh
-bash ffmpeg/setup.mac.sh
-bash imagemagick/setup.mac.sh
-bash ranger/setup.mac.sh
-bash nmap/setup.mac.sh
-bash bpytop/setup.mac.sh
-bash lolcat/setup.mac.sh
+#bash asciiquarium/setup.debian.sh
+#bash entr/setup.debian.sh
+#bash lazygit/setup.debian.sh
+#bash vifm/setup.debian.sh
+#bash htop/setup.debian.sh
+#bash jq/setup.debian.sh
+#bash pandoc/setup.debian.sh
+#bash w3m/setup.debian.sh
+#bash watch/setup.debian.sh
+#bash youtube-dl/setup.debian.sh
+#bash ffmpeg/setup.debian.sh
+#bash imagemagick/setup.debian.sh
+#bash ranger/setup.debian.sh
+#bash nmap/setup.debian.sh
+#bash bpytop/setup.debian.sh
+#bash lolcat/setup.debian.sh
 
-bash mpv/setup.mac.sh
-bash vlc/setup.mac.sh
-bash obsidian/setup.mac.sh
-bash vscodium/setup.mac.sh
+#bash mpv/setup.debian.sh
+#bash vlc/setup.debian.sh
+#bash obsidian/setup.debian.sh
+#bash vscodium/setup.debian.sh
 
-bash chromium/setup.mac.sh
-bash firefox/setup.mac.sh
-bash vivaldi/setup.mac.sh
-bash opera/setup.mac.sh
+#bash chromium/setup.debian.sh
+#bash firefox/setup.debian.sh
+#bash vivaldi/setup.debian.sh
+#bash opera/setup.debian.sh
 
-bash virtualbox/setup.mac.sh
-bash vagrant/setup.mac.sh
-bash docker/setup.mac.sh
-bash kubernetes/setup.mac.sh
+#bash virtualbox/setup.debian.sh
+#bash vagrant/setup.debian.sh
+#bash docker/setup.debian.sh
+#bash kubernetes/setup.debian.sh
 
-neofetch
-cowsay "DONE!"
-sleep 15
+#neofetch
+#cowsay "DONE!"
+#sleep 15
 
 ## Manual Install
-# bash julia/setup.mac.sh
-# bash wiki/setup.mac.sh
-# bash tf2/setup.mac.sh
-# bash spotify/setup.mac.sh
+# bash julia/setup.debian.sh
+# bash wiki/setup.debian.sh
+# bash tf2/setup.debian.sh
+# bash spotify/setup.debian.sh
