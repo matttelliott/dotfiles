@@ -102,6 +102,16 @@ require("lspconfig")["tsserver"].setup({
 	on_attach = on_attach, -- pass options to lspconfig's setup method
 })
 
+require("lspconfig")["svelte"].setup({
+	single_file_support = true,
+	disable_commands = false, -- prevent the plugin from creating Vim commands
+	debug = false, -- enable debug logging for commands
+	go_to_source_definition = {
+		fallback = true, -- fall back to standard LSP definition on failure
+	},
+	on_attach = on_attach, -- pass options to lspconfig's setup method
+})
+
 require("lspconfig")["pyright"].setup({
 	disable_commands = false, -- prevent the plugin from creating Vim commands
 	on_attach = on_attach,
