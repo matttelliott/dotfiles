@@ -68,10 +68,12 @@ bash neovim/setup.debian.sh
 
 # Rust CLI Apps
 #bash bat/setup.debian.sh
-#bash exa/setup.debian.sh
+#bash lsd/setup.debian.sh
 #bash ripgrep/setup.debian.sh
 #bash fd/setup.debian.sh
+#bash sd/setup.debian.sh
 #bash gitui/setup.debian.sh
+#bash kondo/setup.debian.sh
 
 # bash git/setup.debian.sh
 # bash svn/setup.debian.sh
