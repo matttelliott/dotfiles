@@ -1,3 +1,5 @@
+let-env PATH = ($env.PATH | split row (char esep) | append '$env.HOME/.cargo/bin')
+
 let-env STARSHIP_SHELL = "nu"
 
 def create_left_prompt [] {
@@ -14,8 +16,7 @@ let-env PROMPT_INDICATOR = ""
 let-env PROMPT_INDICATOR_VI_INSERT = ": "
 let-env PROMPT_INDICATOR_VI_NORMAL = "〉"
 let-env PROMPT_MULTILINE_INDICATOR = "::: "
-let-env config {
+let-env config = {
     show_banner: false,
 }
 
-let-env PATH = ($env.PATH | split row (char esep) | append '$env.HOME/.cargo/bin')

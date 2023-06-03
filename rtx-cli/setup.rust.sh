@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-cat rtx-cli/README.md
 cd "$HOME/dotfiles"
+cat rtx-cli/README.md
 cargo install rtx-cli
 eval "$(rtx activate bash)"
 echo 'eval "$(rtx activate bash)"' >> ~/.bashrc

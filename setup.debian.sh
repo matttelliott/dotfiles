@@ -70,8 +70,8 @@ bash nodejs/setup.rust.sh
 bash prompt/setup.rust.sh
 bash nushell/setup.rust.sh
 nupath=`which nu`
-chsh -s $nupath
 echo $nupath | sudo tee -a /etc/shells
+sudo chsh -s $(which nu) $(whoami)
 
 bash zellij/setup.rust.sh
 bash mprocs/setup.rust.sh
