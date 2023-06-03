@@ -16,3 +16,5 @@ for file in `ls -a $HOME/.zsh_modules`; do
 done;
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+

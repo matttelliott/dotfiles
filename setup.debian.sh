@@ -54,19 +54,30 @@ done
 git clone $REPO $HOME/dotfiles
 cd $HOME/dotfiles
 
+# Rust core tools
 bash rust/setup.debian.sh
 source "$HOME/.cargo/env"
+bash rtx-cli/setup.debian.sh
+
+# Rust terminal environment
 bash nushell/setup.debian.sh
 bash zellij/setup.debian.sh
 bash mprocs/setup.debian.sh
-bash rtx-cli/setup.debian.sh
-# bash bat/setup.debian.sh
+bash prompt/setup.debian.sh
+bash neovim/setup.debian.sh
+
+# Rust CLI Apps
+#bash bat/setup.debian.sh
+#bash exa/setup.debian.sh
+#bash ripgrep/setup.debian.sh
+#bash fd/setup.debian.sh
+#bash gitui/setup.debian.sh
+
 # bash git/setup.debian.sh
 # bash svn/setup.debian.sh
 # bash stow/setup.debian.sh
 # bash zsh/setup.debian.sh
 #bash fonts/setup.debian.sh
-#bash prompt/setup.debian.sh
 #bash tmux/setup.debian.sh
 #bash cron/setup.debian.sh
 #bash bin/setup.debian.sh
@@ -75,11 +86,6 @@ bash rtx-cli/setup.debian.sh
 #bash wget/setup.debian.sh
 #bash trash/setup.debian.sh
 #bash clipboard/setup.debian.sh
-#bash exa/setup.debian.sh
-#bash ag/setup.debian.sh
-#bash fd/setup.debian.sh
-#bash ripgrep/setup.debian.sh
-#bash neovim/setup.debian.sh
 #bash vim/setup.debian.sh
 #bash neofetch/setup.debian.sh
 #bash cowsay/setup.debian.sh
