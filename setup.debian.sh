@@ -18,8 +18,6 @@ cd "$HOME"
 # sleep 10
 
 
-
-
 # Ask for the administrator password upfront
 sudo -v
 
@@ -36,8 +34,9 @@ sudo apt upgrade -y
 
 
 sudo apt install -y git
-sudo apt install -y bat
 sudo apt install -y stow
+sudo apt install -y curl
+sudo apt install -y build-essential
 
 date=$(date -I seconds)
 mv $HOME/dotfiles $HOME/dotfiles-$date
@@ -53,11 +52,14 @@ done
 git clone $REPO $HOME/dotfiles
 cd $HOME/dotfiles
 
-bash bat/setup.debian.sh
-bash git/setup.debian.sh
-bash svn/setup.debian.sh
-bash stow/setup.debian.sh
-bash zsh/setup.debian.sh
+bash rust/setup.debian.sh
+bash nushell/setup.debian.sh
+bash zellij/setup.debian.sh
+# bash bat/setup.debian.sh
+# bash git/setup.debian.sh
+# bash svn/setup.debian.sh
+# bash stow/setup.debian.sh
+# bash zsh/setup.debian.sh
 #bash fonts/setup.debian.sh
 #bash prompt/setup.debian.sh
 #bash tmux/setup.debian.sh
@@ -82,7 +84,6 @@ bash zsh/setup.debian.sh
 #bash python/setup.debian.sh
 #bash lua/setup.debian.sh
 #bash ruby/setup.debian.sh
-#bash rust/setup.debian.sh
 #bash golang/setup.debian.sh
 #bash php/setup.debian.sh
 #bash shfmt/setup.debian.sh
