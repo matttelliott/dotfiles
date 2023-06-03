@@ -69,6 +69,10 @@ bash nodejs/setup.rust.sh
 # Rust terminal environment
 bash prompt/setup.rust.sh
 bash nushell/setup.rust.sh
+nupath=`which nu`
+chsh -s $nupath
+echo $nupath | sudo tee -a /etc/shells
+
 bash zellij/setup.rust.sh
 bash mprocs/setup.rust.sh
 bash neovim/setup.rust.sh
@@ -78,7 +82,7 @@ bash zoxide/setup.rust.sh
 #bash lsd/setup.rust.sh
 #bash ripgrep/setup.rust.sh
 #bash fd/setup.rust.sh
-#bash sd/segituitup.rust.sh
+#bash sd/setup.rust.sh
 bash gitui/setup.rust.sh
 #bash kondo/setup.rust.sh
 
