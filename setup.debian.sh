@@ -37,6 +37,8 @@ sudo apt install -y git
 sudo apt install -y stow
 sudo apt install -y curl
 sudo apt install -y build-essential
+sudo apt install -y pkg-config
+sudo apt install -y libssl-dev
 
 date=$(date -I seconds)
 mv $HOME/dotfiles $HOME/dotfiles-$date
@@ -56,6 +58,8 @@ bash rust/setup.debian.sh
 source "$HOME/.cargo/env"
 bash nushell/setup.debian.sh
 bash zellij/setup.debian.sh
+bash mprocs/setup.debian.sh
+bash rtx-cli/setup.debian.sh
 # bash bat/setup.debian.sh
 # bash git/setup.debian.sh
 # bash svn/setup.debian.sh
