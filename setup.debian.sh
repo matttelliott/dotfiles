@@ -53,6 +53,7 @@ git clone $REPO $HOME/dotfiles
 cd $HOME/dotfiles
 
 bash rust/setup.debian.sh
+source "$HOME/.cargo/env"
 bash nushell/setup.debian.sh
 bash zellij/setup.debian.sh
 # bash bat/setup.debian.sh

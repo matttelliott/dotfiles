@@ -2,4 +2,4 @@
 cd "$HOME/dotfiles"
 cargo install --git https://github.com/nushell/nushell nu
 stow nushell
-bat nushell/README.md
+cat nushell/README.md
