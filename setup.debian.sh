@@ -57,6 +57,8 @@ cd $HOME/dotfiles
 
 # Rust core tools
 bash rust/setup.debian.sh
+bash nushell/setup.rust.sh
+nu bat/setup.nu
 source "$HOME/.cargo/env"
 export RUSTC_WRAPPER=sccache cargo install {package}
 
@@ -68,7 +70,6 @@ bash nodejs/setup.rust.sh
 
 # Rust terminal environment
 bash prompt/setup.rust.sh
-bash nushell/setup.rust.sh
 nupath=`which nu`
 echo $nupath | sudo tee -a /etc/shells
 sudo chsh -s $(which nu) $(whoami)
