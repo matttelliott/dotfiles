@@ -1,4 +1,5 @@
-let-env PATH = ($env.PATH | split row (char esep) | append '$env.HOME/.cargo/bin')
+let-env PATH = ($env.PATH | split row (char esep) | append $"($env.HOME)/.cargo/bin")
+let-env PATH = ($env.PATH | split row (char esep) | append $"($env.HOME)/.local/share/bob/nvim-bin")
 
 let-env STARSHIP_SHELL = "nu"
 
