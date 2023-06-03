@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-sudo apt install -y bat
-alias bat=batcat
-alias cat=batcat
-batcat bat/README.md
+cat bat/README.md
+cargo install bat
+alias cat=bat
 stow bat

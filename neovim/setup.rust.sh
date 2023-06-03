@@ -9,4 +9,5 @@ rm -rf $HOME/.local/state/nvim
 cargo install bob-nvim
 bob use stable
 export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
+echo "export PATH=$PATH:$HOME/.local/share/bob/nvim-bin" >> $HOME/.bashrc
 nvim +PackerSync +qa!

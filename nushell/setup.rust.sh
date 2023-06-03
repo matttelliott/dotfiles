@@ -4,6 +4,6 @@ cd "$HOME/dotfiles"
 cargo install coreutils
 cargo install nu
 stow nushell
-nupath=which nu 
+nupath=`which nu`
 sudo echo $nupath >> /etc/shells
 chsh -s $nupath

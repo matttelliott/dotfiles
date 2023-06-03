@@ -2,5 +2,6 @@
 cat rtx-cli/README.md
 cd "$HOME/dotfiles"
 cargo install rtx-cli
-echo 'eval "$(~/bin/rtx activate bash)"' >> ~/.bashrc
+eval "$(rtx activate bash)"
+echo 'eval "$(rtx activate bash)"' >> ~/.bashrc
 stow rtx-cli

@@ -39,6 +39,7 @@ sudo apt install -y curl
 sudo apt install -y build-essential
 sudo apt install -y pkg-config
 sudo apt install -y libssl-dev
+sudo apt install -y cmake
 
 date=$(date -I seconds)
 mv $HOME/dotfiles $HOME/dotfiles-$date
@@ -57,30 +58,32 @@ cd $HOME/dotfiles
 # Rust core tools
 bash rust/setup.debian.sh
 source "$HOME/.cargo/env"
-bash rtx-cli/setup.debian.sh
+bash bat/setup.rust.sh
+alias cat=bat
+bash rtx-cli/setup.rust.sh
+eval "$(rtx activate bash)"
+bash nodejs/setup.rust.sh
 
 # Rust terminal environment
-bash nushell/setup.debian.sh
-bash zellij/setup.debian.sh
-bash mprocs/setup.debian.sh
-bash prompt/setup.debian.sh
-bash neovim/setup.debian.sh
+bash prompt/setup.rust.sh
+bash nushell/setup.rust.sh
+bash zellij/setup.rust.sh
+bash mprocs/setup.rust.sh
+bash neovim/setup.rust.sh
 
 # Rust CLI Apps
-#bash bat/setup.debian.sh
-#bash lsd/setup.debian.sh
-#bash ripgrep/setup.debian.sh
-#bash fd/setup.debian.sh
-#bash sd/setup.debian.sh
-#bash gitui/setup.debian.sh
-#bash kondo/setup.debian.sh
+#bash lsd/setup.rust.sh
+#bash ripgrep/setup.rust.sh
+#bash fd/setup.rust.sh
+#bash sd/segituitup.rust.sh
+#bash gitui/setup.rust.sh
+#bash kondo/setup.rust.sh
 
 # bash git/setup.debian.sh
 # bash svn/setup.debian.sh
 # bash stow/setup.debian.sh
 # bash zsh/setup.debian.sh
 #bash fonts/setup.debian.sh
-#bash tmux/setup.debian.sh
 #bash cron/setup.debian.sh
 #bash bin/setup.debian.sh
 
@@ -93,7 +96,6 @@ bash neovim/setup.debian.sh
 #bash cowsay/setup.debian.sh
 #bash github/setup.debian.sh
 
-#bash nodejs/setup.debian.sh
 #bash python/setup.debian.sh
 #bash lua/setup.debian.sh
 #bash ruby/setup.debian.sh
