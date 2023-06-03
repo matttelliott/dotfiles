@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
+cat nodejs/README.md
 cd "$HOME/dotfiles"
-bat nodejs/README.md
+eval "$(rtx activate bash)"
 rtx use nodejs@lts
 stow nodejs
 

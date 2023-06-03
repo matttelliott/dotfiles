@@ -58,6 +58,8 @@ cd $HOME/dotfiles
 # Rust core tools
 bash rust/setup.debian.sh
 source "$HOME/.cargo/env"
+export RUSTC_WRAPPER=sccache cargo install {package}
+
 bash bat/setup.rust.sh
 alias cat=bat
 bash rtx-cli/setup.rust.sh
@@ -72,11 +74,12 @@ bash mprocs/setup.rust.sh
 bash neovim/setup.rust.sh
 
 # Rust CLI Apps
+bash zoxide/setup.rust.sh
 #bash lsd/setup.rust.sh
 #bash ripgrep/setup.rust.sh
 #bash fd/setup.rust.sh
 #bash sd/segituitup.rust.sh
-#bash gitui/setup.rust.sh
+bash gitui/setup.rust.sh
 #bash kondo/setup.rust.sh
 
 # bash git/setup.debian.sh

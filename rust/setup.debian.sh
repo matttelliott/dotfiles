@@ -5,6 +5,7 @@ source "$HOME/.cargo/env"
 cargo install sccache
 export RUSTC_WRAPPER=sccache cargo install {package}
 rustup +stable component add rust-analyzer-preview
+cargo install coreutils
 cargo install irust
 cargo install bacon
 cargo install cargo-info
