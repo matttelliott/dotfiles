@@ -8,4 +8,5 @@ rm -rf $HOME/.local/share/nvim
 rm -rf $HOME/.local/state/nvim
 cargo install bob-nvim
 bob use stable
+export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
 nvim +PackerSync +qa!
