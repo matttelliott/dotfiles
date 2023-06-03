@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 cat nushell/README.md
 cd "$HOME/dotfiles"
-cargo install --git https://github.com/nushell/nushell nu
+cargo install coreutils
+cargo install nu
 stow nushell
-sudo which nu > /etc/shells
+nupath=which nu 
+sudo echo $nupath >> /etc/shells
+chsh -s $nupath
