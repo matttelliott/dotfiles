@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-cat nushell/README.md
 cd "$HOME/dotfiles"
+cat nushell/README.md
 cargo install nu
 stow nushell

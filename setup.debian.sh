@@ -57,13 +57,11 @@ cd $HOME/dotfiles
 
 # Rust core tools
 bash rust/setup.debian.sh
-bash nushell/setup.rust.sh
-nu bat/setup.nu
 source "$HOME/.cargo/env"
 export RUSTC_WRAPPER=sccache cargo install {package}
+bash nushell/setup.rust.sh
+nu bat/setup.nu
 
-bash bat/setup.rust.sh
-alias cat=bat
 bash rtx-cli/setup.rust.sh
 eval "$(rtx activate bash)"
 bash nodejs/setup.rust.sh
