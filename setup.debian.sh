@@ -56,32 +56,44 @@ cd $HOME/dotfiles
 # Rust core tools
 bash rust/setup.debian.sh
 source "$HOME/.cargo/env"
-export RUSTC_WRAPPER=sccache cargo install {package}
-
-sudo -n true
-sleep 60
-kill -0 "$$" || exit
-
-bash nushell/setup.rust.sh
-nupath=`which nu`
-echo $nupath | sudo tee -a /etc/shells
-sudo chsh -s $(which nu) $(whoami)
-
-nu bat/setup.nu
-nu gitui/setup.nu
-nu zoxide/setup.nu
 
 nu rtx-cli/setup.nu
 nu $HOME/.config/nushell/rtx.nu
 rtx hook-env
 
-nu nodejs/setup.nu
-nu prompt/setup.nu
+rtx use golang@latest
+go install github.com/charmbracelet/gum@latest
+gum style \
+	--foreground 212 --border-foreground 212 --border double \
+	--align center --width 50 --margin "1 2" --padding "2 4" \
+	'Welcom to Dotfiles' 'This is Gum'
+
+
+sudo -n true
+sleep 60
+kill -0 "$$" || exit
+
+gum style \
+	--foreground 212 --border-foreground 212 --border double \
+	--align center --width 50 --margin "1 2" --padding "2 4" \
+	'Welcom to Dotfiles' 'This is Gum'
+
+# bash nushell/setup.rust.sh
+# nupath=`which nu`
+# echo $nupath | sudo tee -a /etc/shells
+# sudo chsh -s $(which nu) $(whoami)
+
+# nu bat/setup.nu
+# nu gitui/setup.nu
+# nu zoxide/setup.nu
+
+# nu nodejs/setup.nu
+# nu prompt/setup.nu
 # Rust terminal environment
 
 #bash zellij/setup.rust.sh
 #bash mprocs/setup.rust.sh
-nu neovim/setup.nu
+# nu neovim/setup.nu
 
 # Rust CLI Apps
 
@@ -95,7 +107,7 @@ nu neovim/setup.nu
 # bash svn/setup.debian.sh
 # bash stow/setup.debian.sh
 # bash zsh/setup.debian.sh
-#bash fonts/setup.debian.sh
+bash fonts/setup.debian.sh
 #bash cron/setup.debian.sh
 #bash bin/setup.debian.sh
 
