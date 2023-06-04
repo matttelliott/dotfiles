@@ -3,7 +3,7 @@ cd $"($env.HOME)/dotfiles"
 cat rtx-cli/README.md
 cargo install rtx-cli
 stow rtx-cli
-$"\nsource $"($env.HOME)/.config/nushell/rtx.nu"" | save $nu.config-path --append
+$"\nsource "($env.HOME)/.config/nushell/rtx.nu"" | save $nu.config-path --append
 
 export-env {
   let-env RTX_SHELL = "nu"
