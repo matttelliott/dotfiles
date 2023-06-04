@@ -28,12 +28,20 @@ while true; do
 	kill -0 "$$" || exit
 done 2>/dev/null &
 
+nonfreeSource="deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware"
+echo $nonfreeSource | sudo tee -a /etc/apt/sources.list
+
 
 sudo apt update -y
 sudo apt upgrade -y
 
+rtx hook-env
 
 sudo apt install -y git stow curl build-essential pkg-config libssl-dev cmake
+
+# Nvidia Drivers
+apt install -y nvidia-driver firmware-misc-nonfree
+
 
 date=$(date -I seconds)
 mv $HOME/dotfiles $HOME/dotfiles-$date
