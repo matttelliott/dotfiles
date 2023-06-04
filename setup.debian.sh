@@ -63,7 +63,7 @@ bash nushell/setup.rust.sh
 nu bat/setup.nu
 
 bash rtx-cli/setup.rust.sh
-eval "$(rtx activate bash)"
+rtx hook-env
 bash nodejs/setup.rust.sh
 
 # Rust terminal environment
