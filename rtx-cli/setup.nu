@@ -5,7 +5,10 @@ cargo binstall rtx-cli
 stow rtx-cli
 
 do {
+  let configpath = $"($nu.config-path | path dirname )";
   let rtxpath = $"($nu.config-path | path dirname | path join "rtx.nu")";
   run-external rtx activate nu --redirect-stdout | save $rtxpath -f;
   $"\nsource "($rtxpath)"" | save $nu.config-path --append
+  cd $configpath
+  source rtx.nu
 }
