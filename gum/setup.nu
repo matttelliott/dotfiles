@@ -4,6 +4,7 @@ cat gum/README.md
 
 stow gum
 
-rtx hook-env
+rtx activate nu
 rtx use golang@latest
+nu $"($env.HOME)/.config/nushell/rtx.nu"
 go install github.com/charmbracelet/gum@latest
