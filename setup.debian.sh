@@ -35,6 +35,10 @@ sudo apt upgrade -y
 
 sudo apt install -y git stow curl build-essential pkg-config libssl-dev cmake
 
+sudo -n true
+sleep 60
+kill -0 "$$" || exit
+
 date=$(date -I seconds)
 mv $HOME/dotfiles $HOME/dotfiles-$date
 mv $HOME/.local $HOME/.local-$date
@@ -53,6 +57,10 @@ cd $HOME/dotfiles
 bash rust/setup.debian.sh
 source "$HOME/.cargo/env"
 export RUSTC_WRAPPER=sccache cargo install {package}
+
+sudo -n true
+sleep 60
+kill -0 "$$" || exit
 
 bash nushell/setup.rust.sh
 nupath=`which nu`
