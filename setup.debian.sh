@@ -63,8 +63,10 @@ nu $HOME/.config/nushell/rtx.nu
 rtx hook-env
 
 nu golang/setup.nu
+rtx use golang@latest
 nu gum/setup.nu
 
+# nu nodejs/setup.nu
 gum style \
 	--foreground 212 --border-foreground 212 --border double \
 	--align center --width 50 --margin "1 2" --padding "2 4" \
@@ -81,7 +83,6 @@ gum style \
 # nu gitui/setup.nu
 # nu zoxide/setup.nu
 
-# nu nodejs/setup.nu
 # nu prompt/setup.nu
 # Rust terminal environment
 
