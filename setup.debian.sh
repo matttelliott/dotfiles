@@ -53,6 +53,11 @@ cd $HOME/dotfiles
 bash rust/setup.debian.sh
 source "$HOME/.cargo/env"
 
+bash nushell/setup.rust.sh
+nupath=`which nu`
+echo $nupath | sudo tee -a /etc/shells
+sudo chsh -s $(which nu) $(whoami)
+
 nu rtx-cli/setup.nu
 nu $HOME/.config/nushell/rtx.nu
 rtx hook-env
@@ -68,11 +73,6 @@ gum style \
 	--foreground 212 --border-foreground 212 --border double \
 	--align center --width 50 --margin "1 2" --padding "2 4" \
 	'Welcom to Dotfiles' 'This is Gum'
-
-# bash nushell/setup.rust.sh
-# nupath=`which nu`
-# echo $nupath | sudo tee -a /etc/shells
-# sudo chsh -s $(which nu) $(whoami)
 
 # nu bat/setup.nu
 # nu gitui/setup.nu
