@@ -1,5 +1,5 @@
 #!/usr/bin/env nu
-cd "$HOME/dotfiles"
+cd $"($env.HOME)/dotfiles"
 cat neovim/README.md
 cargo install bob-nvim
 bob use stable

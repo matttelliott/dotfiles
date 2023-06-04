@@ -73,7 +73,7 @@ nu prompt/setup.nu
 
 #bash zellij/setup.rust.sh
 #bash mprocs/setup.rust.sh
-#bash neovim/setup.rust.sh
+nu neovim/setup.nu
 
 # Rust CLI Apps
 
