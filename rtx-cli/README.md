@@ -1,3 +1,3 @@
 # rtx-cli
-## a terminal workspace with batteries included
-https://zellij.dev
+## Polyglot runtime manager (asdf rust clone) 
+https://crates.io/crates/rtx-cli
