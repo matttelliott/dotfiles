@@ -1,7 +1,7 @@
 #!/usr/bin/env nu
 cd $"($env.HOME)/dotfiles"
 cat rtx-cli/README.md
-cargo binstall rtx-cli -y
+cargo install rtx-cli
 stow rtx-cli
 
 let rtxpath = $"($nu.config-path | path dirname | path join "rtx.nu")";
