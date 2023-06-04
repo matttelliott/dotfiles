@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-cat nodejs/README.md
 cd "$HOME/dotfiles"
+cat nodejs/README.md
 eval "$(rtx activate bash)"
 rtx hook-env
 rtx use nodejs@lts
