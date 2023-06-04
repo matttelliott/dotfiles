@@ -33,13 +33,7 @@ sudo apt update -y
 sudo apt upgrade -y
 
 
-sudo apt install -y git
-sudo apt install -y stow
-sudo apt install -y curl
-sudo apt install -y build-essential
-sudo apt install -y pkg-config
-sudo apt install -y libssl-dev
-sudo apt install -y cmake
+sudo apt install -y git stow curl build-essential pkg-config libssl-dev cmake
 
 date=$(date -I seconds)
 mv $HOME/dotfiles $HOME/dotfiles-$date
@@ -70,6 +64,7 @@ nu gitui/setup.nu
 nu zoxide/setup.nu
 
 nu rtx-cli/setup.nu
+nu $HOME/.config/nushell/rtx.nu
 rtx hook-env
 
 nu nodejs/setup.nu
