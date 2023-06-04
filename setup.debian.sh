@@ -35,10 +35,6 @@ sudo apt upgrade -y
 
 sudo apt install -y git stow curl build-essential pkg-config libssl-dev cmake
 
-sudo -n true
-sleep 60
-kill -0 "$$" || exit
-
 date=$(date -I seconds)
 mv $HOME/dotfiles $HOME/dotfiles-$date
 mv $HOME/.local $HOME/.local-$date
@@ -67,11 +63,6 @@ gum style \
 	--foreground 212 --border-foreground 212 --border double \
 	--align center --width 50 --margin "1 2" --padding "2 4" \
 	'Welcom to Dotfiles' 'This is Gum'
-
-
-sudo -n true
-sleep 60
-kill -0 "$$" || exit
 
 gum style \
 	--foreground 212 --border-foreground 212 --border double \
