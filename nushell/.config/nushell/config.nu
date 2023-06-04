@@ -21,4 +21,3 @@ let-env config = {
     show_banner: false,
 }
 
-source $"($env.HOME)/.config/nushell/rtx.nu"

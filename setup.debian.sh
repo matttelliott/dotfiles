@@ -59,18 +59,19 @@ cd $HOME/dotfiles
 bash rust/setup.debian.sh
 source "$HOME/.cargo/env"
 export RUSTC_WRAPPER=sccache cargo install {package}
+
 bash nushell/setup.rust.sh
-nu bat/setup.nu
-
-bash rtx-cli/setup.rust.sh
-rtx hook-env
-bash nodejs/setup.rust.sh
-
-# Rust terminal environment
-bash prompt/setup.rust.sh
 nupath=`which nu`
 echo $nupath | sudo tee -a /etc/shells
 sudo chsh -s $(which nu) $(whoami)
+
+nu bat/setup.nu
+nu rtx-cli/setup.nu
+rtx hook-env
+
+bash prompt/setup.rust.sh
+bash nodejs/setup.rust.sh
+# Rust terminal environment
 
 bash zellij/setup.rust.sh
 bash mprocs/setup.rust.sh
