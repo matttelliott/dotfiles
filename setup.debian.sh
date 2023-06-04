@@ -40,6 +40,8 @@ rtx hook-env
 sudo apt install -y git stow curl build-essential pkg-config libssl-dev cmake
 
 # Nvidia Drivers
+# ===
+
 apt install -y nvidia-driver firmware-misc-nonfree
 
 
@@ -58,6 +60,8 @@ git clone $REPO $HOME/dotfiles
 cd $HOME/dotfiles
 
 # Rust core tools
+# ===
+
 bash rust/setup.debian.sh
 source "$HOME/.cargo/env"
 
@@ -70,108 +74,127 @@ nu rtx-cli/setup.nu
 nu $HOME/.config/nushell/rtx.nu
 rtx hook-env
 
+# GO core tools
+# ===
 nu golang/setup.nu
 rtx use golang@latest
 nu gum/setup.nu
 
-# nu nodejs/setup.nu
-gum style \
-	--foreground 212 --border-foreground 212 --border double \
-	--align center --width 50 --margin "1 2" --padding "2 4" \
-	'Welcom to Dotfiles' 'This is Gum'
+# Other Languages
+# ===
 
-gum style \
-	--foreground 212 --border-foreground 212 --border double \
-	--align center --width 50 --margin "1 2" --padding "2 4" \
-	'Welcom to Dotfiles' 'This is Gum'
+nu nodejs/setup.nu
+# bash python/setup.debian.sh
+# bash lua/setup.debian.sh
+# bash ruby/setup.debian.sh
+# bash golang/setup.debian.sh
+# bash php/setup.debian.sh
 
-# bash fonts/setup.debian.sh
-# 
-# nu bat/setup.nu
-# nu gitui/setup.nu
-# nu zoxide/setup.nu
 
-# nu prompt/setup.nu
-# Rust terminal environment
 
-#bash zellij/setup.rust.sh
-#bash mprocs/setup.rust.sh
-# nu neovim/setup.nu
+
+# Terminal environment
+# ===
+
+bash fonts/setup.debian.sh
+nu prompt/setup.nu
+bash zellij/setup.rust.sh
+bash mprocs/setup.rust.sh
+nu neovim/setup.nu
 
 # Rust CLI Apps
+# ===
 
-#bash lsd/setup.rust.sh
-#bash ripgrep/setup.rust.sh
-#bash fd/setup.rust.sh
-#bash sd/setup.rust.sh
-#bash kondo/setup.rust.sh
+nu bat/setup.nu
+nu gitui/setup.nu
+nu zoxide/setup.nu
+# bash lsd/setup.rust.sh
+# bash ripgrep/setup.rust.sh
+# bash fd/setup.rust.sh
+# bash sd/setup.rust.sh
+# bash kondo/setup.rust.sh
+
+# GO CLI Apps
+# ===
+
+
+# bash fzf/setup.debian.sh
+
+
+# Python CLI Apps
+# ===
+
+# FOSS GUI Apps
+# ===
+
+# Nonfree GUI Apps
+# ===
+ 
+bash virtualbox/setup.debian.sh
+
+# Other/TODO
+# ===
 
 # bash git/setup.debian.sh
 # bash svn/setup.debian.sh
 # bash stow/setup.debian.sh
 # bash zsh/setup.debian.sh
-#bash cron/setup.debian.sh
-#bash bin/setup.debian.sh
+# bash cron/setup.debian.sh
+# bash bin/setup.debian.sh
 
-#bash fzf/setup.debian.sh
-#bash wget/setup.debian.sh
-#bash trash/setup.debian.sh
-#bash clipboard/setup.debian.sh
-#bash vim/setup.debian.sh
-#bash neofetch/setup.debian.sh
-#bash cowsay/setup.debian.sh
-#bash github/setup.debian.sh
+# bash wget/setup.debian.sh
+# bash trash/setup.debian.sh
+# bash clipboard/setup.debian.sh
+# bash vim/setup.debian.sh
+# bash neofetch/setup.debian.sh
+# bash cowsay/setup.debian.sh
+# bash github/setup.debian.sh
 
-#bash python/setup.debian.sh
-#bash lua/setup.debian.sh
-#bash ruby/setup.debian.sh
-#bash golang/setup.debian.sh
-#bash php/setup.debian.sh
-#bash shfmt/setup.debian.sh
 
-#bash sqlite/setup.debian.sh
-#bash postgres/setup.debian.sh
+# bash shfmt/setup.debian.sh
 
-#bash mac/setup.debian.sh
-#bash iterm/setup.debian.sh
-#bash 1password/setup.debian.sh
-#bash spectacle/setup.debian.sh
+# bash sqlite/setup.debian.sh
+# bash postgres/setup.debian.sh
 
-#bash asciiquarium/setup.debian.sh
-#bash entr/setup.debian.sh
-#bash lazygit/setup.debian.sh
-#bash vifm/setup.debian.sh
-#bash htop/setup.debian.sh
-#bash jq/setup.debian.sh
-#bash pandoc/setup.debian.sh
-#bash w3m/setup.debian.sh
-#bash watch/setup.debian.sh
-#bash youtube-dl/setup.debian.sh
-#bash ffmpeg/setup.debian.sh
-#bash imagemagick/setup.debian.sh
-#bash ranger/setup.debian.sh
-#bash nmap/setup.debian.sh
-#bash bpytop/setup.debian.sh
-#bash lolcat/setup.debian.sh
+# bash mac/setup.debian.sh
+# bash iterm/setup.debian.sh
+# bash 1password/setup.debian.sh
+# bash spectacle/setup.debian.sh
 
-#bash mpv/setup.debian.sh
-#bash vlc/setup.debian.sh
-#bash obsidian/setup.debian.sh
-#bash vscodium/setup.debian.sh
+# bash asciiquarium/setup.debian.sh
+# bash entr/setup.debian.sh
+# bash lazygit/setup.debian.sh
+# bash vifm/setup.debian.sh
+# bash htop/setup.debian.sh
+# bash jq/setup.debian.sh
+# bash pandoc/setup.debian.sh
+# bash w3m/setup.debian.sh
+# bash watch/setup.debian.sh
+# bash youtube-dl/setup.debian.sh
+# bash ffmpeg/setup.debian.sh
+# bash imagemagick/setup.debian.sh
+# bash ranger/setup.debian.sh
+# bash nmap/setup.debian.sh
+# bash bpytop/setup.debian.sh
+# bash lolcat/setup.debian.sh
 
-#bash chromium/setup.debian.sh
-#bash firefox/setup.debian.sh
-#bash vivaldi/setup.debian.sh
-#bash opera/setup.debian.sh
+# bash mpv/setup.debian.sh
+# bash vlc/setup.debian.sh
+# bash obsidian/setup.debian.sh
+# bash vscodium/setup.debian.sh
 
-#bash virtualbox/setup.debian.sh
-#bash vagrant/setup.debian.sh
-#bash docker/setup.debian.sh
-#bash kubernetes/setup.debian.sh
+# bash chromium/setup.debian.sh
+# bash firefox/setup.debian.sh
+# bash vivaldi/setup.debian.sh
+# bash opera/setup.debian.sh
 
-#neofetch
-#cowsay "DONE!"
-#sleep 15
+# bash vagrant/setup.debian.sh
+# bash docker/setup.debian.sh
+# bash kubernetes/setup.debian.sh
+
+# neofetch
+# cowsay "DONE!"
+# sleep 15
 
 ## Manual Install
 # bash julia/setup.debian.sh

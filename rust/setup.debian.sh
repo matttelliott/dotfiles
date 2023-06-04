@@ -7,7 +7,7 @@ source "$HOME/.cargo/env"
 rustup +stable component add rust-analyzer-preview
 cargo install coreutils
 # cargo install cargo-binstall
-# cargo install irust -y
-# cargo install bacon -y
-# cargo install cargo-info -y
+cargo install irust -y
+cargo install bacon -y
+cargo install cargo-info -y
 stow rust
