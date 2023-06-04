@@ -62,18 +62,21 @@ nu rtx-cli/setup.nu
 nu $HOME/.config/nushell/rtx.nu
 rtx hook-env
 
-rtx use golang@latest
-go install github.com/charmbracelet/gum@latest
-gum style \
-	--foreground 212 --border-foreground 212 --border double \
-	--align center --width 50 --margin "1 2" --padding "2 4" \
-	'Welcom to Dotfiles' 'This is Gum'
+nu golang/setup.nu
+nu gum/setup.nu
 
 gum style \
 	--foreground 212 --border-foreground 212 --border double \
 	--align center --width 50 --margin "1 2" --padding "2 4" \
 	'Welcom to Dotfiles' 'This is Gum'
 
+gum style \
+	--foreground 212 --border-foreground 212 --border double \
+	--align center --width 50 --margin "1 2" --padding "2 4" \
+	'Welcom to Dotfiles' 'This is Gum'
+
+# bash fonts/setup.debian.sh
+# 
 # nu bat/setup.nu
 # nu gitui/setup.nu
 # nu zoxide/setup.nu
@@ -98,7 +101,6 @@ gum style \
 # bash svn/setup.debian.sh
 # bash stow/setup.debian.sh
 # bash zsh/setup.debian.sh
-bash fonts/setup.debian.sh
 #bash cron/setup.debian.sh
 #bash bin/setup.debian.sh
 
