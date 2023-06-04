@@ -66,24 +66,25 @@ echo $nupath | sudo tee -a /etc/shells
 sudo chsh -s $(which nu) $(whoami)
 
 nu bat/setup.nu
-nu rtx-cli/setup.nu
-rtx hook-env
+#nu rtx-cli/setup.nu
+#rtx hook-env
 
-bash prompt/setup.rust.sh
-bash nodejs/setup.rust.sh
+#bash prompt/setup.rust.sh
+#bash nodejs/setup.rust.sh
 # Rust terminal environment
 
-bash zellij/setup.rust.sh
-bash mprocs/setup.rust.sh
-bash neovim/setup.rust.sh
+#bash zellij/setup.rust.sh
+#bash mprocs/setup.rust.sh
+#bash neovim/setup.rust.sh
 
 # Rust CLI Apps
-bash zoxide/setup.rust.sh
+#bash zoxide/setup.rust.sh
+#bash gitui/setup.rust.sh
+
 #bash lsd/setup.rust.sh
 #bash ripgrep/setup.rust.sh
 #bash fd/setup.rust.sh
 #bash sd/setup.rust.sh
-bash gitui/setup.rust.sh
 #bash kondo/setup.rust.sh
 
 # bash git/setup.debian.sh
