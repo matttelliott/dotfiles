@@ -21,8 +21,4 @@ let-env config = {
     show_banner: false,
 }
 
-do {
-  let rtxpath = $"($nu.config-path | path dirname | path join "rtx.nu")";
-  run-external rtx activate nu --redirect-stdout | save $rtxpath -f;
-  $"\nsource "($rtxpath)"" | save $nu.config-path --append
-}
+source $"($env.HOME)/.config/nushell/rtx.nu"
