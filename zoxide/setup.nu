@@ -1,6 +1,6 @@
 #!/usr/bin/env nu
 cd $"($env.HOME)/dotfiles"
 cat zoxide/README.md
-cargo install zoxide
+cargo binstall zoxide
 stow zoxide
 

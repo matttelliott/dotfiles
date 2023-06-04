@@ -1,5 +1,5 @@
 #!/usr/bin/env nu
-cd $"$env.HOME/dotfiles"
+cd $"($env.HOME)/dotfiles"
 cat nodejs/README.md
 rtx hook-env
 rtx use nodejs@lts

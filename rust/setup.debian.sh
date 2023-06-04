@@ -6,7 +6,8 @@ cargo install sccache
 export RUSTC_WRAPPER=sccache cargo install {package}
 rustup +stable component add rust-analyzer-preview
 cargo install coreutils
-cargo install irust
-cargo install bacon
-cargo install cargo-info
+cargo install cargo-binstall
+cargo binstall irust
+cargo binstall bacon
+cargo binstall cargo-info
 stow rust

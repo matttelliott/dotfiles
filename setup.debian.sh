@@ -73,7 +73,7 @@ nu rtx-cli/setup.nu
 rtx hook-env
 
 nu nodejs/setup.nu
-bash prompt/setup.rust.sh
+nu prompt/setup.nu
 # Rust terminal environment
 
 #bash zellij/setup.rust.sh
