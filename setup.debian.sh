@@ -105,7 +105,6 @@ nu nodejs/setup.nu
 # bash python/setup.debian.sh
 # bash lua/setup.debian.sh
 # bash ruby/setup.debian.sh
-# bash golang/setup.debian.sh
 # bash php/setup.debian.sh
 
 
@@ -139,6 +138,12 @@ nu zoxide/setup.nu
 # Python CLI Apps
 # ===
 
+# Databases
+# ===
+
+# bash sqlite/setup.debian.sh
+# bash postgres/setup.debian.sh
+
 # FOSS GUI Apps
 # ===
 # bash obsidian/setup.debian.sh
@@ -147,15 +152,15 @@ nu zoxide/setup.nu
 # Nonfree GUI Apps
 # ===
 
-nonfreeSource="deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware"
-echo $nonfreeSource | sudo tee -a /etc/apt/sources.list
-sudo apt update -y
-sudo apt upgrade -y
-
 # Skip for VM
 # ---
 
-# Virtualbox 
+# nonfreeSource="deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware"
+# echo $nonfreeSource | sudo tee -a /etc/apt/sources.list
+# sudo apt update -y
+# sudo apt upgrade -y
+
+
 # bash virtualbox/setup.debian.sh
 
 # Nvidia Drivers
@@ -169,7 +174,6 @@ sudo apt upgrade -y
 # bash zsh/setup.debian.sh
 # bash cron/setup.debian.sh
 # bash bin/setup.debian.sh
-
 # bash wget/setup.debian.sh
 # bash trash/setup.debian.sh
 # bash clipboard/setup.debian.sh
@@ -177,18 +181,11 @@ sudo apt upgrade -y
 # bash neofetch/setup.debian.sh
 # bash cowsay/setup.debian.sh
 # bash github/setup.debian.sh
-
-
 # bash shfmt/setup.debian.sh
-
-# bash sqlite/setup.debian.sh
-# bash postgres/setup.debian.sh
-
 # bash mac/setup.debian.sh
 # bash iterm/setup.debian.sh
 # bash 1password/setup.debian.sh
 # bash spectacle/setup.debian.sh
-
 # bash asciiquarium/setup.debian.sh
 # bash entr/setup.debian.sh
 # bash vifm/setup.debian.sh
@@ -204,26 +201,27 @@ sudo apt upgrade -y
 # bash nmap/setup.debian.sh
 # bash bpytop/setup.debian.sh
 # bash lolcat/setup.debian.sh
-
 # bash mpv/setup.debian.sh
 # bash vlc/setup.debian.sh
-
-
 # bash chromium/setup.debian.sh
 # bash firefox/setup.debian.sh
 # bash vivaldi/setup.debian.sh
 # bash opera/setup.debian.sh
-
 # bash vagrant/setup.debian.sh
 # bash docker/setup.debian.sh
 # bash kubernetes/setup.debian.sh
+# bash julia/setup.debian.sh
+# bash wiki/setup.debian.sh
+# bash tf2/setup.debian.sh
+# bash spotify/setup.debian.sh
+
+# Finish
+# ===
+
 
 # neofetch
 # cowsay "DONE!"
 # sleep 15
 
-## Manual Install
-# bash julia/setup.debian.sh
-# bash wiki/setup.debian.sh
-# bash tf2/setup.debian.sh
-# bash spotify/setup.debian.sh
+
+

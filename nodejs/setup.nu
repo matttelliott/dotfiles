@@ -1,7 +1,7 @@
 #!/usr/bin/env nu
 cd $"($env.HOME)/dotfiles"
 cat nodejs/README.md
-rtx use -g node@lts
+rtx use node@lts
 stow nodejs
 
 rtx x node@lts -- npm install -g neovim
