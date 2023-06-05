@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+dotfilesRepoDir="$HOME/dotfiles"
+
 # check environment and set global env var
 if [[ -n $(cat /etc/issue | grep -i debian) ]]; then
   echo 'debian dotfiles setup';
@@ -68,19 +70,19 @@ sudo apt install -y \
 # Clone Repo
 # ===
 git clone $REPO $HOME/dotfiles
-cd $HOME/dotfiles
+cd $dotfilesRepoDir
 
 
 
 # Rust core tools
 # ===
-
+cd $dotfilesRepoDir
 bash rust/setup.debian.sh
 source "$HOME/.cargo/env"
 
 # NuShell
 # ===
-
+cd $dotfilesRepoDir
 bash fonts/setup.debian.sh
 nu prompt/setup.nu
 bash nushell/setup.rust.sh
@@ -91,15 +93,18 @@ sudo chsh -s $(which nu) $(whoami)
 
 # Language Version Manager
 # ===
+cd $dotfilesRepoDir
 nu rtx-cli/setup.nu
 
 # GO core tools
 # ===
+cd $dotfilesRepoDir
 nu golang/setup.nu
 nu gum/setup.nu
 
 # Other Languages
 # ===
+cd $dotfilesRepoDir
 
 nu nodejs/setup.nu
 # bash python/setup.debian.sh
@@ -111,14 +116,14 @@ nu nodejs/setup.nu
 
 # Terminal environment
 # ===
-
+cd $dotfilesRepoDir
 nu zellij/setup.nu
 nu mprocs/setup.nu
 nu neovim/setup.nu
 
 # Rust CLI Apps
 # ===
-
+cd $dotfilesRepoDir
 nu bat/setup.nu
 nu gitui/setup.nu
 nu zoxide/setup.nu
@@ -130,28 +135,29 @@ nu zoxide/setup.nu
 
 # GO CLI Apps
 # ===
-
+cd $dotfilesRepoDir
 # bash fzf/setup.debian.sh
 # bash lazygit/setup.debian.sh
 
 
 # Python CLI Apps
 # ===
-
+cd $dotfilesRepoDir
 # Databases
 # ===
-
+cd $dotfilesRepoDir
 # bash sqlite/setup.debian.sh
 # bash postgres/setup.debian.sh
 
 # FOSS GUI Apps
 # ===
+cd $dotfilesRepoDir
 # bash obsidian/setup.debian.sh
 # bash vscodium/setup.debian.sh
 
 # Nonfree GUI Apps
 # ===
-
+cd $dotfilesRepoDir
 # Skip for VM
 # ---
 
@@ -169,7 +175,7 @@ nu zoxide/setup.nu
 
 # Other/TODO
 # ===
-
+cd $dotfilesRepoDir
 
 # bash zsh/setup.debian.sh
 # bash cron/setup.debian.sh
