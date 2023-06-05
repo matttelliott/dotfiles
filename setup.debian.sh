@@ -42,7 +42,7 @@ sudo apt install -y git stow curl build-essential pkg-config libssl-dev cmake
 
 
 
-date=$(date -I seconds)
+date=$(date --iso-8601=seconds)
 mv $HOME/dotfiles $HOME/dotfiles-$date
 mv $HOME/.local $HOME/.local-$date
 mv $HOME/.config $HOME/.config-$date
