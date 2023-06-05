@@ -21,3 +21,7 @@ let-env config = {
     show_banner: false,
 }
 
+alias l = l
+alias c = clear
+alias e = nvim
+alias gs = git status

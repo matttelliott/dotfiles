@@ -1,3 +1,3 @@
 # mprocs
-## a terminal workspace with batteries included
-https://zellij.dev
+##  Run multiple commands in parallel 
+https://github.com/pvolok/mprocs

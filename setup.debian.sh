@@ -84,8 +84,8 @@ source "$HOME/.cargo/env"
 # ===
 cd $dotfilesRepoDir
 bash fonts/setup.debian.sh
-nu prompt/setup.nu
 bash nushell/setup.rust.sh
+nu prompt/setup.nu
 
 # Set as default shell
 which nu | sudo tee -a /etc/shells
@@ -161,16 +161,16 @@ cd $dotfilesRepoDir
 # Skip for VM
 # ---
 
-# nonfreeSource="deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware"
-# echo $nonfreeSource | sudo tee -a /etc/apt/sources.list
-# sudo apt update -y
-# sudo apt upgrade -y
+nonfreeSource="deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware"
+echo $nonfreeSource | sudo tee -a /etc/apt/sources.list
+sudo apt update -y
+sudo apt upgrade -y
 
 
-# bash virtualbox/setup.debian.sh
+bash virtualbox/setup.debian.sh
 
 # Nvidia Drivers
-# sudo apt install -y nvidia-driver firmware-misc-nonfree
+sudo apt install -y nvidia-driver firmware-misc-nonfree
 
 
 # Other/TODO
