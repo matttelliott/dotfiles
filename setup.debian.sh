@@ -14,12 +14,12 @@ REPO=https://gitlab.com/matttelliott/dotfiles-stow
 
 # Because Git submodule commands cannot operate without a work tree, they must
 # be run from within $HOME (assuming this is the root of your dotfiles)
-cd "$HOME"
-# sleep 10
-
 
 # Ask for the administrator password upfront
 sudo -v
+
+
+cd "$HOME"
 
 # Keep-alive: update existing `sudo` time stamp until bootstrap has finished
 while true; do
@@ -35,9 +35,14 @@ echo $nonfreeSource | sudo tee -a /etc/apt/sources.list
 sudo apt update -y
 sudo apt upgrade -y
 
-rtx hook-env
-
-sudo apt install -y git stow curl build-essential pkg-config libssl-dev cmake
+sudo apt install -y \
+	git \ 
+	stow \
+	curl \
+	build-essential \
+	pkg-config \
+	libssl-dev \
+	cmake
 
 
 
@@ -68,14 +73,13 @@ echo $nupath | sudo tee -a /etc/shells
 sudo chsh -s $(which nu) $(whoami)
 
 nu rtx-cli/setup.nu
-nu $HOME/.config/nushell/rtx.nu
-rtx hook-env
+# nu $HOME/.config/nushell/rtx.nu
 
 # GO core tools
 # ===
-nu golang/setup.nu
-rtx use golang@latest
-nu gum/setup.nu
+# nu golang/setup.nu
+# rtx use golang@latest
+# nu gum/setup.nu
 
 # Other Languages
 # ===
@@ -93,18 +97,18 @@ nu nodejs/setup.nu
 # Terminal environment
 # ===
 
-bash fonts/setup.debian.sh
-nu prompt/setup.nu
-bash zellij/setup.rust.sh
-bash mprocs/setup.rust.sh
-nu neovim/setup.nu
+# bash fonts/setup.debian.sh
+# nu prompt/setup.nu
+# bash zellij/setup.rust.sh
+# bash mprocs/setup.rust.sh
+# nu neovim/setup.nu
 
 # Rust CLI Apps
 # ===
 
-nu bat/setup.nu
-nu gitui/setup.nu
-nu zoxide/setup.nu
+# nu bat/setup.nu
+# nu gitui/setup.nu
+# nu zoxide/setup.nu
 # bash lsd/setup.rust.sh
 # bash ripgrep/setup.rust.sh
 # bash fd/setup.rust.sh
@@ -113,7 +117,6 @@ nu zoxide/setup.nu
 
 # GO CLI Apps
 # ===
-
 
 # bash fzf/setup.debian.sh
 
@@ -134,6 +137,7 @@ nu zoxide/setup.nu
 
 # Nvidia Drivers
 # apt install -y nvidia-driver firmware-misc-nonfree
+
 
 # Other/TODO
 # ===
