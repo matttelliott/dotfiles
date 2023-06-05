@@ -85,19 +85,19 @@ bash nushell/setup.rust.sh
 which nu | sudo tee -a /etc/shells
 sudo chsh -s $(which nu) $(whoami)
 
+# Language Version Manager
+# ===
 nu rtx-cli/setup.nu
-# nu $HOME/.config/nushell/rtx.nu
 
 # GO core tools
 # ===
 nu golang/setup.nu
-# rtx use golang@latest
 nu gum/setup.nu
 
 # Other Languages
 # ===
 
-# nu nodejs/setup.nu
+nu nodejs/setup.nu
 # bash python/setup.debian.sh
 # bash lua/setup.debian.sh
 # bash ruby/setup.debian.sh
@@ -109,10 +109,9 @@ nu gum/setup.nu
 # Terminal environment
 # ===
 
-
-# bash zellij/setup.rust.sh
-# bash mprocs/setup.rust.sh
-# nu neovim/setup.nu
+nu zellij/setup.nu
+nu mprocs/setup.nu
+nu neovim/setup.nu
 
 # Rust CLI Apps
 # ===

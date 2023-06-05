@@ -1,8 +1,7 @@
 #!/usr/bin/env nu
 cd $"($env.HOME)/dotfiles"
 cat nodejs/README.md
-rtx hook-env
-rtx use node@lts
+rtx use -g node@lts
 stow nodejs
 
 rtx x node@lts -- npm install -g neovim
