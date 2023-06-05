@@ -11,6 +11,7 @@ M.telescope = {
 	plugin = true,
 	n = {
 		["<leader>ff"] = { "<cmd> Telescope find_files hidden=true<CR>", "Find files" },
+		["<leader>o"] = { "<cmd> Telescope find_files hidden=true<CR>", "Find files" },
 		["<leader>fw"] = { "<cmd> Telescope live_grep hidden=true<CR>", "Live grep" },
 	},
 }
@@ -24,3 +25,5 @@ M.nvimtree = {
 -- more keybinds!
 
 return M
+
+

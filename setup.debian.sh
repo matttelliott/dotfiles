@@ -61,7 +61,8 @@ sudo apt install -y \
 	build-essential \
 	pkg-config \
 	libssl-dev \
-	cmake
+	cmake \
+  xclip
 
 # bash git/setup.debian.sh
 # bash svn/setup.debian.sh

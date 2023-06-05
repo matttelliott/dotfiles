@@ -5,3 +5,9 @@
 --   pattern = "*",
 --   command = "tabdo wincmd =",
 -- })
+--
+-- 
+vim.cmd([[
+    set clipboard+=unnamedplus
+    set shada="NONE"
+]])
