@@ -74,9 +74,15 @@ cd $HOME/dotfiles
 bash rust/setup.debian.sh
 source "$HOME/.cargo/env"
 
+# NuShell
+# ===
+
+# bash fonts/setup.debian.sh
+# nu prompt/setup.nu
 bash nushell/setup.rust.sh
-nupath=`which nu`
-echo $nupath | sudo tee -a /etc/shells
+
+# Set as default shell
+which nu | sudo tee -a /etc/shells
 sudo chsh -s $(which nu) $(whoami)
 
 nu rtx-cli/setup.nu
@@ -84,9 +90,9 @@ nu rtx-cli/setup.nu
 
 # GO core tools
 # ===
-# nu golang/setup.nu
+nu golang/setup.nu
 # rtx use golang@latest
-# nu gum/setup.nu
+nu gum/setup.nu
 
 # Other Languages
 # ===
@@ -103,8 +109,7 @@ nu rtx-cli/setup.nu
 # Terminal environment
 # ===
 
-# bash fonts/setup.debian.sh
-# nu prompt/setup.nu
+
 # bash zellij/setup.rust.sh
 # bash mprocs/setup.rust.sh
 # nu neovim/setup.nu
