@@ -156,10 +156,10 @@ sudo apt upgrade -y
 # ---
 
 # Virtualbox 
-bash virtualbox/setup.debian.sh
+# bash virtualbox/setup.debian.sh
 
 # Nvidia Drivers
-sudo apt install -y nvidia-driver firmware-misc-nonfree
+# sudo apt install -y nvidia-driver firmware-misc-nonfree
 
 
 # Other/TODO
