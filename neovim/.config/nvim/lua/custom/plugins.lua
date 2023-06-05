@@ -37,6 +37,10 @@ local plugins = {
     "nvim-tree/nvim-tree.lua",
     opts = overrides.nvimtree,
   },
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = overrides.telescope,
+  },
 
   -- Install a plugin
   {
