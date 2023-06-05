@@ -61,6 +61,10 @@ sudo apt install -y \
 	libssl-dev \
 	cmake
 
+# bash git/setup.debian.sh
+# bash svn/setup.debian.sh
+# bash stow/setup.debian.sh
+
 # Clone Repo
 # ===
 git clone $REPO $HOME/dotfiles
@@ -77,8 +81,8 @@ source "$HOME/.cargo/env"
 # NuShell
 # ===
 
-# bash fonts/setup.debian.sh
-# nu prompt/setup.nu
+bash fonts/setup.debian.sh
+nu prompt/setup.nu
 bash nushell/setup.rust.sh
 
 # Set as default shell
@@ -129,6 +133,7 @@ nu neovim/setup.nu
 # ===
 
 # bash fzf/setup.debian.sh
+# bash lazygit/setup.debian.sh
 
 
 # Python CLI Apps
@@ -136,6 +141,8 @@ nu neovim/setup.nu
 
 # FOSS GUI Apps
 # ===
+# bash obsidian/setup.debian.sh
+# bash vscodium/setup.debian.sh
 
 # Nonfree GUI Apps
 # ===
@@ -157,9 +164,7 @@ nu neovim/setup.nu
 # Other/TODO
 # ===
 
-# bash git/setup.debian.sh
-# bash svn/setup.debian.sh
-# bash stow/setup.debian.sh
+
 # bash zsh/setup.debian.sh
 # bash cron/setup.debian.sh
 # bash bin/setup.debian.sh
@@ -185,7 +190,6 @@ nu neovim/setup.nu
 
 # bash asciiquarium/setup.debian.sh
 # bash entr/setup.debian.sh
-# bash lazygit/setup.debian.sh
 # bash vifm/setup.debian.sh
 # bash htop/setup.debian.sh
 # bash jq/setup.debian.sh
@@ -202,8 +206,7 @@ nu neovim/setup.nu
 
 # bash mpv/setup.debian.sh
 # bash vlc/setup.debian.sh
-# bash obsidian/setup.debian.sh
-# bash vscodium/setup.debian.sh
+
 
 # bash chromium/setup.debian.sh
 # bash firefox/setup.debian.sh
