@@ -1,3 +1,4 @@
 [tools]
 node = "lts"
 go = "latest"
+golang = "latest"

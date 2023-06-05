@@ -21,7 +21,11 @@ let-env config = {
     show_banner: false,
 }
 
-alias l = l
+alias l = ls
 alias c = clear
 alias e = nvim
+alias q = exit
+
+alias g = git status
 alias gs = git status
+alias gg = lazygit

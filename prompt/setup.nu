@@ -8,6 +8,6 @@ let color = 8
 rtx x golang@latest -- gum style --foreground $color --border-foreground $color --border double --align center --width 50 --margin "1 2" --padding "2 4" $title $description $url
   
 
-bat prompt/README.md
+cat prompt/README.md
 cargo install starship
 stow prompt
