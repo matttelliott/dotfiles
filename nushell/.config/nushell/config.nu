@@ -28,45 +28,51 @@ alias q = exit
 
 alias gg = lazygit
 
-alias gstatus="git status"
-alias gst="git status"
-alias gs="git status"
-alias g="git status"
+alias gstatus = git status
+alias gst = git status
+alias gs = git status
+alias g = git status
 
-alias gadd="git add"
-alias ga="git add"
+alias gadd = git add
+alias ga = git add
 
-alias gcommit="git commit"
-alias gc="git commit"
+alias gcommit = git commit
+alias gc = git commit
 
-alias gcheckout="git checkout"
-alias gco="git checkout"
-alias gcom="git checkout master"
-alias gcot="git checkout trunk"
+alias gcheckout = git checkout
+alias gco = git checkout
+alias gcom = git checkout master
+alias gcot = git checkout trunk
 
-alias gmerge="git merge"
-alias gm="git merge"
+alias gmerge = git merge
+alias gm = git merge
 
-alias gdiff="git diff"
-alias gd="git diff"
-alias gdfiles="git diff --name-only"
-alias gdf="git diff --name-only"
+alias gdiff = git diff
+alias gd = git diff
+alias gdfiles = git diff --name-only
+alias gdf = git diff --name-only
 
-alias gac="git add . && git commit"
-alias gacm="git add . && git commit -m"
+alias gac = git add . ; git commit
+alias gacm = git add . ; git commit -m
+def gacm_fn [message] {
+    git add .
+    git commit -m $message
+  }
+  
+alias gacmt = gacm_fn
 
-alias gpull="git pull"
-alias gp="git pull"
+alias gpull = git pull
+alias gp = git pull
 
-alias gpush="git push"
-alias gPush="git push"
-alias gP="git push"
+alias gpush = git push
+alias gPush = git push
+alias gP = git push
 
-alias gfetch="git fetch"
-alias gf="git fetch"
+alias gfetch = git fetch
+alias gf = git fetch
 
-alias glog="git log --oneline --graph --decorate"
-alias glg="git log --oneline --graph --decorate"
-alias gl="git log --oneline --graph --decorate"
+alias glog = git log --oneline --graph --decorate
+alias glg = git log --oneline --graph --decorate
+alias gl = git log --oneline --graph --decorate
 
 source "/home/matt/dotfiles/nushell/.config/nushell/rtx.nu"
