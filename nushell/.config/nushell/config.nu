@@ -21,7 +21,7 @@ let-env config = {
     show_banner: false,
 }
 
-alias l = ls
+alias l = ls -lad
 alias c = clear
 alias e = nvim
 alias q = exit
@@ -29,3 +29,5 @@ alias q = exit
 alias g = git status
 alias gs = git status
 alias gg = lazygit
+
+source "/home/matt/dotfiles/nushell/.config/nushell/rtx.nu"
