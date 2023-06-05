@@ -39,10 +39,7 @@ rtx hook-env
 
 sudo apt install -y git stow curl build-essential pkg-config libssl-dev cmake
 
-# Nvidia Drivers
-# ===
 
-apt install -y nvidia-driver firmware-misc-nonfree
 
 
 date=$(date -I seconds)
@@ -129,8 +126,14 @@ nu zoxide/setup.nu
 
 # Nonfree GUI Apps
 # ===
- 
-bash virtualbox/setup.debian.sh
+
+# Skip for VM
+# ---
+# Virtualbox 
+# bash virtualbox/setup.debian.sh
+
+# Nvidia Drivers
+# apt install -y nvidia-driver firmware-misc-nonfree
 
 # Other/TODO
 # ===
