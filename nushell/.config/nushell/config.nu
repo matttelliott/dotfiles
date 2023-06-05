@@ -53,13 +53,12 @@ alias gdfiles = git diff --name-only
 alias gdf = git diff --name-only
 
 alias gac = git add . ; git commit
-alias gacm = git add . ; git commit -m
-def gacm_fn [message] {
+
+def gacm [message] {
     git add .
     git commit -m $message
   }
-  
-alias gacmt = gacm_fn
+alias gacm = gacm
 
 alias gpull = git pull
 alias gp = git pull
