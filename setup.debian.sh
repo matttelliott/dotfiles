@@ -18,9 +18,6 @@ REPO=https://gitlab.com/matttelliott/dotfiles-stow
 # Ask for the administrator password upfront
 sudo -v
 
-
-cd "$HOME"
-
 # Keep-alive: update existing `sudo` time stamp until bootstrap has finished
 while true; do
 	sudo -n true
@@ -28,24 +25,11 @@ while true; do
 	kill -0 "$$" || exit
 done 2>/dev/null &
 
-nonfreeSource="deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware"
-echo $nonfreeSource | sudo tee -a /etc/apt/sources.list
 
+cd "$HOME"
 
-sudo apt update -y
-sudo apt upgrade -y
-
-sudo apt install -y \
-	git \ 
-	stow \
-	curl \
-	build-essential \
-	pkg-config \
-	libssl-dev \
-	cmake
-
-
-
+# Backup files
+# ===
 
 date=$(date --iso-8601=seconds)
 mv $HOME/dotfiles $HOME/dotfiles-$date
@@ -58,8 +42,31 @@ done
 for file in $(ls -lash | awk '{ print $10 }' | grep '^.bash' | grep -v '\d\d\d\d-\d\d-\d\d'); do
 	mv $HOME/$file $HOME/$file-$date
 done
+
+
+
+# Install updates
+# ===
+sudo apt update -y
+sudo apt upgrade -y
+
+# Install Core dependencies
+# ===
+sudo apt install -y \
+	git \ 
+	stow \
+	curl \
+	build-essential \
+	pkg-config \
+	libssl-dev \
+	cmake
+
+# Clone Repo
+# ===
 git clone $REPO $HOME/dotfiles
 cd $HOME/dotfiles
+
+
 
 # Rust core tools
 # ===
@@ -84,13 +91,12 @@ nu rtx-cli/setup.nu
 # Other Languages
 # ===
 
-nu nodejs/setup.nu
+# nu nodejs/setup.nu
 # bash python/setup.debian.sh
 # bash lua/setup.debian.sh
 # bash ruby/setup.debian.sh
 # bash golang/setup.debian.sh
 # bash php/setup.debian.sh
-
 
 
 
@@ -129,6 +135,11 @@ nu nodejs/setup.nu
 
 # Nonfree GUI Apps
 # ===
+
+# nonfreeSource="deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware"
+# echo $nonfreeSource | sudo tee -a /etc/apt/sources.list
+# sudo apt update -y
+# sudo apt upgrade -y
 
 # Skip for VM
 # ---
