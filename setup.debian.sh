@@ -120,9 +120,9 @@ nu neovim/setup.nu
 # Rust CLI Apps
 # ===
 
-# nu bat/setup.nu
-# nu gitui/setup.nu
-# nu zoxide/setup.nu
+nu bat/setup.nu
+nu gitui/setup.nu
+nu zoxide/setup.nu
 # bash lsd/setup.rust.sh
 # bash ripgrep/setup.rust.sh
 # bash fd/setup.rust.sh
@@ -147,18 +147,19 @@ nu neovim/setup.nu
 # Nonfree GUI Apps
 # ===
 
-# nonfreeSource="deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware"
-# echo $nonfreeSource | sudo tee -a /etc/apt/sources.list
-# sudo apt update -y
-# sudo apt upgrade -y
+nonfreeSource="deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware"
+echo $nonfreeSource | sudo tee -a /etc/apt/sources.list
+sudo apt update -y
+sudo apt upgrade -y
 
 # Skip for VM
 # ---
+
 # Virtualbox 
-# bash virtualbox/setup.debian.sh
+bash virtualbox/setup.debian.sh
 
 # Nvidia Drivers
-# apt install -y nvidia-driver firmware-misc-nonfree
+apt install -y nvidia-driver firmware-misc-nonfree
 
 
 # Other/TODO
