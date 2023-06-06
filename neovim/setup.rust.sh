@@ -2,18 +2,18 @@
 cd "$HOME/dotfiles"
 
 
-title="NeoVim \n"
-description= "More modern Vim \n"
-url="https://neovim.io/ \n"
+title="NeoVim"
+description= "More modern Vim"
+url="https://neovim.io/"
 color=5
 gum style --foreground $color --border-foreground $color --border double --align center --width 50 --margin "1 2" --padding "2 4" $title $description $url
 
-rm -rf $HOME/.local/share/nvim
-rm -rf $HOME/.local/state/nvim
-stow neovim
-rm -rf $HOME/.local/share/nvim
-rm -rf $HOME/.local/state/nvim
-cargo install bob-nvim
-bob use stable
+
+gum spin --spinner dot --title "Installing Neovim via nvim-bob" --title.foreground $color -- cargo install bob-nvim && bob use stable
 export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
 echo "export PATH=$PATH:$HOME/.local/share/bob/nvim-bin" >> $HOME/.bashrc
+
+gum spin --spinner dot --title "Installing NvChad" --title.foreground $color -- git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+
+stow neovim
+
