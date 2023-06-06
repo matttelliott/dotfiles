@@ -55,8 +55,8 @@ alias gdf = git diff --name-only
 alias gac = git add . ; git commit
 
 def gacm [message] {
-    git add .
-    git commit -m $message
+    git add . ;
+    git commit -m $message ;
   }
 alias gacm = gacm
 
