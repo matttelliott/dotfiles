@@ -70,7 +70,7 @@ sudo apt install -y \
 	pkg-config \
 	libssl-dev \
 	cmake \
-    xclip \
+  xclip \
 	fonts-dejavu \
 	fonts-powerline \
 	fonts-font-awesome
@@ -164,13 +164,15 @@ bash fonts/setup.debian.sh
 # Rust CLI Apps
 # ===
 cd $dotfilesRepoDir
-# nu bat/setup.nu
-# nu gitui/setup.nu
-# nu zoxide/setup.nu
-# nu lsd/setup.nu
-# nu ripgrep/setup.nu
-# nu fd/setup.nu
-# nu sd/setup.nu
+bash bat/setup.sh
+alias cat=bat
+bash gitui/setup.sh
+bash zoxide/setup.sh
+bash lsd/setup.sh
+bash exa/setup.sh
+bash ripgrep/setup.sh
+bash fd/setup.sh
+bash sd/setup.sh
 
 # GO CLI Apps
 # ===
