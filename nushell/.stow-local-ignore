@@ -1,3 +1,4 @@
 setup.*
 README.md
+.config/nushell/env.nu
 .config/nushell/rtx.nu
