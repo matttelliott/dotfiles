@@ -89,9 +89,7 @@ source "$HOME/.cargo/env"
 # NuShell
 # ===
 cd $dotfilesRepoDir
-bash fonts/setup.debian.sh
 bash nushell/setup.rust.sh
-nu prompt/setup.nu
 
 # Set as default shell
 which nu | sudo tee -a /etc/shells
@@ -123,9 +121,11 @@ nu nodejs/setup.nu
 # Terminal environment
 # ===
 cd $dotfilesRepoDir
+nu prompt/setup.nu
 nu zellij/setup.nu
 nu mprocs/setup.nu
 nu neovim/setup.nu
+bash fonts/setup.debian.sh
 
 # Rust CLI Apps
 # ===
