@@ -83,9 +83,17 @@ cd $dotfilesRepoDir
 # Install Core tools
 # ===
 cd $dotfilesRepoDir
+
+# Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source "$HOME/.cargo/env"
+export PATH=$PATH:$HOME/.cargo/bin
+
+# RTX Language Manager
 cargo install rtx-cli
+eval "$(rtx activate bash)"
+
+# Golang
 rtx use --global golang@latest
 go install github.com/charmbracelet/gum@latest
 gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
