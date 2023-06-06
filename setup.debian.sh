@@ -149,12 +149,15 @@ cd $dotfilesRepoDir
 # Terminal environment
 # ===
 cd $dotfilesRepoDir
-# nu prompt/setup.nu
-# nu zellij/setup.nu
-# nu mprocs/setup.nu
-# nu neovim/setup.nu
+
 bash neovim/setup.rust.sh
 export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
+
+bash prompt/setup.sh
+eval "$(starship init bash)"
+
+bash zellij/setup.sh
+bash mprocs/setup.sh
 
 bash fonts/setup.debian.sh
 
