@@ -163,6 +163,7 @@ bash stow/setup.debian.sh
 cd $dotfilesRepoDir
 # bash obsidian/setup.debian.sh
 # bash vscodium/setup.debian.sh
+nu kitty/setup.nu
 
 # Nonfree GUI Apps
 # ===
