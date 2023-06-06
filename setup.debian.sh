@@ -99,7 +99,14 @@ eval "$(rtx hook-env)"
 go install github.com/charmbracelet/gum@latest
 gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
 
-rtx use --global python@latest
+# NodeJs
+rtx use --global nodejs@latest
+eval "$(rtx hook-env)"
+npm i -g prettier
+
+# Python
+# rtx use --global python@latest
+# eval "$(rtx hook-env)"
 
 # bash rust/setup.debian.sh
 
@@ -143,7 +150,8 @@ cd $dotfilesRepoDir
 # nu zellij/setup.nu
 # nu mprocs/setup.nu
 # nu neovim/setup.nu
-# bash fonts/setup.debian.sh
+bash neovim/setup.rust.sh
+bash fonts/setup.debian.sh
 
 # Rust CLI Apps
 # ===
