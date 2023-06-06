@@ -70,7 +70,10 @@ sudo apt install -y \
 	pkg-config \
 	libssl-dev \
 	cmake \
-    xclip
+    xclip \
+	fonts-dejavu \
+	fonts-powerline \
+	fonts-font-awesome
 
 
 # Clone Repo

@@ -4,12 +4,7 @@ bash svn/setup.mac.sh
 cd "$HOME/dotfiles"
 
 cat fonts/README.md
-stow fonts
 
-echo "Install Fonts"
-sudo apt install -y fonts-dejavu
-sudo apt install -y fonts-powerline
-sudo apt install -y fonts-font-awesome
 
 pushd $HOME
 git clone https://github.com/gabrielelana/awesome-terminal-fonts
@@ -24,4 +19,5 @@ cd ..
 rm -rf awesome-terminal-fonts
 popd
 
+stow fonts
 
