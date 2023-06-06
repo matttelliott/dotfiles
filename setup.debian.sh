@@ -131,12 +131,12 @@ bash fonts/setup.debian.sh
 # ===
 cd $dotfilesRepoDir
 nu bat/setup.nu
-nu gitui/setup.nu
-nu zoxide/setup.nu
-nu lsd/setup.nu
-nu ripgrep/setup.nu
-nu fd/setup.nu
-nu sd/setup.nu
+# nu gitui/setup.nu
+# nu zoxide/setup.nu
+# nu lsd/setup.nu
+# nu ripgrep/setup.nu
+# nu fd/setup.nu
+# nu sd/setup.nu
 
 # GO CLI Apps
 # ===
@@ -166,7 +166,7 @@ cd $dotfilesRepoDir
 # ===
 cd $dotfilesRepoDir
 bash git/setup.debian.sh
-bash svn/setup.debian.sh
+# bash svn/setup.debian.sh
 bash stow/setup.debian.sh
 
 # Nonfree CLI Tools
@@ -179,7 +179,7 @@ cd $dotfilesRepoDir
 cd $dotfilesRepoDir
 # bash obsidian/setup.debian.sh
 # bash vscodium/setup.debian.sh
-nu kitty/setup.nu
+# nu kitty/setup.nu
 
 # Nonfree GUI Apps
 # ===
