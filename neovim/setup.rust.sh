@@ -24,8 +24,8 @@ gum style --foreground $color --border-foreground $color --border double --align
 
 gum spin --spinner dot --title "Installing NvChad" --title.foreground $color -- git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 
-stow neovim
 
 ls ~/.config/nvim
 
+stow neovim
 
