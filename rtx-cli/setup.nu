@@ -6,5 +6,5 @@ stow rtx-cli
 
 let rtxpath = $"($nu.config-path | path dirname | path join "rtx.nu")";
 run-external rtx activate nu --redirect-stdout | save $rtxpath -f;
-let newline = $"\nsource "($rtxpath)""
-$newline | save $nu.config-path --append
+let newline = $"\nrtxPath = "($rtxpath)""
+$newline | save $nu.env-path --append
