@@ -1,4 +1,14 @@
 #!/usr/bin/env bash
+# 
+# This script requires a user with sudo priviliges to set up dependencies with apt
+#
+# to add a user to sudo on debian
+# ```bash
+# su -
+# apt install sudo
+# usermod -aG sudo <username>
+# ```
+# then reboot
 
 dotfilesRepoDir="$HOME/dotfiles"
 
@@ -13,6 +23,7 @@ fi
 
 REPO=https://gitlab.com/matttelliott/dotfiles-stow
 # curl $REPO/-/raw/master/WARNING.md | cat
+
 
 # Ask for the administrator password upfront
 sudo -v
@@ -122,11 +133,11 @@ cd $dotfilesRepoDir
 nu bat/setup.nu
 nu gitui/setup.nu
 nu zoxide/setup.nu
-# bash lsd/setup.rust.sh
-# bash ripgrep/setup.rust.sh
-# bash fd/setup.rust.sh
-# bash sd/setup.rust.sh
-# bash kondo/setup.rust.sh
+nu lsd/setup.nu
+nu ripgrep/setup.nu
+nu fd/setup.nu
+nu sd/setup.nu
+nu kondo/setup.nu
 
 # GO CLI Apps
 # ===

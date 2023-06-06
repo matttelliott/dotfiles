@@ -80,4 +80,4 @@ alias glog = git log --oneline --graph --decorate
 alias glg = git log --oneline --graph --decorate
 alias gl = git log --oneline --graph --decorate
 
-source "/home/matt/dotfiles/nushell/.config/nushell/rtx.nu"
+source "./rtx.nu"
