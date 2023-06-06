@@ -23,3 +23,5 @@ gum spin --spinner dot --title "Installing NvChad" --title.foreground $color -- 
 
 stow neovim
 
+echo nvim
+
