@@ -1,14 +1,17 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-cat nodejs/README.md
+
+title="NodeJs"
+url="https://nodejs.org/en"
+color=5
+gum style --foreground $color --border-foreground $color --border double --align center --width 50 --margin "1 2" --padding "2 4" $title $url
+
 eval "$(rtx activate bash)"
 rtx hook-env
-rtx use nodejs@lts
+gum spin --spinner dot --title "Installing NodeJs" --title.foreground $color -- rtx use nodejs@lts
 stow nodejs
 
-npm install -g neovim
-npm install -g typescript-language-server
-npm install -g vscode-langservers-extracted
-npm install -g sql-formatter
-npm install -g eslint_d
-npm install -g prettier
+
+
+gum spin --spinner dot --title "Installing Npm Packages" --title.foreground $color --  npm install -g neovim typescript-language-server vscode-langservers-extracted eslint_d prettier
+
