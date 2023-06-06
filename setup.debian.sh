@@ -70,7 +70,7 @@ sudo apt install -y \
 	pkg-config \
 	libssl-dev \
 	cmake \
-  xclip
+    xclip
 
 
 # Clone Repo
@@ -137,7 +137,6 @@ nu lsd/setup.nu
 nu ripgrep/setup.nu
 nu fd/setup.nu
 nu sd/setup.nu
-nu kondo/setup.nu
 
 # GO CLI Apps
 # ===
@@ -149,6 +148,8 @@ cd $dotfilesRepoDir
 # Python CLI Apps
 # ===
 cd $dotfilesRepoDir
+
+
 # Databases
 # ===
 cd $dotfilesRepoDir
@@ -157,17 +158,21 @@ cd $dotfilesRepoDir
 
 # My CLI Apps
 # ===
+cd $dotfilesRepoDir
 # bash bin/setup.debian.sh
 
 
 # FOSS CLI Tools
 # ===
+cd $dotfilesRepoDir
 bash git/setup.debian.sh
 bash svn/setup.debian.sh
 bash stow/setup.debian.sh
 
 # Nonfree CLI Tools
 # ===
+cd $dotfilesRepoDir
+
 
 # FOSS GUI Apps
 # ===
