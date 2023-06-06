@@ -123,7 +123,7 @@ nu nodejs/setup.nu
 cd $dotfilesRepoDir
 nu prompt/setup.nu
 nu zellij/setup.nu
-nu mprocs/setup.nu
+# nu mprocs/setup.nu
 nu neovim/setup.nu
 bash fonts/setup.debian.sh
 
