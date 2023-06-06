@@ -4,7 +4,7 @@ bash svn/setup.mac.sh
 cd "$HOME/dotfiles"
 
 title="Fonts"
-description= "IDK how fonts work"
+description="IDK how fonts work"
 color=6
 gum style --foreground $color --border-foreground $color --border double --align center --width 50 --margin "1 2" --padding "2 4" $title $description
 
