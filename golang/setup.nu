@@ -3,4 +3,4 @@ cd $"($env.HOME)/dotfiles"
 
 cat golang/README.md
 stow golang
-rtx use golang@latest
+rtx use --global golang@latest
