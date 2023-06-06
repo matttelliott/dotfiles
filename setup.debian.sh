@@ -132,7 +132,7 @@ cd $dotfilesRepoDir
 # nu zellij/setup.nu
 # nu mprocs/setup.nu
 # nu neovim/setup.nu
-bash fonts/setup.debian.sh
+# bash fonts/setup.debian.sh
 
 # Rust CLI Apps
 # ===
@@ -174,7 +174,7 @@ cd $dotfilesRepoDir
 cd $dotfilesRepoDir
 # bash git/setup.debian.sh
 # bash svn/setup.debian.sh
-bash stow/setup.debian.sh
+# bash stow/setup.debian.sh
 
 # Nonfree CLI Tools
 # ===
