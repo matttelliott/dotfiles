@@ -60,6 +60,8 @@ def gacm [message] {
   }
 alias gacm = gacm
 
+alias gacmp = gacm ; git push
+
 alias gpull = git pull
 alias gp = git pull
 

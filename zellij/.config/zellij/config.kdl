@@ -160,14 +160,19 @@ themes {
 keybinds {
     // keybinds are divided into modes
     normal {
+
+        unbind "Ctrl b"
+
         // bind instructions can include one or more keys (both keys will be bound separately)
         // bind keys can include one or more actions (all actions will be performed with no sequential guarantees)
-        // bind "Ctrl g" { SwitchToMode "locked"; }
         // bind "Ctrl p" { SwitchToMode "pane"; }
         // bind "Alt n" { NewPane; }
         // bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
-        unbind "Ctrl b"
+
         bind "Ctrl a" { SwitchToMode "tmux"; }
+
+        bind "Ctrl h" { SwitchToMode "locked"; }
+        bind "Ctrl g" { SwitchToMode "move"; }
     }
     pane {
         bind "h" "Left" { MoveFocus "Left"; }

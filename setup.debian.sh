@@ -14,9 +14,6 @@ fi
 REPO=https://gitlab.com/matttelliott/dotfiles-stow
 # curl $REPO/-/raw/master/WARNING.md | cat
 
-# Because Git submodule commands cannot operate without a work tree, they must
-# be run from within $HOME (assuming this is the root of your dotfiles)
-
 # Ask for the administrator password upfront
 sudo -v
 
@@ -28,10 +25,10 @@ while true; do
 done 2>/dev/null &
 
 
-cd "$HOME"
 
 # Backup files
 # ===
+cd "$HOME"
 
 date=$(date --iso-8601=seconds)
 mv $HOME/dotfiles $HOME/dotfiles-$date
@@ -64,9 +61,6 @@ sudo apt install -y \
 	cmake \
   xclip
 
-# bash git/setup.debian.sh
-# bash svn/setup.debian.sh
-# bash stow/setup.debian.sh
 
 # Clone Repo
 # ===
@@ -150,6 +144,20 @@ cd $dotfilesRepoDir
 # bash sqlite/setup.debian.sh
 # bash postgres/setup.debian.sh
 
+# My CLI Apps
+# ===
+# bash bin/setup.debian.sh
+
+
+# FOSS CLI Tools
+# ===
+bash git/setup.debian.sh
+bash svn/setup.debian.sh
+bash stow/setup.debian.sh
+
+# Nonfree CLI Tools
+# ===
+
 # FOSS GUI Apps
 # ===
 cd $dotfilesRepoDir
@@ -162,16 +170,16 @@ cd $dotfilesRepoDir
 # Skip for VM
 # ---
 
-nonfreeSource="deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware"
-echo $nonfreeSource | sudo tee -a /etc/apt/sources.list
-sudo apt update -y
-sudo apt upgrade -y
+# nonfreeSource="deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware"
+# echo $nonfreeSource | sudo tee -a /etc/apt/sources.list
+# sudo apt update -y
+# sudo apt upgrade -y
 
 
-bash virtualbox/setup.debian.sh
+# bash virtualbox/setup.debian.sh
 
 # Nvidia Drivers
-sudo apt install -y nvidia-driver firmware-misc-nonfree
+# sudo apt install -y nvidia-driver firmware-misc-nonfree
 
 
 # Other/TODO
@@ -180,7 +188,6 @@ cd $dotfilesRepoDir
 
 # bash zsh/setup.debian.sh
 # bash cron/setup.debian.sh
-# bash bin/setup.debian.sh
 # bash wget/setup.debian.sh
 # bash trash/setup.debian.sh
 # bash clipboard/setup.debian.sh
