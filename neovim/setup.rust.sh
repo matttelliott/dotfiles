@@ -13,6 +13,9 @@ gum spin --spinner dot --title "Installing Neovim via nvim-bob" --title.foregrou
 export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
 echo "export PATH=$PATH:$HOME/.local/share/bob/nvim-bin" >> $HOME/.bashrc
 
+echo $PATH
+
+
 title="NvChad"
 description="More modern NeoVim"
 url="https://github.com/NvChad/NvChad"
@@ -23,5 +26,6 @@ gum spin --spinner dot --title "Installing NvChad" --title.foreground $color -- 
 
 stow neovim
 
-echo nvim
+ls ~/.config/nvim
+
 
