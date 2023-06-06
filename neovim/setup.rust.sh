@@ -3,7 +3,7 @@ cd "$HOME/dotfiles"
 
 
 title="NeoVim"
-description="More modern Vim"
+description='"More modern Vim"'
 url="https://neovim.io/"
 color=5
 gum style --foreground $color --border-foreground $color --border double --align center --width 50 --margin "1 2" --padding "2 4" $title $description $url
@@ -17,7 +17,7 @@ echo $PATH
 
 
 title="NvChad"
-description="More modern NeoVim"
+description='"More modern NeoVim"'
 url="https://github.com/NvChad/NvChad"
 color=15
 gum style --foreground $color --border-foreground $color --border double --align center --width 50 --margin "1 2" --padding "2 4" $title $description $url
