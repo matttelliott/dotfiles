@@ -89,28 +89,29 @@ source "$HOME/.cargo/env"
 # NuShell
 # ===
 cd $dotfilesRepoDir
-bash nushell/setup.rust.sh
+# bash nushell/setup.rust.sh
 
 # Set as default shell
-which nu | sudo tee -a /etc/shells
-sudo chsh -s $(which nu) $(whoami)
+# which nu | sudo tee -a /etc/shells
+# sudo chsh -s $(which nu) $(whoami)
 
 # Language Version Manager
 # ===
 cd $dotfilesRepoDir
-nu rtx-cli/setup.nu
+# nu rtx-cli/setup.nu
+bash rtx-cli/setup.rust.sh
 
 # GO core tools
 # ===
 cd $dotfilesRepoDir
-nu golang/setup.nu
-nu gum/setup.nu
+# nu golang/setup.nu
+# nu gum/setup.nu
 
 # Other Languages
 # ===
 cd $dotfilesRepoDir
 
-nu nodejs/setup.nu
+# nu nodejs/setup.nu
 # bash python/setup.debian.sh
 # bash lua/setup.debian.sh
 # bash ruby/setup.debian.sh
@@ -121,10 +122,10 @@ nu nodejs/setup.nu
 # Terminal environment
 # ===
 cd $dotfilesRepoDir
-nu prompt/setup.nu
-nu zellij/setup.nu
+# nu prompt/setup.nu
+# nu zellij/setup.nu
 # nu mprocs/setup.nu
-nu neovim/setup.nu
+# nu neovim/setup.nu
 bash fonts/setup.debian.sh
 
 # Rust CLI Apps
@@ -165,7 +166,7 @@ cd $dotfilesRepoDir
 # FOSS CLI Tools
 # ===
 cd $dotfilesRepoDir
-bash git/setup.debian.sh
+# bash git/setup.debian.sh
 # bash svn/setup.debian.sh
 bash stow/setup.debian.sh
 
