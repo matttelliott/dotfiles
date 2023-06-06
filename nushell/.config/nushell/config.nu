@@ -80,4 +80,6 @@ alias glog = git log --oneline --graph --decorate
 alias glg = git log --oneline --graph --decorate
 alias gl = git log --oneline --graph --decorate
 
-source "./rtx.nu"
+source $rtxPath
+
+

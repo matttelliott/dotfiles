@@ -1,1 +1,1 @@
-source "/home/matt/dotfiles/nushell/.config/nushell/rtx.nu"
+const rtxPath = "/home/matt/.config/nushell/rtx.nu"
