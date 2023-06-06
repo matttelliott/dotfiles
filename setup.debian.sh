@@ -154,6 +154,8 @@ cd $dotfilesRepoDir
 # nu mprocs/setup.nu
 # nu neovim/setup.nu
 bash neovim/setup.rust.sh
+export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
+
 bash fonts/setup.debian.sh
 
 # Rust CLI Apps
@@ -242,7 +244,6 @@ cd $dotfilesRepoDir
 # bash cowsay/setup.debian.sh
 # bash github/setup.debian.sh
 # bash shfmt/setup.debian.sh
-# bash mac/setup.debian.sh
 # bash iterm/setup.debian.sh
 # bash 1password/setup.debian.sh
 # bash spectacle/setup.debian.sh
