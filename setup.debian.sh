@@ -80,11 +80,17 @@ cd $dotfilesRepoDir
 
 
 
-# Rust core tools
+# Install Core tools
 # ===
 cd $dotfilesRepoDir
-bash rust/setup.debian.sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source "$HOME/.cargo/env"
+cargo install rtx-cli
+rtx use --global golang@latest
+go install github.com/charmbracelet/gum@latest
+gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
+
+# bash rust/setup.debian.sh
 
 # NuShell
 # ===
@@ -99,7 +105,7 @@ cd $dotfilesRepoDir
 # ===
 cd $dotfilesRepoDir
 # nu rtx-cli/setup.nu
-bash rtx-cli/setup.rust.sh
+# bash rtx-cli/setup.rust.sh
 
 # GO core tools
 # ===
@@ -131,7 +137,7 @@ bash fonts/setup.debian.sh
 # Rust CLI Apps
 # ===
 cd $dotfilesRepoDir
-nu bat/setup.nu
+# nu bat/setup.nu
 # nu gitui/setup.nu
 # nu zoxide/setup.nu
 # nu lsd/setup.nu
