@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bash svn/setup.mac.sh
-cd "$HOME/dotfiles"
+
 
 title="Fonts"
 description="'IDK how fonts work'"
