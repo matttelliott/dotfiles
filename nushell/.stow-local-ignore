@@ -1,5 +1,6 @@
 setup.*
 README.md
+.gitignore
 .config/nushell/env.nu
 .config/nushell/rtx.nu
 .config/nushell/history.txt

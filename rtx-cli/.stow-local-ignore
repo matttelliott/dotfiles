@@ -1,4 +1,5 @@
 setup.*
 README.md
+.gitignore
 .config/nushell/rtx.nu
 .config/nushell/env.nu
