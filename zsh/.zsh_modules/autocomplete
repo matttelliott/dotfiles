@@ -1,13 +1,13 @@
-zstyle ':autocomplete:*' fzf-completion yes
+# zstyle ':autocomplete:*' fzf-completion yes
 # no:  Tab uses Zsh's completion system only.
 # yes: Tab first tries Fzf's completion, then falls back to Zsh's.
 # ⚠️ NOTE: This setting can NOT be changed at runtime and requires that you
 # have installed Fzf's shell extensions.
 
-zstyle ':autocomplete:*' widget-style menu-select
+# zstyle ':autocomplete:*' widget-style menu-select
 # complete-word: (Shift-)Tab inserts the top (bottom) completion.
 # menu-complete: Press again to cycle to next (previous) completion.
 # menu-select:   Same as `menu-complete`, but updates selection in menu.
 # ⚠️ NOTE: This setting can NOT be changed at runtime.
 # `znap source` automatically downloads and starts your plugins.
-znap source marlonrichert/zsh-autocomplete
+# znap source marlonrichert/zsh-autocomplete
