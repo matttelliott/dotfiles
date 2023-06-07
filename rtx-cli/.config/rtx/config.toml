@@ -2,3 +2,5 @@
 node = "lts"
 go = "latest"
 golang = "latest"
+nodejs = "lts"
+python = "latest"

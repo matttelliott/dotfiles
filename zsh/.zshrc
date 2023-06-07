@@ -19,3 +19,4 @@ done;
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 
+eval "$(rtx activate zsh)"
