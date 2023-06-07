@@ -172,7 +172,7 @@ cd $dotfilesRepoDir
 # My CLI Apps
 # ===
 cd $dotfilesRepoDir
-# bash bin/setup.debian.sh
+bash bin/setup.sh
 
 
 # FOSS CLI Tools
