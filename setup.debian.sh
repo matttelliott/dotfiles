@@ -110,9 +110,9 @@ bash imagemagick/setup.debian.sh
 cd $dotfilesRepoDir
 
 # Rust
-bash rust/setup.sh
-source "$HOME/.cargo/env"
-export PATH=$PATH:$HOME/.cargo/bin
+# bash rust/setup.sh
+# source "$HOME/.cargo/env"
+# export PATH=$PATH:$HOME/.cargo/bin
 
 
 
@@ -121,8 +121,8 @@ export PATH=$PATH:$HOME/.cargo/bin
 cd $dotfilesRepoDir
 bash zsh/setup.sh
 bash fonts/setup.debian.sh
-bash prompt/setup.sh
-eval "$(starship init bash)"
+# bash prompt/setup.sh
+# eval "$(starship init bash)"
 
 
 # RTX Language Manager
