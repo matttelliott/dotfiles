@@ -84,7 +84,12 @@ sudo apt install -y \
     libsqlite3-dev \
     wget \
     libbz2-dev \
-	nmap
+	nmap \
+	htop \
+	entr \
+	watch \
+	ffmpeg \
+	w3m
 
 sudo chsh -s $(which zsh) $(whoami)
 
@@ -159,11 +164,14 @@ bash fzf/setup.sh
 bash lazygit/setup.sh
 bash jq/setup.sh
 bash gum/setup.sh
+bash shfmt/setup.debian.sh
+
 
 # Python CLI Apps
 # ===
 cd $dotfilesRepoDir
 bash youtube-dl/setup.sh
+bash bpytop/setup.sh
 # bash cowsay/setup.sh
 
 
@@ -186,14 +194,10 @@ bash git/setup.sh
 # bash nmap/setup.debian.sh
 # bash htop/setup.debian.sh
 # bash stow/setup.debian.sh
-# bash pandoc/setup.debian.sh
-
 # bash entr/setup.debian.sh
 # bash watch/setup.debian.sh
-
-# bash ffmpeg/setup.debian.sh
-# bash imagemagick/setup.debian.sh
 # bash w3m/setup.debian.sh
+# bash ffmpeg/setup.debian.sh
 
 
 # Fun
@@ -216,15 +220,33 @@ cd $dotfilesRepoDir
 # bash github/setup.debian.sh
 
 
+
+
+# Other/TODO
+# ===
+cd $dotfilesRepoDir
+# bash cron/setup.debian.sh
+# bash wiki/setup.debian.sh
+# bash imagemagick/setup.debian.sh
+# bash pandoc/setup.debian.sh
+
+
+CLI
+------------------------------------------------------------------------------------------
+GUI
+
 # FOSS GUI Apps
 # ===
 cd $dotfilesRepoDir
+# bash 1password/setup.debian.sh
+
 # bash stable-diffusion/setup.sh
 # bash obsidian/setup.debian.sh
 # bash vscodium/setup.debian.sh
 # bash mpv/setup.debian.sh
 # bash vlc/setup.debian.sh
 # bash kitty/setup.sh
+# bash urxvt/setup.sh
 
 # Nonfree GUI Apps
 # ===
@@ -237,6 +259,12 @@ cd $dotfilesRepoDir
 # bash vivaldi/setup.debian.sh
 # bash opera/setup.debian.sh
 
+# Fun
+# ===
+# bash tf2/setup.debian.sh
+# bash steam/setup.debian.sh
+# bash spotify/setup.debian.sh
+
 
 # Skip for VM
 # ---
@@ -246,42 +274,15 @@ cd $dotfilesRepoDir
 # sudo apt update -y
 # sudo apt upgrade -y
 
-
 # bash virtualbox/setup.debian.sh
 
 # Nvidia Drivers
 # sudo apt install -y nvidia-driver firmware-misc-nonfree
 
 
-# Other/TODO
-# ===
-cd $dotfilesRepoDir
-# 
-
-# bash cron/setup.debian.sh
-# bash wget/setup.debian.sh
-# bash trash/setup.debian.sh
-# bash clipboard/setup.debian.sh
-# bash vim/setup.debian.sh
-# bash shfmt/setup.debian.sh
-# bash iterm/setup.debian.sh
-# bash vifm/setup.debian.sh
-# 
-# bash ranger/setup.debian.sh
-# bash bpytop/setup.debian.sh
-#
-# 
-# bash wiki/setup.debian.sh
-# 
-# bash tf2/setup.debian.sh
-# bash steam/setup.debian.sh
-# bash spotify/setup.debian.sh
-# bash 1password/setup.debian.sh
 
 # Finish
 # ===
-
-
 # neofetch
 # cowsay "DONE!"
 

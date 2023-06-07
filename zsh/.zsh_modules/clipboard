@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+
+# Clipboard
+## make system clipboard work "as expected"
+# mac: use `pbcopy` and `pbpaste`
+
+if ! command -v pbcopy > /dev/null; then
+  alias pbcopy="xclip -selection clipboard"
+fi
+
+if ! command -v pbpaste > /dev/null; then
+  alias pbpaste="xclip -o -selection clipboard"
+fi
