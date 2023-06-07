@@ -3,14 +3,6 @@ alias e="$EDITOR"
 alias q=exit
 alias c=clear
 alias br="bulk-rename"
-alias ys="yadm status"
-alias ya="yadm add"
-alias yaa="yadm status -s | awk '{print \$2}' | xargs yadm add"
-alias yc="yadm commit"
-alias yd="yadm diff"
-alias ydiff="yadm diff"
-alias ypush="yadm push"
-alias ypull="yadm pull"
 alias pword='echo $(LC_CTYPE=C tr -dc A-Za-z0-9_\!\@\#\$\%\^\&\*\(\)-+= < /dev/urandom | head -c 32 | xargs)'
 alias chromium-no-cors='open -n -a /Applications/Chromium.app/Contents/MacOS/Chromium --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security'
 alias stray_port="lsof -i :"
