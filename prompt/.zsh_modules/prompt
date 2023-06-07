@@ -1,2 +1,5 @@
 #!/usr/bin/env zsh
+source "$HOME/.cargo/env"
+export PATH=$PATH:$HOME/.cargo/bin
 znap eval starship 'starship init zsh --print-full-init'
+znap prompt
