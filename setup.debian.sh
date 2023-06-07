@@ -70,23 +70,20 @@ sudo apt install -y \
 	pkg-config \
 	libssl-dev \
 	cmake \
-  xclip \
+    xclip \
 	fonts-dejavu \
 	fonts-powerline \
 	fonts-font-awesome \
-  zsh
-
-# Install Python dependencies
-sudo apt install -y \
- zlib1g-dev \
- libncurses5-dev \
- libgdbm-dev \
- libnss3-dev \
- libreadline-dev \
- libffi-dev \
- libsqlite3-dev \
- wget \
- libbz2-dev
+    zsh \
+    zlib1g-dev \
+    libncurses5-dev \
+    libgdbm-dev \
+    libnss3-dev \
+    libreadline-dev \
+    libffi-dev \
+    libsqlite3-dev \
+    wget \
+    libbz2-dev
 
 # Clone Repo
 # ===
@@ -112,8 +109,8 @@ export PATH=$PATH:$HOME/.cargo/bin
 # ===
 cd $dotfilesRepoDir
 bash zsh/setup.sh
+sudo chsh -s $(which zsh) $(whoami)
 bash fonts/setup.debian.sh
-
 bash prompt/setup.sh
 eval "$(starship init bash)"
 
