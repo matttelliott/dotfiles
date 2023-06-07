@@ -70,11 +70,23 @@ sudo apt install -y \
 	pkg-config \
 	libssl-dev \
 	cmake \
-  xclip \
+    xclip \
 	fonts-dejavu \
 	fonts-powerline \
 	fonts-font-awesome
 
+# Install Python dependencies
+sudo apt install -y \
+ zlib1g-dev \
+ libncurses5-dev \
+ libgdbm-dev \
+ libnss3-dev \
+ libssl-dev \
+ libreadline-dev \
+ libffi-dev \
+ libsqlite3-dev \
+ wget \
+ libbz2-dev
 
 # Clone Repo
 # ===
