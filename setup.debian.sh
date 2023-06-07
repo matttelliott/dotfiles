@@ -107,16 +107,13 @@ cargo install rtx-cli
 # bash rtx-cli/setup.sh
 eval "$(rtx activate bash)"
 
-# Set up Shell
-bash zsh/setup.sh
 
 # Terminal environment
 # ===
 cd $dotfilesRepoDir
-
+bash zsh/setup.sh
 bash fonts/setup.debian.sh
-# bash neovim/setup.rust.sh
-# export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
+
 bash prompt/setup.sh
 
 eval "$(starship init bash)"
@@ -146,15 +143,19 @@ eval "$(rtx hook-env)"
 # bash ruby/setup.debian.sh
 # bash php/setup.debian.sh
 
+# Editor
+# ===
+# bash neovim/setup.rust.sh
+# export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
 
 
 
-bash zellij/setup.sh
-bash mprocs/setup.sh
 
 # Rust CLI Apps
 # ===
 cd $dotfilesRepoDir
+# bash zellij/setup.sh
+# bash mprocs/setup.sh
 # bash bat/setup.sh
 # alias cat=bat
 # bash gitui/setup.sh
@@ -169,15 +170,15 @@ cd $dotfilesRepoDir
 # GO CLI Apps
 # ===
 cd $dotfilesRepoDir
-bash fzf/setup.sh
-bash lazygit/setup.sh
-bash jq/setup.sh
+# bash fzf/setup.sh
+# bash lazygit/setup.sh
+# bash jq/setup.sh
 # bash gum/setup.sh
 
 # Python CLI Apps
 # ===
 cd $dotfilesRepoDir
-bash youtube-dl/setup.sh
+# bash youtube-dl/setup.sh
 
 # Databases
 # ===
@@ -251,16 +252,16 @@ cd $dotfilesRepoDir
 # Skip for VM
 # ---
 
-nonfreeSource="deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware"
-echo $nonfreeSource | sudo tee -a /etc/apt/sources.list
-sudo apt update -y
-sudo apt upgrade -y
+# nonfreeSource="deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware"
+# echo $nonfreeSource | sudo tee -a /etc/apt/sources.list
+# sudo apt update -y
+# sudo apt upgrade -y
 
 
-bash virtualbox/setup.debian.sh
+# bash virtualbox/setup.debian.sh
 
 # Nvidia Drivers
-sudo apt install -y nvidia-driver firmware-misc-nonfree
+# sudo apt install -y nvidia-driver firmware-misc-nonfree
 
 
 # Other/TODO
