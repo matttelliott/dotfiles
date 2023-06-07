@@ -178,7 +178,7 @@ bash bin/setup.sh
 # FOSS CLI Tools
 # ===
 cd $dotfilesRepoDir
-bash git/setup.debian.sh
+bash git/setup.sh
 # bash svn/setup.debian.sh
 # bash stow/setup.debian.sh
 # bash nmap/setup.debian.sh
