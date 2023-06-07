@@ -103,9 +103,9 @@ source "$HOME/.cargo/env"
 export PATH=$PATH:$HOME/.cargo/bin
 
 # RTX Language Manager
-cargo install rtx-cli
 # bash rtx-cli/setup.sh
-eval "$(rtx activate bash)"
+# cargo install rtx-cli
+# eval "$(rtx activate bash)"
 
 
 # Terminal environment
@@ -115,28 +115,27 @@ bash zsh/setup.sh
 bash fonts/setup.debian.sh
 
 bash prompt/setup.sh
-
 eval "$(starship init bash)"
 
 # Golang
-# basy golang/setup.sh
-rtx use --global golang@latest
-eval "$(rtx hook-env)"
-go install github.com/charmbracelet/gum@latest
-gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
-export PATH=$PATH:$HOME/go/bin
+# bash golang/setup.sh
+# rtx use --global golang@latest
+# eval "$(rtx hook-env)"
+# go install github.com/charmbracelet/gum@latest
+# gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
+# export PATH=$PATH:$HOME/go/bin
 
 
 # NodeJs
 # bash nodejs/setup.sh
-rtx use --global nodejs@latest
-eval "$(rtx hook-env)"
-npm i -g prettier
+# rtx use --global nodejs@latest
+# eval "$(rtx hook-env)"
+# npm i -g ts-node
 
 # Python
 # bash python/setup.debian.sh
-rtx use --global python@latest
-eval "$(rtx hook-env)"
+# rtx use --global python@latest
+# eval "$(rtx hook-env)"
 
 
 # bash lua/setup.debian.sh
