@@ -191,13 +191,13 @@ bash bin/setup.sh
 # ===
 cd $dotfilesRepoDir
 bash git/setup.sh
-# bash nmap/setup.debian.sh
-# bash htop/setup.debian.sh
-# bash stow/setup.debian.sh
-# bash entr/setup.debian.sh
-# bash watch/setup.debian.sh
-# bash w3m/setup.debian.sh
-# bash ffmpeg/setup.debian.sh
+bash nmap/setup.sh
+bash htop/setup.sh
+bash stow/setup.sh
+bash entr/setup.sh
+bash watch/setup.sh
+bash w3m/setup.debian.sh
+bash ffmpeg/setup.debian.sh
 
 
 # Nonfree CLI Tools
