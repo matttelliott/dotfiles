@@ -175,19 +175,13 @@ bash bpytop/setup.sh
 # bash cowsay/setup.sh
 
 
-# Databases
-# ===
-cd $dotfilesRepoDir
-# bash sqlite/setup.debian.sh
-# bash postgres/setup.debian.sh
-
 # My CLI Apps
 # ===
 cd $dotfilesRepoDir
 bash bin/setup.sh
 
 
-# FOSS CLI Tools
+# apt CLI Tools
 # ===
 cd $dotfilesRepoDir
 bash git/setup.sh
@@ -196,19 +190,12 @@ bash htop/setup.sh
 bash stow/setup.sh
 bash entr/setup.sh
 bash watch/setup.sh
-bash w3m/setup.debian.sh
-bash ffmpeg/setup.debian.sh
-
-
-# Nonfree CLI Tools
-# ===
-cd $dotfilesRepoDir
-# bash github/setup.debian.sh
+bash w3m/setup.sh
+bash ffmpeg/setup.sh
 
 # Fun
 # ===
 # bash lolcat/setup.debian.sh
-# bash neofetch/setup.debian.sh
 # bash asciiquarium/setup.debian.sh
 
 # Containers
@@ -216,6 +203,17 @@ cd $dotfilesRepoDir
 # bash docker/setup.debian.sh
 # bash kubernetes/setup.debian.sh
 
+# Databases
+# ===
+cd $dotfilesRepoDir
+# bash sqlite/setup.debian.sh
+# bash postgres/setup.debian.sh
+
+
+# Nonfree CLI Tools
+# ===
+cd $dotfilesRepoDir
+# bash github/setup.debian.sh
 
 
 # Other/TODO
