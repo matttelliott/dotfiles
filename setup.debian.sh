@@ -105,6 +105,13 @@ bash pandoc/setup.debian.sh
 bash imagemagick/setup.debian.sh
 
 
+# Databases (sudo)
+# ===
+cd $dotfilesRepoDir
+bash sqlite/setup.debian.sh
+# bash postgres/setup.debian.sh
+
+
 # Install Core tools
 # ===
 cd $dotfilesRepoDir
@@ -136,6 +143,7 @@ export PATH=$PATH:$HOME/go/bin
 go install github.com/charmbracelet/gum@latest
 gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
 
+# Other Languages
 
 bash nodejs/setup.sh
 bash python/setup.sh
@@ -205,11 +213,6 @@ bash bin/setup.sh
 # bash docker/setup.debian.sh
 # bash kubernetes/setup.debian.sh
 
-# Databases
-# ===
-cd $dotfilesRepoDir
-# bash sqlite/setup.debian.sh
-# bash postgres/setup.debian.sh
 
 
 # Nonfree CLI Tools
@@ -221,7 +224,7 @@ cd $dotfilesRepoDir
 # Other/TODO
 # ===
 cd $dotfilesRepoDir
-# bash cron/setup.debian.sh
+bash cron/setup.debian.sh
 # bash wiki/setup.debian.sh
 
 
