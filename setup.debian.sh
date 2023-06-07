@@ -84,6 +84,7 @@ sudo apt install -y \
     libsqlite3-dev \
     wget \
     libbz2-dev
+sudo chsh -s $(which zsh) $(whoami)
 
 # Clone Repo
 # ===
@@ -94,11 +95,9 @@ git clone $REPO $dotfilesRepoDir
 cd $dotfilesRepoDir
 
 # Rust
-# bash rust/setup.sh
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+bash rust/setup.sh
 source "$HOME/.cargo/env"
 export PATH=$PATH:$HOME/.cargo/bin
-stow rust
 
 
 
@@ -106,10 +105,10 @@ stow rust
 # ===
 cd $dotfilesRepoDir
 bash zsh/setup.sh
-sudo chsh -s $(which zsh) $(whoami)
 bash fonts/setup.debian.sh
 bash prompt/setup.sh
 eval "$(starship init bash)"
+bash neovim/setup.sh
 
 
 # RTX Language Manager
@@ -118,34 +117,19 @@ eval "$(rtx activate bash)"
 
 # Golang
 bash golang/setup.sh
-# rtx use --global golang@latest
 eval "$(rtx hook-env)"
 export PATH=$PATH:$HOME/go/bin
 go install github.com/charmbracelet/gum@latest
 gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
 
 
-# NodeJs
 bash nodejs/setup.sh
-# rtx use --global nodejs@latest
-
-# Python
 bash python/setup.sh
-# rtx use --global python@latest
-# eval "$(rtx hook-env)"
-
-
 # bash lua/setup.sh
 # bash ruby/setup.sh
 # bash php/setup.sh
 
 eval "$(rtx hook-env)"
-
-
-# Editor
-# ===
-bash neovim/setup.sh
-export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
 
 
 
@@ -194,7 +178,7 @@ cd $dotfilesRepoDir
 # FOSS CLI Tools
 # ===
 cd $dotfilesRepoDir
-# bash git/setup.debian.sh
+bash git/setup.debian.sh
 # bash svn/setup.debian.sh
 # bash stow/setup.debian.sh
 # bash nmap/setup.debian.sh
@@ -234,7 +218,7 @@ cd $dotfilesRepoDir
 # bash vscodium/setup.debian.sh
 # bash mpv/setup.debian.sh
 # bash vlc/setup.debian.sh
-bash kitty/setup.sh
+# bash kitty/setup.sh
 
 # Nonfree GUI Apps
 # ===
