@@ -1,2 +1,4 @@
 setup.*
 README.md
+.local
+.gitignore
