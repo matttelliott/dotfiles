@@ -108,7 +108,6 @@ bash zsh/setup.sh
 bash fonts/setup.debian.sh
 bash prompt/setup.sh
 eval "$(starship init bash)"
-bash neovim/setup.sh
 
 
 # RTX Language Manager
@@ -131,6 +130,7 @@ bash python/setup.sh
 
 eval "$(rtx hook-env)"
 
+bash neovim/setup.sh
 
 
 
@@ -162,6 +162,8 @@ bash gum/setup.sh
 # ===
 cd $dotfilesRepoDir
 bash youtube-dl/setup.sh
+# bash cowsay/setup.sh
+
 
 # Databases
 # ===
@@ -194,7 +196,6 @@ bash git/setup.sh
 # ===
 # bash lolcat/setup.debian.sh
 # bash neofetch/setup.debian.sh
-# bash cowsay/setup.debian.sh
 # bash asciiquarium/setup.debian.sh
 
 # Containers
