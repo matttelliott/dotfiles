@@ -1,4 +1,0 @@
-customCommands:
-  - key: 'c'
-    command: 'git commit --no-verify'
-    context: 'commits'

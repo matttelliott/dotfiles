@@ -70,10 +70,11 @@ sudo apt install -y \
 	pkg-config \
 	libssl-dev \
 	cmake \
-    xclip \
+  xclip \
 	fonts-dejavu \
 	fonts-powerline \
-	fonts-font-awesome
+	fonts-font-awesome \
+  zsh
 
 # Install Python dependencies
 sudo apt install -y \
@@ -87,6 +88,9 @@ sudo apt install -y \
  libsqlite3-dev \
  wget \
  libbz2-dev
+
+# Set up Shell
+# bash zsh/setup.debian.sh
 
 # Clone Repo
 # ===
@@ -113,6 +117,7 @@ rtx use --global golang@latest
 eval "$(rtx hook-env)"
 go install github.com/charmbracelet/gum@latest
 gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
+export PATH=$PATH:$HOME/go/bin
 
 # NodeJs
 rtx use --global nodejs@latest
@@ -176,27 +181,28 @@ bash fonts/setup.debian.sh
 # Rust CLI Apps
 # ===
 cd $dotfilesRepoDir
-bash bat/setup.sh
-alias cat=bat
-bash gitui/setup.sh
-bash zoxide/setup.sh
-bash lsd/setup.sh
-bash exa/setup.sh
-bash ripgrep/setup.sh
-bash fd/setup.sh
-bash sd/setup.sh
+# bash bat/setup.sh
+# alias cat=bat
+# bash gitui/setup.sh
+# bash zoxide/setup.sh
+# bash lsd/setup.sh
+# bash exa/setup.sh
+# bash ripgrep/setup.sh
+# bash fd/setup.sh
+# bash sd/setup.sh
 
 # GO CLI Apps
 # ===
 cd $dotfilesRepoDir
-# bash fzf/setup.sh
-# bash lazygit/setup.sh
+bash fzf/setup.sh
+bash lazygit/setup.sh
+bash jq/setup.sh
 
 
 # Python CLI Apps
 # ===
 cd $dotfilesRepoDir
-
+bash youtube-dl/setup.sh
 
 # Databases
 # ===
@@ -216,6 +222,22 @@ cd $dotfilesRepoDir
 # bash git/setup.debian.sh
 # bash svn/setup.debian.sh
 # bash stow/setup.debian.sh
+# bash nmap/setup.debian.sh
+
+# Fun
+# ===
+# bash lolcat/setup.debian.sh
+# bash neofetch/setup.debian.sh
+# bash cowsay/setup.debian.sh
+# bash asciiquarium/setup.debian.sh
+
+# Containers
+# ===
+# bash vagrant/setup.debian.sh
+# bash docker/setup.debian.sh
+# bash kubernetes/setup.debian.sh
+
+
 
 # Nonfree CLI Tools
 # ===
@@ -227,11 +249,22 @@ cd $dotfilesRepoDir
 cd $dotfilesRepoDir
 # bash obsidian/setup.debian.sh
 # bash vscodium/setup.debian.sh
-# nu kitty/setup.nu
+# bash mpv/setup.debian.sh
+# bash vlc/setup.debian.sh
+# bash kitty/setup.sh
 
 # Nonfree GUI Apps
 # ===
 cd $dotfilesRepoDir
+
+# Browsers
+# ===
+# bash chromium/setup.debian.sh
+# bash firefox/setup.debian.sh
+# bash vivaldi/setup.debian.sh
+# bash opera/setup.debian.sh
+
+
 # Skip for VM
 # ---
 
@@ -250,48 +283,35 @@ cd $dotfilesRepoDir
 # Other/TODO
 # ===
 cd $dotfilesRepoDir
+# 
+# bash entr/setup.debian.sh
+# bash watch/setup.debian.sh
 
-# bash zsh/setup.debian.sh
 # bash cron/setup.debian.sh
 # bash wget/setup.debian.sh
 # bash trash/setup.debian.sh
 # bash clipboard/setup.debian.sh
 # bash vim/setup.debian.sh
-# bash neofetch/setup.debian.sh
-# bash cowsay/setup.debian.sh
 # bash github/setup.debian.sh
 # bash shfmt/setup.debian.sh
 # bash iterm/setup.debian.sh
-# bash 1password/setup.debian.sh
-# bash spectacle/setup.debian.sh
-# bash asciiquarium/setup.debian.sh
-# bash entr/setup.debian.sh
 # bash vifm/setup.debian.sh
 # bash htop/setup.debian.sh
-# bash jq/setup.debian.sh
-# bash pandoc/setup.debian.sh
 # bash w3m/setup.debian.sh
-# bash watch/setup.debian.sh
-# bash youtube-dl/setup.debian.sh
+# bash pandoc/setup.debian.sh
 # bash ffmpeg/setup.debian.sh
 # bash imagemagick/setup.debian.sh
+# 
 # bash ranger/setup.debian.sh
-# bash nmap/setup.debian.sh
 # bash bpytop/setup.debian.sh
-# bash lolcat/setup.debian.sh
-# bash mpv/setup.debian.sh
-# bash vlc/setup.debian.sh
-# bash chromium/setup.debian.sh
-# bash firefox/setup.debian.sh
-# bash vivaldi/setup.debian.sh
-# bash opera/setup.debian.sh
-# bash vagrant/setup.debian.sh
-# bash docker/setup.debian.sh
-# bash kubernetes/setup.debian.sh
-# bash julia/setup.debian.sh
+#
+# 
 # bash wiki/setup.debian.sh
+# 
 # bash tf2/setup.debian.sh
+# bash steam/setup.debian.sh
 # bash spotify/setup.debian.sh
+# bash 1password/setup.debian.sh
 
 # Finish
 # ===
