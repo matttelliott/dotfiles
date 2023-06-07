@@ -119,7 +119,7 @@ cd $dotfilesRepoDir
 # Terminal environment
 # ===
 cd $dotfilesRepoDir
-bash zsh/setup.sh
+bash zsh/setup.debian.sh
 bash fonts/setup.debian.sh
 # bash prompt/setup.sh
 # eval "$(starship init bash)"
