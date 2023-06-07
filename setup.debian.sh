@@ -100,10 +100,6 @@ source "$HOME/.cargo/env"
 export PATH=$PATH:$HOME/.cargo/bin
 stow rust
 
-# RTX Language Manager
-# bash rtx-cli/setup.sh
-# cargo install rtx-cli
-# eval "$(rtx activate bash)"
 
 
 # Terminal environment
@@ -115,35 +111,41 @@ bash fonts/setup.debian.sh
 bash prompt/setup.sh
 eval "$(starship init bash)"
 
+
+# RTX Language Manager
+bash rtx-cli/setup.sh
+eval "$(rtx activate bash)"
+
 # Golang
-# bash golang/setup.sh
+bash golang/setup.sh
 # rtx use --global golang@latest
-# eval "$(rtx hook-env)"
-# go install github.com/charmbracelet/gum@latest
-# gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
-# export PATH=$PATH:$HOME/go/bin
+eval "$(rtx hook-env)"
+export PATH=$PATH:$HOME/go/bin
+go install github.com/charmbracelet/gum@latest
+gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
 
 
 # NodeJs
-# bash nodejs/setup.sh
+bash nodejs/setup.sh
 # rtx use --global nodejs@latest
-# eval "$(rtx hook-env)"
-# npm i -g ts-node
 
 # Python
-# bash python/setup.debian.sh
+bash python/setup.sh
 # rtx use --global python@latest
 # eval "$(rtx hook-env)"
 
 
-# bash lua/setup.debian.sh
-# bash ruby/setup.debian.sh
-# bash php/setup.debian.sh
+# bash lua/setup.sh
+# bash ruby/setup.sh
+# bash php/setup.sh
+
+eval "$(rtx hook-env)"
+
 
 # Editor
 # ===
-# bash neovim/setup.rust.sh
-# export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
+bash neovim/setup.sh
+export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
 
 
 
@@ -151,10 +153,10 @@ eval "$(starship init bash)"
 # Rust CLI Apps
 # ===
 cd $dotfilesRepoDir
-# bash zellij/setup.sh
-# bash mprocs/setup.sh
 # bash bat/setup.sh
 # alias cat=bat
+# bash zellij/setup.sh
+# bash mprocs/setup.sh
 # bash gitui/setup.sh
 # bash zoxide/setup.sh
 # bash lsd/setup.sh

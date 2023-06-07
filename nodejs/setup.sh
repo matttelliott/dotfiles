@@ -13,5 +13,5 @@ stow nodejs
 
 
 
-gum spin --spinner dot --title "Installing Npm Packages" --title.foreground $color --  npm install -g neovim typescript-language-server vscode-langservers-extracted eslint_d prettier
+gum spin --spinner dot --title "Installing Npm Packages" --title.foreground $color --  npm install -g neovim typescript-language-server vscode-langservers-extracted eslint_d prettier ts-node
 
