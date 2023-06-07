@@ -1,2 +1,5 @@
 setup.*
 README.md
+.gitignore
+.fzf.zsh
+.fzf.sh

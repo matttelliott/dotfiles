@@ -215,6 +215,7 @@ cd $dotfilesRepoDir
 # FOSS GUI Apps
 # ===
 cd $dotfilesRepoDir
+# bash stable-diffusion/setup.sh
 # bash obsidian/setup.debian.sh
 # bash vscodium/setup.debian.sh
 # bash mpv/setup.debian.sh
