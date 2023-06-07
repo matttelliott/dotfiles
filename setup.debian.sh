@@ -110,9 +110,9 @@ bash imagemagick/setup.debian.sh
 cd $dotfilesRepoDir
 
 # Rust
-# bash rust/setup.sh
-# source "$HOME/.cargo/env"
-# export PATH=$PATH:$HOME/.cargo/bin
+bash rust/setup.sh
+source "$HOME/.cargo/env"
+export PATH=$PATH:$HOME/.cargo/bin
 
 
 
@@ -121,44 +121,44 @@ cd $dotfilesRepoDir
 cd $dotfilesRepoDir
 bash zsh/setup.debian.sh
 bash fonts/setup.debian.sh
-# bash prompt/setup.sh
-# eval "$(starship init bash)"
+bash prompt/setup.sh
+eval "$(starship init bash)"
 
 
 # RTX Language Manager
-# bash rtx-cli/setup.sh
-# eval "$(rtx activate bash)"
+bash rtx-cli/setup.sh
+eval "$(rtx activate bash)"
 
 # Golang
-# bash golang/setup.sh
-# eval "$(rtx hook-env)"
-# export PATH=$PATH:$HOME/go/bin
-# go install github.com/charmbracelet/gum@latest
-# gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
+bash golang/setup.sh
+eval "$(rtx hook-env)"
+export PATH=$PATH:$HOME/go/bin
+go install github.com/charmbracelet/gum@latest
+gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
 
 
-# bash nodejs/setup.sh
-# bash python/setup.sh
+bash nodejs/setup.sh
+bash python/setup.sh
 # bash lua/setup.sh
 # bash ruby/setup.sh
 # bash php/setup.sh
 
-# eval "$(rtx hook-env)"
+eval "$(rtx hook-env)"
 
 
 # Neovim
 # ===
 cd $dotfilesRepoDir
-# bash neovim/setup.sh
+bash neovim/setup.sh
 
 
 
 # Rust CLI Apps
 # ===
 cd $dotfilesRepoDir
-# bash bat/setup.sh
-# alias cat=bat
-# bash zellij/setup.sh
+bash bat/setup.sh
+alias cat=bat
+bash zellij/setup.sh
 # bash mprocs/setup.sh
 # bash gitui/setup.sh
 # bash zoxide/setup.sh
@@ -172,8 +172,8 @@ cd $dotfilesRepoDir
 # GO CLI Apps
 # ===
 cd $dotfilesRepoDir
-# bash fzf/setup.sh
-# bash lazygit/setup.sh
+bash fzf/setup.sh
+bash lazygit/setup.sh
 # bash jq/setup.sh
 # bash gum/setup.sh
 # bash shfmt/setup.debian.sh
@@ -184,13 +184,13 @@ cd $dotfilesRepoDir
 cd $dotfilesRepoDir
 # bash youtube-dl/setup.sh
 # bash bpytop/setup.sh
-# bash cowsay/setup.sh
+bash cowsay/setup.sh
 
 
 # My CLI Apps
 # ===
 cd $dotfilesRepoDir
-# bash bin/setup.sh
+bash bin/setup.sh
 
 # done
 # -------------------------------------------------------------
