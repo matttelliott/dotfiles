@@ -2,7 +2,7 @@
 # https://github.com/unixorn/awesome-zsh-plugins
 cd "$HOME/dotfiles"
 sudo apt install -y zsh
-sudo chsh -s $(which zsh) $(whoami)
-mkdir $HOME/zsh/
-rm ~/.zshenv
+rm $HOME/.zshenv
+rm $HOME/.zshrc
 stow zsh
+sudo chsh -s $(which zsh) $(whoami)

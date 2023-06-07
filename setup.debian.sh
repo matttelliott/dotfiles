@@ -63,25 +63,26 @@ sudo apt upgrade -y
 # Install Core dependencies
 # ===
 sudo apt install -y \
-	stow \
-	curl \
-	build-essential \
-	pkg-config \
-	libssl-dev \
-	cmake \
-  xclip \
-	fonts-dejavu \
-	fonts-powerline \
-	fonts-font-awesome \
-  zsh \
-  zlib1g-dev \
-  libncurses5-dev \
-  libgdbm-dev \
-  libnss3-dev \
-  libreadline-dev \
-  libffi-dev \
-  libsqlite3-dev \
-  libbz2-dev \
+    git
+    stow \
+    curl \
+    build-essential \
+    pkg-config \
+    libssl-dev \
+    cmake \
+    xclip \
+    fonts-dejavu \
+    fonts-powerline \
+    fonts-font-awesome \
+    zsh \
+    zlib1g-dev \
+    libncurses5-dev \
+    libgdbm-dev \
+    libnss3-dev \
+    libreadline-dev \
+    libffi-dev \
+    libsqlite3-dev \
+    libbz2-dev \
 
 # Clone Repo
 # ===
