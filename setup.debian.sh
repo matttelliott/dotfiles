@@ -167,7 +167,7 @@ bash exa/setup.sh
 bash ripgrep/setup.sh
 bash fd/setup.sh
 bash sd/setup.sh
-bash nushell/setup.rust.sh
+bash nushell/setup.sh
 
 # GO CLI Apps
 # ===
