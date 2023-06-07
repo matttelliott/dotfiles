@@ -8,7 +8,7 @@ gum style --foreground $color --border-foreground $color --border double --align
 
 eval "$(rtx activate bash)"
 rtx hook-env
-gum spin --spinner dot --title "Installing NodeJs" --title.foreground $color -- rtx use nodejs@lts
+gum spin --spinner dot --title "Setting Up NodeJs" --title.foreground $color -- rtx use --global nodejs@lts
 stow nodejs
 
 

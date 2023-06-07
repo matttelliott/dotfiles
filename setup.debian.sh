@@ -82,101 +82,75 @@ sudo apt install -y \
  libncurses5-dev \
  libgdbm-dev \
  libnss3-dev \
- libssl-dev \
  libreadline-dev \
  libffi-dev \
  libsqlite3-dev \
  wget \
  libbz2-dev
 
-# Set up Shell
-# bash zsh/setup.debian.sh
-
 # Clone Repo
 # ===
-git clone $REPO $HOME/dotfiles
-cd $dotfilesRepoDir
-
-
+git clone $REPO $dotfilesRepoDir
 
 # Install Core tools
 # ===
 cd $dotfilesRepoDir
 
 # Rust
+# bash rust/setup.debian.sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source "$HOME/.cargo/env"
 export PATH=$PATH:$HOME/.cargo/bin
 
 # RTX Language Manager
 cargo install rtx-cli
+# bash rtx-cli/setup.sh
 eval "$(rtx activate bash)"
 
+# Set up Shell
+bash zsh/setup.sh
+
+# Terminal environment
+# ===
+cd $dotfilesRepoDir
+
+bash fonts/setup.debian.sh
+# bash neovim/setup.rust.sh
+# export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
+bash prompt/setup.sh
+
+eval "$(starship init bash)"
+
 # Golang
+# basy golang/setup.sh
 rtx use --global golang@latest
 eval "$(rtx hook-env)"
 go install github.com/charmbracelet/gum@latest
 gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
 export PATH=$PATH:$HOME/go/bin
 
+
 # NodeJs
+# bash nodejs/setup.sh
 rtx use --global nodejs@latest
 eval "$(rtx hook-env)"
 npm i -g prettier
 
 # Python
+# bash python/setup.debian.sh
 rtx use --global python@latest
 eval "$(rtx hook-env)"
 
-# bash rust/setup.debian.sh
 
-# NuShell
-# ===
-cd $dotfilesRepoDir
-# bash nushell/setup.rust.sh
-
-# Set as default shell
-# which nu | sudo tee -a /etc/shells
-# sudo chsh -s $(which nu) $(whoami)
-
-# Language Version Manager
-# ===
-cd $dotfilesRepoDir
-# nu rtx-cli/setup.nu
-# bash rtx-cli/setup.rust.sh
-
-# GO core tools
-# ===
-cd $dotfilesRepoDir
-# nu golang/setup.nu
-# nu gum/setup.nu
-
-# Other Languages
-# ===
-cd $dotfilesRepoDir
-
-# nu nodejs/setup.nu
-# bash python/setup.debian.sh
 # bash lua/setup.debian.sh
 # bash ruby/setup.debian.sh
 # bash php/setup.debian.sh
 
 
 
-# Terminal environment
-# ===
-cd $dotfilesRepoDir
-
-bash neovim/setup.rust.sh
-export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
-
-bash prompt/setup.sh
-eval "$(starship init bash)"
 
 bash zellij/setup.sh
 bash mprocs/setup.sh
-
-bash fonts/setup.debian.sh
 
 # Rust CLI Apps
 # ===
@@ -190,6 +164,7 @@ cd $dotfilesRepoDir
 # bash ripgrep/setup.sh
 # bash fd/setup.sh
 # bash sd/setup.sh
+# bash nushell/setup.rust.sh
 
 # GO CLI Apps
 # ===
@@ -197,7 +172,7 @@ cd $dotfilesRepoDir
 bash fzf/setup.sh
 bash lazygit/setup.sh
 bash jq/setup.sh
-
+# bash gum/setup.sh
 
 # Python CLI Apps
 # ===
@@ -223,6 +198,13 @@ cd $dotfilesRepoDir
 # bash svn/setup.debian.sh
 # bash stow/setup.debian.sh
 # bash nmap/setup.debian.sh
+# bash htop/setup.debian.sh
+# bash w3m/setup.debian.sh
+# bash pandoc/setup.debian.sh
+# bash ffmpeg/setup.debian.sh
+# bash imagemagick/setup.debian.sh
+# bash entr/setup.debian.sh
+# bash watch/setup.debian.sh
 
 # Fun
 # ===
@@ -242,6 +224,7 @@ cd $dotfilesRepoDir
 # Nonfree CLI Tools
 # ===
 cd $dotfilesRepoDir
+# bash github/setup.debian.sh
 
 
 # FOSS GUI Apps
@@ -284,23 +267,15 @@ sudo apt install -y nvidia-driver firmware-misc-nonfree
 # ===
 cd $dotfilesRepoDir
 # 
-# bash entr/setup.debian.sh
-# bash watch/setup.debian.sh
 
 # bash cron/setup.debian.sh
 # bash wget/setup.debian.sh
 # bash trash/setup.debian.sh
 # bash clipboard/setup.debian.sh
 # bash vim/setup.debian.sh
-# bash github/setup.debian.sh
 # bash shfmt/setup.debian.sh
 # bash iterm/setup.debian.sh
 # bash vifm/setup.debian.sh
-# bash htop/setup.debian.sh
-# bash w3m/setup.debian.sh
-# bash pandoc/setup.debian.sh
-# bash ffmpeg/setup.debian.sh
-# bash imagemagick/setup.debian.sh
 # 
 # bash ranger/setup.debian.sh
 # bash bpytop/setup.debian.sh
