@@ -153,31 +153,31 @@ export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
 # Rust CLI Apps
 # ===
 cd $dotfilesRepoDir
-# bash bat/setup.sh
-# alias cat=bat
-# bash zellij/setup.sh
-# bash mprocs/setup.sh
-# bash gitui/setup.sh
-# bash zoxide/setup.sh
-# bash lsd/setup.sh
-# bash exa/setup.sh
-# bash ripgrep/setup.sh
-# bash fd/setup.sh
-# bash sd/setup.sh
-# bash nushell/setup.rust.sh
+bash bat/setup.sh
+alias cat=bat
+bash zellij/setup.sh
+bash mprocs/setup.sh
+bash gitui/setup.sh
+bash zoxide/setup.sh
+bash lsd/setup.sh
+bash exa/setup.sh
+bash ripgrep/setup.sh
+bash fd/setup.sh
+bash sd/setup.sh
+bash nushell/setup.rust.sh
 
 # GO CLI Apps
 # ===
 cd $dotfilesRepoDir
-# bash fzf/setup.sh
-# bash lazygit/setup.sh
-# bash jq/setup.sh
-# bash gum/setup.sh
+bash fzf/setup.sh
+bash lazygit/setup.sh
+bash jq/setup.sh
+bash gum/setup.sh
 
 # Python CLI Apps
 # ===
 cd $dotfilesRepoDir
-# bash youtube-dl/setup.sh
+bash youtube-dl/setup.sh
 
 # Databases
 # ===
@@ -234,7 +234,7 @@ cd $dotfilesRepoDir
 # bash vscodium/setup.debian.sh
 # bash mpv/setup.debian.sh
 # bash vlc/setup.debian.sh
-# bash kitty/setup.sh
+bash kitty/setup.sh
 
 # Nonfree GUI Apps
 # ===
@@ -294,7 +294,6 @@ cd $dotfilesRepoDir
 
 # neofetch
 # cowsay "DONE!"
-# sleep 15
 
 
 
