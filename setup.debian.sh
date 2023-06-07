@@ -83,7 +83,9 @@ sudo apt install -y \
     libffi-dev \
     libsqlite3-dev \
     wget \
-    libbz2-dev
+    libbz2-dev \
+	nmap
+
 sudo chsh -s $(which zsh) $(whoami)
 
 # Clone Repo
@@ -181,16 +183,18 @@ bash bin/setup.sh
 # ===
 cd $dotfilesRepoDir
 bash git/setup.sh
-# bash svn/setup.debian.sh
-# bash stow/setup.debian.sh
 # bash nmap/setup.debian.sh
 # bash htop/setup.debian.sh
-# bash w3m/setup.debian.sh
+# bash stow/setup.debian.sh
 # bash pandoc/setup.debian.sh
-# bash ffmpeg/setup.debian.sh
-# bash imagemagick/setup.debian.sh
+
 # bash entr/setup.debian.sh
 # bash watch/setup.debian.sh
+
+# bash ffmpeg/setup.debian.sh
+# bash imagemagick/setup.debian.sh
+# bash w3m/setup.debian.sh
+
 
 # Fun
 # ===
