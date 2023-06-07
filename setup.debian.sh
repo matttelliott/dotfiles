@@ -111,6 +111,12 @@ cd $dotfilesRepoDir
 bash sqlite/setup.debian.sh
 # bash postgres/setup.debian.sh
 
+# Containers
+# ===
+cd $dotfilesRepoDir
+bash docker/setup.debian.sh
+# bash kubernetes/setup.debian.sh
+
 
 # Install Core tools
 # ===
@@ -208,10 +214,6 @@ bash bin/setup.sh
 # bash lolcat/setup.debian.sh
 # bash asciiquarium/setup.debian.sh
 
-# Containers
-# ===
-# bash docker/setup.debian.sh
-# bash kubernetes/setup.debian.sh
 
 
 
