@@ -1,2 +1,2 @@
 
-export PATH=$PATH:$HOME/.local/share/bob/nvim-bob
+export PATH=$PATH:$HOME/.local/share/bob/nvim-bin
