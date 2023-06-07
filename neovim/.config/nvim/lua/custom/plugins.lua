@@ -42,22 +42,6 @@ local plugins = {
     opts = overrides.telescope,
   },
 
-  -- Install a plugin
-  {
-    "max397574/better-escape.nvim",
-    event = "InsertEnter",
-    config = function()
-      require("better_escape").setup()
-    end,
-  },
-  {
-    "LhKipp/nvim-nu",
-    run = ":TSInstall nu",
-    config = function()
-      require("nu").setup{}
-    end
-  }
-
 
 
   -- To make a plugin not be loaded

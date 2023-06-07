@@ -2,8 +2,12 @@
 local M = {}
 
 M.general = {
-	n = {
-		[";"] = { ":", "enter command mode", opts = { nowait = true } },
+	n = {},
+	i = {
+		["jk"] = { "<esc>", "enter normal mode", opts = { nowait = true } },
+		["kj"] = { "<esc>", "enter normal mode", opts = { nowait = true } },
+		["JK"] = { "<esc>", "enter normal mode", opts = { nowait = true } },
+		["KJ"] = { "<esc>", "enter normal mode", opts = { nowait = true } },
 	},
 }
 
@@ -25,5 +29,3 @@ M.nvimtree = {
 -- more keybinds!
 
 return M
-
-
