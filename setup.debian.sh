@@ -200,6 +200,11 @@ bash git/setup.sh
 # bash ffmpeg/setup.debian.sh
 
 
+# Nonfree CLI Tools
+# ===
+cd $dotfilesRepoDir
+# bash github/setup.debian.sh
+
 # Fun
 # ===
 # bash lolcat/setup.debian.sh
@@ -208,17 +213,8 @@ bash git/setup.sh
 
 # Containers
 # ===
-# bash vagrant/setup.debian.sh
 # bash docker/setup.debian.sh
 # bash kubernetes/setup.debian.sh
-
-
-
-# Nonfree CLI Tools
-# ===
-cd $dotfilesRepoDir
-# bash github/setup.debian.sh
-
 
 
 
@@ -238,7 +234,6 @@ GUI
 # FOSS GUI Apps
 # ===
 cd $dotfilesRepoDir
-# bash 1password/setup.debian.sh
 
 # bash stable-diffusion/setup.sh
 # bash obsidian/setup.debian.sh
@@ -251,6 +246,7 @@ cd $dotfilesRepoDir
 # Nonfree GUI Apps
 # ===
 cd $dotfilesRepoDir
+# bash 1password/setup.debian.sh
 
 # Browsers
 # ===
@@ -261,9 +257,9 @@ cd $dotfilesRepoDir
 
 # Fun
 # ===
-# bash tf2/setup.debian.sh
 # bash steam/setup.debian.sh
 # bash spotify/setup.debian.sh
+# bash tf2/setup.debian.sh
 
 
 # Skip for VM
