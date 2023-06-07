@@ -120,8 +120,8 @@ eval "$(rtx hook-env)"
 npm i -g prettier
 
 # Python
-# rtx use --global python@latest
-# eval "$(rtx hook-env)"
+rtx use --global python@latest
+eval "$(rtx hook-env)"
 
 # bash rust/setup.debian.sh
 
