@@ -63,39 +63,46 @@ sudo apt upgrade -y
 # Install Core dependencies
 # ===
 sudo apt install -y \
-	git \
 	stow \
 	curl \
 	build-essential \
 	pkg-config \
 	libssl-dev \
 	cmake \
-    xclip \
+  xclip \
 	fonts-dejavu \
 	fonts-powerline \
 	fonts-font-awesome \
-    zsh \
-    zlib1g-dev \
-    libncurses5-dev \
-    libgdbm-dev \
-    libnss3-dev \
-    libreadline-dev \
-    libffi-dev \
-    libsqlite3-dev \
-    wget \
-    libbz2-dev \
-	nmap \
-	htop \
-	entr \
-	watch \
-	ffmpeg \
-	w3m
-
-sudo chsh -s $(which zsh) $(whoami)
+  zsh \
+  zlib1g-dev \
+  libncurses5-dev \
+  libgdbm-dev \
+  libnss3-dev \
+  libreadline-dev \
+  libffi-dev \
+  libsqlite3-dev \
+  libbz2-dev \
 
 # Clone Repo
 # ===
 git clone $REPO $dotfilesRepoDir
+
+# apt CLI Tools (sudo)
+# ===
+cd $dotfilesRepoDir
+bash git/setup.debian.sh
+bash stow/setup.debian.sh
+
+bash nmap/setup.debian.sh
+bash htop/setup.debian.sh
+bash entr/setup.debian.sh
+bash watch/setup.debian.sh
+bash w3m/setup.debian.sh
+bash wget/setup.debian.sh
+bash ffmpeg/setup.debian.sh
+bash pandoc/setup.debian.sh
+bash imagemagick/setup.debian.sh
+
 
 # Install Core tools
 # ===
@@ -137,6 +144,10 @@ bash python/setup.sh
 
 eval "$(rtx hook-env)"
 
+
+# Neovim
+# ===
+cd $dotfilesRepoDir
 bash neovim/setup.sh
 
 
@@ -172,7 +183,7 @@ bash shfmt/setup.debian.sh
 cd $dotfilesRepoDir
 bash youtube-dl/setup.sh
 bash bpytop/setup.sh
-# bash cowsay/setup.sh
+bash cowsay/setup.sh
 
 
 # My CLI Apps
@@ -180,18 +191,6 @@ bash bpytop/setup.sh
 cd $dotfilesRepoDir
 bash bin/setup.sh
 
-
-# apt CLI Tools
-# ===
-cd $dotfilesRepoDir
-bash git/setup.sh
-bash nmap/setup.sh
-bash htop/setup.sh
-bash stow/setup.sh
-bash entr/setup.sh
-bash watch/setup.sh
-bash w3m/setup.sh
-bash ffmpeg/setup.sh
 
 # Fun
 # ===
@@ -221,8 +220,6 @@ cd $dotfilesRepoDir
 cd $dotfilesRepoDir
 # bash cron/setup.debian.sh
 # bash wiki/setup.debian.sh
-# bash imagemagick/setup.debian.sh
-# bash pandoc/setup.debian.sh
 
 
 # CLI

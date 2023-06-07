@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-stow nmap
+sudo apt install git -y
+stow git

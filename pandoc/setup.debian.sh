@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-stow w3m
+sudo apt install pandoc -y
+stow pandoc

@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-stow ffmpeg
+sudo apt install entr -y
+stow entr

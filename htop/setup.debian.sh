@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-stow git
+sudo apt install htop -y
+stow htop

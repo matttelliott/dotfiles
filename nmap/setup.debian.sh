@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-stow entr
+sudo apt install nmap -y
+stow nmap

@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-stow htop
+sudo apt install w3m -y
+stow w3m
