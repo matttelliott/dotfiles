@@ -189,8 +189,8 @@ bash sd/setup.sh
 # GO CLI Apps
 # ===
 cd $dotfilesRepoDir
-# bash fzf/setup.debian.sh
-# bash lazygit/setup.debian.sh
+# bash fzf/setup.sh
+# bash lazygit/setup.sh
 
 
 # Python CLI Apps
