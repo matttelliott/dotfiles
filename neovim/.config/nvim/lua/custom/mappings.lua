@@ -6,6 +6,12 @@ M.general = {
 		["<localleader>w"] = { ":wa<CR>", "write all files" },
 		["<localleader>g"] = { ":tabnew<CR>:terminal lazygit<CR>i", "git gui" },
 
+		["<localleader>d"] = {
+			function()
+				require("dapui").toggle()
+			end,
+			"LSP formatting",
+		},
 		["<localleader>f"] = {
 			function()
 				vim.lsp.buf.format({ async = true })

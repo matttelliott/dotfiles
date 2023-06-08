@@ -61,6 +61,10 @@ local plugins = {
 			vim.g.rustfmt_autosave = 1
 		end,
 	},
+  {
+    "rcarriga/nvim-dap-ui",
+    dependencies = "mfussenegger/nvim-dap",
+  },
 	{
 		"simrat39/rust-tools.nvim",
 		ft = "rust",
