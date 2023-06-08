@@ -2,7 +2,10 @@
 local M = {}
 
 M.general = {
-	n = {},
+	n = {
+
+		["<leader>g"] = { ":terminal lazygit<CR>i", "enter normal mode", opts = { nowait = true } },
+  },
 	i = {
 		["jk"] = { "<esc>", "enter normal mode", opts = { nowait = true } },
 		["kj"] = { "<esc>", "enter normal mode", opts = { nowait = true } },
