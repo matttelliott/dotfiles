@@ -4,7 +4,7 @@ local M = {}
 M.general = {
 	n = {
 
-		["<leader>g"] = { ":terminal lazygit<CR>i", "enter normal mode", opts = { nowait = true } },
+		["<leader>g"] = { ":tabnew<CR>:terminal lazygit<CR>i", "enter normal mode", opts = { nowait = true } },
   },
 	i = {
 		["jk"] = { "<esc>", "enter normal mode", opts = { nowait = true } },
