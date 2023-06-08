@@ -34,6 +34,7 @@ M.mason = {
 		"deno",
 		"prettier",
 		"angular-language-server",
+		"emmet-ls",
 
 		-- docker
 		"docker-compose-language-service",
