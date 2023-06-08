@@ -63,7 +63,7 @@ sudo apt upgrade -y
 # Install Core dependencies
 # ===
 sudo apt install -y \
-  git
+  git \
   stow \
   curl \
   build-essential \
