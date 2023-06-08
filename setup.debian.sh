@@ -82,7 +82,7 @@ sudo apt install -y \
   libreadline-dev \
   libffi-dev \
   libsqlite3-dev \
-  libbz2-dev \
+  libbz2-dev
 
 # Clone Repo
 # ===
@@ -170,35 +170,35 @@ bash neovim/setup.sh
 # Rust CLI Apps
 # ===
 cd $dotfilesRepoDir
-# bash bat/setup.sh
-# alias cat=bat
-# bash zellij/setup.sh
-# bash mprocs/setup.sh
-# bash gitui/setup.sh
-# bash zoxide/setup.sh
-# bash lsd/setup.sh
-# bash exa/setup.sh
-# bash ripgrep/setup.sh
-# bash fd/setup.sh
-# bash sd/setup.sh
-# bash nushell/setup.sh
+bash bat/setup.sh
+alias cat=bat
+bash zellij/setup.sh
+bash mprocs/setup.sh
+bash gitui/setup.sh
+bash zoxide/setup.sh
+bash lsd/setup.sh
+bash exa/setup.sh
+bash ripgrep/setup.sh
+bash fd/setup.sh
+bash sd/setup.sh
+bash nushell/setup.sh
 
 # GO CLI Apps
 # ===
 cd $dotfilesRepoDir
-# bash fzf/setup.sh
-# bash lazygit/setup.sh
-# bash jq/setup.sh
-# bash gum/setup.sh
-# bash shfmt/setup.debian.sh
+bash fzf/setup.sh
+bash lazygit/setup.sh
+bash jq/setup.sh
+bash gum/setup.sh
+bash shfmt/setup.debian.sh
 
 
 # Python CLI Apps
 # ===
-# cd $dotfilesRepoDir
-# bash youtube-dl/setup.sh
-# bash bpytop/setup.sh
-# bash cowsay/setup.sh
+cd $dotfilesRepoDir
+bash youtube-dl/setup.sh
+bash bpytop/setup.sh
+bash cowsay/setup.sh
 
 
 # My CLI Apps
