@@ -82,7 +82,8 @@ sudo apt install -y \
   libreadline-dev \
   libffi-dev \
   libsqlite3-dev \
-  libbz2-dev
+  libbz2-dev \
+  lldb
 
 # Clone Repo
 # ===

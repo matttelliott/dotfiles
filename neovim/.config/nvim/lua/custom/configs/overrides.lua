@@ -49,6 +49,11 @@ M.mason = {
 		"json-lsp",
 		"taplo",
 		"yaml-language-server",
+
+		--rust
+		"rust-analyzer",
+		"rustfmt",
+		"codelldb",
 	},
 }
 
