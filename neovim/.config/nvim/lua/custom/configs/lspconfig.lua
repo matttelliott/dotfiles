@@ -3,7 +3,7 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require("lspconfig")
 -- if you just want default config for the servers then put them in a table
-local servers = { "html", "cssls", "tsserver", "clangd", "emmet_ls" }
+local servers = { "html", "cssls", "tsserver", "clangd", "emmet_ls", "angularls" }
 
 for _, lsp in ipairs(servers) do
 	lspconfig[lsp].setup({
@@ -14,3 +14,9 @@ end
 
 --
 -- lspconfig.pyright.setup { blabla}
+--
+require("lspconfig").angularls.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	root_dir = lspconfig.util.root_pattern("angular.json", "nx.json"),
+})
