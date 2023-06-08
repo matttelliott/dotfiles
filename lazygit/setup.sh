@@ -9,4 +9,4 @@ gum style --foreground $color --border-foreground $color --border double --align
 
 go install github.com/jesseduffield/lazygit@latest
 
-stow lazygit
+stow --no-folding lazygit

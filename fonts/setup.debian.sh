@@ -21,5 +21,5 @@ cd ..
 rm -rf awesome-terminal-fonts
 popd
 
-stow fonts
+stow --no-folding fonts
 

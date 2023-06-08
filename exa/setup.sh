@@ -2,4 +2,4 @@
 cd "$HOME/dotfiles"
 exa/README.md
 cargo install exa
-stow exa
+stow --no-folding exa

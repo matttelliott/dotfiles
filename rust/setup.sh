@@ -9,7 +9,7 @@ cargo install coreutils
 cargo install irust
 cargo install bacon
 cargo install cargo-info
-stow rust
+stow --no-folding rust
 
 # cargo install sccache
 # export RUSTC_WRAPPER=sccache cargo install {package}

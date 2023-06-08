@@ -2,4 +2,4 @@
 cd "$HOME/dotfiles"
 pip install youtube-dl
 pip install yt-dlp
-stow youtube-dl
+stow --no-folding youtube-dl

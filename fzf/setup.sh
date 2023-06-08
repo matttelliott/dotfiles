@@ -10,4 +10,4 @@ gum style --foreground $color --border-foreground $color --border double --align
 git clone --depth 1 https://github.com/junegunn/fzf ~/.fzf
 ~/.fzf/install --no-key-bindings --completion --no-update-rc
 
-stow fzf
+stow --no-folding fzf

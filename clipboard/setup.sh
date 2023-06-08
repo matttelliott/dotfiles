@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-stow clipboard
+stow --no-folding clipboard

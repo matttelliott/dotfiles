@@ -9,9 +9,9 @@ gum style --foreground $color --border-foreground $color --border double --align
 eval "$(rtx activate bash)"
 eval "$(rtx hook-env)"
 gum spin --spinner dot --title "Setting Up NodeJs" --title.foreground $color -- rtx use --global nodejs@lts
-stow nodejs
 
 
 
 gum spin --spinner dot --title "Installing Npm Packages" --title.foreground $color --  npm install -g neovim typescript-language-server vscode-langservers-extracted eslint_d prettier ts-node
 
+stow --no-folding nodejs
