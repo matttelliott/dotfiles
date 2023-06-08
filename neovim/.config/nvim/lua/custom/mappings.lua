@@ -4,7 +4,8 @@ local M = {}
 M.general = {
 	n = {
 
-		["<leader>g"] = { ":tabnew<CR>:terminal lazygit<CR>i", "enter normal mode", opts = { nowait = true } },
+		["<localleader>w"] = { ":wa<CR>", "write all files" },
+		["<localleader>g"] = { ":tabnew<CR>:terminal lazygit<CR>i", "open git gui", opts = { nowait = true } },
   },
 	i = {
 		["jk"] = { "<esc>", "enter normal mode", opts = { nowait = true } },
@@ -17,16 +18,15 @@ M.general = {
 M.telescope = {
 	plugin = true,
 	n = {
-		["<leader>ff"] = { "<cmd> Telescope find_files hidden=true<CR>", "Find files" },
-		["<leader>o"] = { "<cmd> Telescope find_files hidden=true<CR>", "Find files" },
-		["<leader>fw"] = { "<cmd> Telescope live_grep hidden=true<CR>", "Live grep" },
+		["<localleader>o"] = { "<cmd> Telescope find_files hidden=true<CR>", "Find files" },
+		["<localleader>/"] = { "<cmd> Telescope live_grep hidden=true<CR>", "Live grep" },
 	},
 }
 
 M.nvimtree = {
 	plugin = true,
 	n = {
-		["<leader>e"] = { "<cmd> NvimTreeToggle <CR>", "Focus nvimtree" },
+		["<localleader>e"] = { "<cmd> NvimTreeToggle <CR>", "Focus nvimtree" },
 	},
 }
 -- more keybinds!

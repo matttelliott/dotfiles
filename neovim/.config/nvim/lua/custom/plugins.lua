@@ -34,7 +34,7 @@ local plugins = {
 			require("custom.configs.lspconfig")
 		end, -- Override to setup mason-lspconfig
 	},
-
+	{ "folke/neodev.nvim", opts = {} },
 	-- override plugin configs
 	{
 		"williamboman/mason.nvim",
