@@ -3,10 +3,16 @@ local M = {}
 
 M.general = {
 	n = {
-
 		["<localleader>w"] = { ":wa<CR>", "write all files" },
-		["<localleader>g"] = { ":tabnew<CR>:terminal lazygit<CR>i", "open git gui", opts = { nowait = true } },
-  },
+		["<localleader>g"] = { ":tabnew<CR>:terminal lazygit<CR>i", "git gui" },
+
+		["<localleader>f"] = {
+			function()
+				vim.lsp.buf.format({ async = true })
+			end,
+			"LSP formatting",
+		},
+	},
 	i = {
 		["jk"] = { "<esc>", "enter normal mode", opts = { nowait = true } },
 		["kj"] = { "<esc>", "enter normal mode", opts = { nowait = true } },
