@@ -25,4 +25,4 @@ rtx x golang@latest -- gum style --foreground $color --border-foreground $color 
 
 
 rtx x golang@latest -- gum spin --spinner dot --title "Installing NvChad" --title.foreground $color -- git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
-stow neovim
+stow --no-folding neovim

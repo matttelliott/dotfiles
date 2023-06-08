@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 bat asciiquarium/README.md
-stow asciiquarium
+stow --no-folding asciiquarium
 brew install asciiquarium

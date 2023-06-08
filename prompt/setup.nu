@@ -10,4 +10,4 @@ rtx x golang@latest -- gum style --foreground $color --border-foreground $color 
 
 cat prompt/README.md
 cargo install starship
-stow prompt
+stow --no-folding prompt

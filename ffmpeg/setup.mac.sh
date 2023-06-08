@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 bat ffmpeg/README.md
-stow ffmpeg
+stow --no-folding ffmpeg
 brew install ffmpeg
