@@ -4,4 +4,4 @@ bat lua/README.md
 brew install luarocks
 brew install lua-language-server
 brew install stylua
-stow lua
+stow --no-folding lua

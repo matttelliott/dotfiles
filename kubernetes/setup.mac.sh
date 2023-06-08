@@ -5,4 +5,4 @@ brew install kubectl
 brew install minikube 
 brew install kubernetes-helm
 
-stow kubernetes
+stow --no-folding kubernetes

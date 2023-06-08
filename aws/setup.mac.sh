@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 bat aws/README.md
-stow aws
+stow --no-folding aws
 brew install awscli

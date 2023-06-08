@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 bat lazygit/README.md
-stow lazygit
+stow --no-folding lazygit
 brew install lazygit

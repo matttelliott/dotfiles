@@ -18,7 +18,7 @@ pip3 install wheel
 pip3 install pynvim
 pip3 install black
 pip3 install flake8
-stow python
+stow --no-folding python
 
 cd "$HOME"
 python3 -m venv python-neovim

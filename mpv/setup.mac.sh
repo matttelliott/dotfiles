@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 bat mpv/README.md
-stow mpv
+stow --no-folding mpv
 brew install mpv

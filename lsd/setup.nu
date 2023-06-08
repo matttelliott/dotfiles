@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 cat lsd/README.md
-stow lsd
+stow --no-folding lsd
 
 let title = "lsd \n"
 let description = " Modern alternative to ls  \n"

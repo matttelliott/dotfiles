@@ -2,4 +2,4 @@
 cd "$HOME/dotfiles"
 bat virtualbox/README.md
 brew install virtualbox
-stow virtualbox
+stow --no-folding virtualbox

@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 bat ripgrep/README.md
-stow ripgrep
+stow --no-folding ripgrep
 brew install ripgrep
 
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 cat ripgrep/README.md
-stow ripgrep
+stow --no-folding ripgrep
 
 let title = "ripgrep \n"
 let description = " rust based Modern alternative to grep  \n"

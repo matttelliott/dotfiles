@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 bat lolcat/README.md
-stow lolcat
+stow --no-folding lolcat
 brew install lolcat

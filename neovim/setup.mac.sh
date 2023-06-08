@@ -3,7 +3,7 @@ cd "$HOME/dotfiles"
 bat neovim/README.md
 rm -rf $HOME/.local/share/nvim
 rm -rf $HOME/.local/state/nvim
-stow neovim
+stow --no-folding neovim
 rm -rf $HOME/.local/share/nvim
 rm -rf $HOME/.local/state/nvim
 brew install neovim

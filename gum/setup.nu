@@ -1,7 +1,7 @@
 #!/usr/bin/env nu
 cd $"($env.HOME)/dotfiles"
 cat gum/README.md
-stow gum
+stow --no-folding gum
 
 rtx use -g golang@latest
 

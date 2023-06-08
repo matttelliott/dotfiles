@@ -10,7 +10,7 @@ rtx x golang@latest -- gum style --foreground $color --border-foreground $color 
 
 cat nodejs/README.md
 rtx use --global node@lts
-stow nodejs
+stow --no-folding nodejs
 
 rtx x node@lts -- npm install -g neovim
 rtx x node@lts -- npm install -g typescript-language-server

@@ -9,6 +9,6 @@ rtx x golang@latest -- gum style --foreground $color --border-foreground $color 
 
 cat zoxide/README.md
 cargo install zoxide
-stow zoxide
+stow --no-folding zoxide
 
   

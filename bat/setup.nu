@@ -9,4 +9,4 @@ rtx x golang@latest -- gum style --foreground $color --border-foreground $color 
   
 cat bat/README.md
 cargo install bat
-stow bat
+stow --no-folding bat

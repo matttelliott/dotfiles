@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 bat keepass/README.md
-stow keepass
+stow --no-folding keepass
 brew install keepassxc

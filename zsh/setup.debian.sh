@@ -5,4 +5,4 @@ sudo apt install -y zsh
 sudo chsh -s $(which zsh) $(whoami)
 rm -rf $HOME/.zshenv
 rm -rf $HOME/.zshrc
-stow zsh
+stow --no-folding zsh

@@ -10,4 +10,4 @@ rtx x golang@latest -- gum style --foreground $color --border-foreground $color 
 
 cat zellij/README.md
 cargo install zellij
-stow zellij
+stow --no-folding zellij

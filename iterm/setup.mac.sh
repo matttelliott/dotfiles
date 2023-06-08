@@ -4,7 +4,7 @@ rm -rf ~/.config/iterm2
 cd "$HOME/dotfiles"
 bat iterm/README.md
 brew install iterm2
-stow iterm
+stow --no-folding iterm
 # Specify the preferences directory
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "~/.iterm2"
 

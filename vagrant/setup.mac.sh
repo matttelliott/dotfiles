@@ -2,4 +2,4 @@
 cd "$HOME/dotfiles"
 bat vagrant/README.md
 brew install vagrant
-stow vagrant
+stow --no-folding vagrant

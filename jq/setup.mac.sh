@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 bat jq/README.md
-stow jq
+stow --no-folding jq
 brew install jq

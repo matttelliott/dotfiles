@@ -10,4 +10,4 @@ rtx x golang@latest -- gum style --foreground $color --border-foreground $color 
 
 cat mprocs/README.md
 cargo install mprocs
-stow mprocs
+stow --no-folding mprocs

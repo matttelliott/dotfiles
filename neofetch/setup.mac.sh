@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 bat neofetch/README.md
-stow neofetch
+stow --no-folding neofetch
 brew install neofetch

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 bat entr/README.md
-stow entr
+stow --no-folding entr
 brew install entr

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 bat tmux/README.md
-stow tmux
+stow --no-folding tmux
 brew install tmux

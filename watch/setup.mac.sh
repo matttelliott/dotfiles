@@ -2,4 +2,4 @@
 cd "$HOME/dotfiles"
 bat watch/README.md
 brew install watch
-stow watch
+stow --no-folding watch

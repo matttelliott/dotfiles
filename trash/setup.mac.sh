@@ -2,4 +2,4 @@
 cd "$HOME/dotfiles"
 brew install trash
 bat trash/README.md
-stow trash
+stow --no-folding trash

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 bat github/README.md
-stow github
+stow --no-folding github
 brew install gh

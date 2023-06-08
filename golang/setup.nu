@@ -2,5 +2,5 @@
 cd $"($env.HOME)/dotfiles"
 
 cat golang/README.md
-stow golang
+stow --no-folding golang
 rtx use --global golang@latest

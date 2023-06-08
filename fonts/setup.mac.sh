@@ -3,7 +3,7 @@ cd "$HOME/dotfiles"
 
 
 bat fonts/README.md
-stow fonts
+stow --no-folding fonts
 
 brew tap homebrew/cask-fonts
 brew install --cask font-inconsolata

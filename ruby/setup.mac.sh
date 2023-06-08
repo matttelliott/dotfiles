@@ -2,4 +2,4 @@
 cd "$HOME/dotfiles"
 bat ruby/README.md
 brew install ruby
-stow ruby
+stow --no-folding ruby

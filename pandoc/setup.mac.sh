@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 bat pandoc/README.md
-stow pandoc
+stow --no-folding pandoc
 brew install pandoc
