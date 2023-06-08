@@ -1,4 +1,6 @@
+.config-old/*
 .config-old/
+.config-old
 setup.*
 README.md
 .local
