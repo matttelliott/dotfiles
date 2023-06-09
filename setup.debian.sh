@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+
 # 
 # This script requires a user with sudo priviliges to set up dependencies with apt
 #
@@ -236,6 +236,7 @@ cd $dotfilesRepoDir
 # ------------------------------------------------------------------------------------------
 # GUI
 
+
 # FOSS GUI Apps
 # ===
 cd $dotfilesRepoDir
@@ -251,6 +252,17 @@ cd $dotfilesRepoDir
 # Nonfree GUI Apps
 # ===
 cd $dotfilesRepoDir
+
+# add nonfress sources to sources.list
+nonfreeSource="deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware"
+echo $nonfreeSource | sudo tee -a /etc/apt/sources.list
+sudo apt update -y
+sudo apt upgrade -y
+
+# Virtualbox and Nvidia Drivers -- Skip for VM
+bash virtualbox/setup.debian.sh
+sudo apt install -y nvidia-driver firmware-misc-nonfree
+
 # bash 1password/setup.debian.sh
 
 # Browsers
@@ -267,25 +279,13 @@ cd $dotfilesRepoDir
 # bash tf2/setup.debian.sh
 
 
-# Skip for VM
-# ---
-
-# nonfreeSource="deb http://deb.debian.org/debian/ sid main contrib non-free non-free-firmware"
-# echo $nonfreeSource | sudo tee -a /etc/apt/sources.list
-# sudo apt update -y
-# sudo apt upgrade -y
-
-# bash virtualbox/setup.debian.sh
-
-# Nvidia Drivers
-# sudo apt install -y nvidia-driver firmware-misc-nonfree
-
 
 
 # Finish
 # ===
 # neofetch
 # cowsay "DONE!"
+echo "DONE!"
 
 
 
