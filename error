@@ -1,0 +1,14 @@
+
+
+                                                                                
+[nvim-treesitter] [0/1] Downloading tree-sitter-lua...
+Error detected while processing /home/matt/.config/nvim/init.lua:
+Failed to load `custom.plugins`
+/home/matt/.config/nvim/lua/custom/plugins.lua:3: loop or previous error loading
+ module 'plugins.configs.lspconfig'
+# stacktrace:
+  - .config/nvim/lua/custom/plugins.lua:3
+  - .config/nvim/lua/plugins/init.lua:275
+  - .config/nvim/lua/core/bootstrap.lua:27 _in_ **lazy**
+  - .config/nvim/init.lua:16
+Press ENTER or type command to continue
