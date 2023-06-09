@@ -10,7 +10,7 @@ M.general = {
 			function()
 				require("dapui").toggle()
 			end,
-			"LSP formatting",
+			"Debug UI",
 		},
 		["<localleader>f"] = {
 			function()
