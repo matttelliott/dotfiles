@@ -49,9 +49,17 @@ done
 
 # Install homebrew package manager
 # ===
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-export PATH=$PATH:/opt/homebrew/bin
-sudo chown -R $(whoami) /usr/local/var/homebrew
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# export PATH=$PATH:/opt/homebrew/bin
+# sudo chown -R $(whoami) /usr/local/var/homebrew
+cd $HOME
+git clone https://github.com/Homebrew/brew.git
+# mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+
+./brew/bin/brew tap homebrew/core
+export PATH=$HOME/brew/bin:$PATH >> ~/.zshrc # or ~/.bashrc
+exec $SHELL
+which brew # see that brew is found in your path
 
 
 # Install updates
@@ -66,6 +74,10 @@ brew update
 brew install \
   git \
   stow
+
+bash git/setup.mac.sh
+bash stow/setup.mac.sh
+bash homebrew/setup.mac.sh
 
 # Clone Repo
 # ===
@@ -148,9 +160,6 @@ bash cowsay/setup.sh
 cd $dotfilesRepoDir
 bash bin/setup.sh
 
-bash git/setup.mac.sh
-bash stow/setup.mac.sh
-bash homebrew/setup.mac.sh
 
 # bash svn/setup.mac.sh
 # bash tmux/setup.mac.sh
