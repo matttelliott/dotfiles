@@ -2,9 +2,6 @@
 cd "$HOME/dotfiles"
 
 
-bat fonts/README.md
-stow --no-folding fonts
-
 brew tap homebrew/cask-fonts
 brew install --cask font-inconsolata
 brew install --cask font-hack-nerd-font
@@ -14,5 +11,6 @@ brew install --cask font-hack-nerd-font
 brew install --cask font-awesome-terminal-fonts
 brew install --cask font-fontawesome
 
+stow --no-folding fonts
 cp $HOME/.local/share/fonts/* /Library/Fonts/
 fc-cache -f -v
