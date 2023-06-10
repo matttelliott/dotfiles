@@ -49,17 +49,19 @@ done
 
 # Install homebrew package manager
 # ===
-# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# export PATH=$PATH:/opt/homebrew/bin
-# sudo chown -R $(whoami) /usr/local/var/homebrew
-cd $HOME
-git clone https://github.com/Homebrew/brew.git
-# mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+export PATH=$PATH:/opt/homebrew/bin
 
-./brew/bin/brew tap homebrew/core
-export PATH=$HOME/brew/bin:$PATH >> ~/.zshrc # or ~/.bashrc
-exec $SHELL
-which brew # see that brew is found in your path
+
+# sudo chown -R $(whoami) /usr/local/var/homebrew
+
+# cd $HOME
+# git clone https://github.com/Homebrew/brew.git
+# mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+# ./brew/bin/brew tap homebrew/core
+# export PATH=$HOME/brew/bin:$PATH >> ~/.zshrc # or ~/.bashrc
+# exec $SHELL
+# which brew # see that brew is found in your path
 
 
 # Install updates
