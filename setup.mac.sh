@@ -132,30 +132,30 @@ cd $dotfilesRepoDir
 bash bat/setup.sh
 alias cat=bat
 bash zellij/setup.sh
-# bash mprocs/setup.sh
-# bash gitui/setup.sh
-# bash zoxide/setup.sh
-# bash lsd/setup.sh
-# bash exa/setup.sh
-# bash ripgrep/setup.sh
-# bash fd/setup.sh
-# bash sd/setup.sh
-# bash nushell/setup.sh
+bash mprocs/setup.sh
+bash gitui/setup.sh
+bash zoxide/setup.sh
+bash lsd/setup.sh
+bash exa/setup.sh
+bash ripgrep/setup.sh
+bash fd/setup.sh
+bash sd/setup.sh
+bash nushell/setup.sh
 
 # GO CLI Apps
 # ===
 cd $dotfilesRepoDir
 bash fzf/setup.sh
-# bash lazygit/setup.sh
-# bash jq/setup.sh
+bash lazygit/setup.sh
+bash jq/setup.sh
 bash gum/setup.sh
-# bash shfmt/setup.debian.sh
+bash shfmt/setup.debian.sh
 
 # Python CLI Apps
 # ===
 cd $dotfilesRepoDir
-# bash youtube-dl/setup.sh
-# bash bpytop/setup.sh
+bash youtube-dl/setup.sh
+bash bpytop/setup.sh
 bash cowsay/setup.sh
 
 # My CLI Apps
@@ -171,56 +171,52 @@ bash bin/setup.sh
 # bash wget/setup.mac.sh
 # bash trash/setup.mac.sh
 # bash clipboard/setup.mac.sh
-# bash bat/setup.mac.sh
 # bash ag/setup.mac.sh
 # bash vim/setup.mac.sh
 # bash neofetch/setup.mac.sh
 # bash github/setup.mac.sh
 
-# bash lua/setup.mac.sh
-# bash ruby/setup.mac.sh
-# bash php/setup.mac.sh
 
-# bash sqlite/setup.mac.sh
-# bash postgres/setup.mac.sh
+bash sqlite/setup.mac.sh
+bash postgres/setup.mac.sh
 
-# bash mac/setup.mac.sh
-# bash iterm/setup.mac.sh
-# bash 1password/setup.mac.sh
-# bash spectacle/setup.mac.sh
+bash mac/setup.mac.sh
+bash iterm/setup.mac.sh
+bash 1password/setup.mac.sh
+bash spectacle/setup.mac.sh
 
-# bash asciiquarium/setup.mac.sh
-# bash entr/setup.mac.sh
-# bash vifm/setup.mac.sh
-# bash htop/setup.mac.sh
-# bash pandoc/setup.mac.sh
-# bash w3m/setup.mac.sh
-# bash watch/setup.mac.sh
-# bash ffmpeg/setup.mac.sh
-# bash imagemagick/setup.mac.sh
-# bash ranger/setup.mac.sh
-# bash nmap/setup.mac.sh
-# bash lolcat/setup.mac.sh
+bash asciiquarium/setup.mac.sh
+bash entr/setup.mac.sh
+bash vifm/setup.mac.sh
+bash htop/setup.mac.sh
+bash pandoc/setup.mac.sh
+bash w3m/setup.mac.sh
+bash watch/setup.mac.sh
+bash ffmpeg/setup.mac.sh
+bash imagemagick/setup.mac.sh
+bash ranger/setup.mac.sh
+bash nmap/setup.mac.sh
+bash lolcat/setup.mac.sh
 
-# bash mpv/setup.mac.sh
-# bash vlc/setup.mac.sh
-# bash obsidian/setup.mac.sh
-# bash vscodium/setup.mac.sh
+bash mpv/setup.mac.sh
+bash vlc/setup.mac.sh
+bash obsidian/setup.mac.sh
+bash vscodium/setup.mac.sh
 
-# bash chromium/setup.mac.sh
-# bash firefox/setup.mac.sh
-# bash vivaldi/setup.mac.sh
-# bash opera/setup.mac.sh
+bash chromium/setup.mac.sh
+bash firefox/setup.mac.sh
+bash vivaldi/setup.mac.sh
+bash opera/setup.mac.sh
 
 # bash virtualbox/setup.mac.sh
 # bash vagrant/setup.mac.sh
-# bash docker/setup.mac.sh
-# bash kubernetes/setup.mac.sh
+bash docker/setup.mac.sh
+bash kubernetes/setup.mac.sh
 
 
 ## Manual Install
 # bash julia/setup.mac.sh
-# bash wiki/setup.mac.sh
+bash wiki/setup.mac.sh
 # bash tf2/setup.mac.sh
-# bash spotify/setup.mac.sh
+bash spotify/setup.mac.sh
 echo "DONE!"
