@@ -75,7 +75,8 @@ brew update
 # ===
 brew install \
   git \
-  stow
+  stow \
+  cmake
 
 bash git/setup.mac.sh
 bash stow/setup.mac.sh
