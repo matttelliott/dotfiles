@@ -52,6 +52,18 @@ done
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 export PATH=$PATH:/opt/homebrew/bin
 
+
+# sudo chown -R $(whoami) /usr/local/var/homebrew
+
+# cd $HOME
+# git clone https://github.com/Homebrew/brew.git
+# mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+# ./brew/bin/brew tap homebrew/core
+# export PATH=$HOME/brew/bin:$PATH >> ~/.zshrc # or ~/.bashrc
+# exec $SHELL
+# which brew # see that brew is found in your path
+
+
 # Install updates
 # ===
 sudo softwareupdate --install-rosetta --agree-to-license
@@ -63,7 +75,12 @@ brew update
 # ===
 brew install \
   git \
-  stow
+  stow \
+  cmake
+
+bash git/setup.mac.sh
+bash stow/setup.mac.sh
+bash homebrew/setup.mac.sh
 
 # Clone Repo
 # ===
@@ -146,25 +163,19 @@ bash cowsay/setup.sh
 cd $dotfilesRepoDir
 bash bin/setup.sh
 
-bash git/setup.mac.sh
-bash svn/setup.mac.sh
-bash stow/setup.mac.sh
-bash homebrew/setup.mac.sh
-bash tmux/setup.mac.sh
-bash cron/setup.mac.sh
 
-bash wget/setup.mac.sh
-bash trash/setup.mac.sh
-bash clipboard/setup.mac.sh
-bash bat/setup.mac.sh
-bash ag/setup.mac.sh
-bash vim/setup.mac.sh
-bash neofetch/setup.mac.sh
-bash github/setup.mac.sh
+# bash svn/setup.mac.sh
+# bash tmux/setup.mac.sh
+# bash cron/setup.mac.sh
 
-bash lua/setup.mac.sh
-bash ruby/setup.mac.sh
-bash php/setup.mac.sh
+# bash wget/setup.mac.sh
+# bash trash/setup.mac.sh
+# bash clipboard/setup.mac.sh
+# bash ag/setup.mac.sh
+# bash vim/setup.mac.sh
+# bash neofetch/setup.mac.sh
+# bash github/setup.mac.sh
+
 
 bash sqlite/setup.mac.sh
 bash postgres/setup.mac.sh
@@ -197,15 +208,15 @@ bash firefox/setup.mac.sh
 bash vivaldi/setup.mac.sh
 bash opera/setup.mac.sh
 
-bash virtualbox/setup.mac.sh
-bash vagrant/setup.mac.sh
+# bash virtualbox/setup.mac.sh
+# bash vagrant/setup.mac.sh
 bash docker/setup.mac.sh
 bash kubernetes/setup.mac.sh
 
 
 ## Manual Install
 # bash julia/setup.mac.sh
-# bash wiki/setup.mac.sh
+bash wiki/setup.mac.sh
 # bash tf2/setup.mac.sh
-# bash spotify/setup.mac.sh
+bash spotify/setup.mac.sh
 echo "DONE!"
