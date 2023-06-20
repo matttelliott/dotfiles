@@ -1,5 +1,0 @@
-	#base	"..\..\#customization\_enabled\bh_size_ammo.res"
-	#base	"..\..\#customization\_enabled\bh_ammo_box.res"
-	#base	"..\..\_stream\resource\ui\hudammoweapons.res"
-	#base	"..\..\_budhud\resource\ui\hudammoweapons.res"
-	#base	"..\..\_tf2hud\resource\ui\hudammoweapons.res"
