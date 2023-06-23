@@ -78,9 +78,9 @@ brew install \
   stow \
   cmake
 
+bash homebrew/setup.mac.sh
 bash git/setup.mac.sh
 bash stow/setup.mac.sh
-bash homebrew/setup.mac.sh
 
 # Clone Repo
 # ===
