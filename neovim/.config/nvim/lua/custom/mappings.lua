@@ -24,10 +24,6 @@ M.general = {
 		["JK"] = { "<esc>", "enter normal mode", opts = { nowait = true } },
 		["jK"] = { "<esc>", "enter normal mode", opts = { nowait = true } },
 		["Jk"] = { "<esc>", "enter normal mode", opts = { nowait = true } },
-		-- ["KJ"] = { "<esc>", "enter normal mode", opts = { nowait = true } },
-		-- ["kJ"] = { "<esc>", "enter normal mode", opts = { nowait = true } },
-		-- ["Kj"] = { "<esc>", "enter normal mode", opts = { nowait = true } },
-		-- ["kj"] = { "<esc>", "enter normal mode", opts = { nowait = true } },
 	},
 }
 
