@@ -54,6 +54,10 @@ M.mason = {
 		"rust-analyzer",
 		"rustfmt",
 		"codelldb",
+
+		"sqlls",
+		"sqlfmt",
+
 	},
 }
 
