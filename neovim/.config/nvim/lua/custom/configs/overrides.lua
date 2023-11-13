@@ -10,8 +10,11 @@ M.treesitter = {
 		"typescript",
 		"tsx",
 		"rust",
+		"python",
+		"bash",
 		"markdown",
 		"markdown_inline",
+		"htmldjango",
 	},
 	indent = {
 		enable = true,
@@ -55,9 +58,13 @@ M.mason = {
 		"rustfmt",
 		"codelldb",
 
+		--sql
 		"sqlls",
 		"sqlfmt",
 
+		--python
+		"mypy",
+		"jedi-language-server",
 	},
 }
 

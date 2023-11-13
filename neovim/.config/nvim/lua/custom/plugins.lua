@@ -5,11 +5,6 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require("lspconfig")
 
--- local mason_registry = require("mason-registry")
--- local codelldb = mason_registry.get_package("codelldb") -- error not found ??
--- local extension_path = codelldb:get_install_path()
--- local codelldb_path = extension_path .. "adapter/codelldb"
--- local liblldb_path = extension_path .. "lldb/lib/liblldb.so"
 local codelldb_path = vim.env.HOME .. "/.local/share/nvim/mason/packages/codelldb/extension/adapter/codelldb" -- "/home/debian/.local/share/nvim/mason/packages/codelldb/codelldb"
 local liblldb_path = vim.env.HOME .. "/.local/share/nvim/mason/packages/codelldb/extension/lldb/lib/liblldb.so"
 
@@ -61,10 +56,10 @@ local plugins = {
 			vim.g.rustfmt_autosave = 1
 		end,
 	},
-  {
-    "rcarriga/nvim-dap-ui",
-    dependencies = "mfussenegger/nvim-dap",
-  },
+	{
+		"rcarriga/nvim-dap-ui",
+		dependencies = "mfussenegger/nvim-dap",
+	},
 	{
 		"simrat39/rust-tools.nvim",
 		ft = "rust",
@@ -88,6 +83,13 @@ local plugins = {
 	},
 	{
 		"mfussenegger/nvim-dap",
+	},
+	{
+		"vimwiki/vimwiki",
+		ft = "markdown",
+		init = function()
+			require('custom.configs.vimwiki')
+		end,
 	},
 
 	-- To make a plugin not be loaded

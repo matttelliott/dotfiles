@@ -13,7 +13,9 @@ local servers = {
 	"eslint",
 	"tailwindcss",
 	"sqlls",
-	"pylsp",
+	"pyright",
+	-- "mypy",
+	-- "jedi-language-server",
 }
 
 for _, lsp in ipairs(servers) do
