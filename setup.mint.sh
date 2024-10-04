@@ -13,10 +13,10 @@
 dotfilesRepoDir="$HOME/dotfiles"
 
 # check environment and set global env var
-if [[ -n $(cat /etc/issue | grep -i debian) ]]; then
-  echo 'debian dotfiles setup';
+if [[ -n $(cat /etc/issue | grep -i mint) ]]; then
+  echo 'mint dotfiles setup';
 else
-  echo 'Error: Running debian dotfiles setup on non-debian device.';
+  echo 'Error: Running mint dotfiles setup on non-mint device.';
   exit 1
 fi
 

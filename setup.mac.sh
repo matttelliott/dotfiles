@@ -14,7 +14,7 @@ else
 fi
 
 
-REPO=https://gitlab.com/matttelliott/dotfiles-stow
+REPO=https://github.com/matttelliott/dotfiles
 curl $REPO/-/raw/master/WARNING.md | cat
 
 # Because Git submodule commands cannot operate without a work tree, they must
