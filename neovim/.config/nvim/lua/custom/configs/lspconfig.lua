@@ -14,6 +14,8 @@ local servers = {
 	"tailwindcss",
 	"sqlls",
 	"pyright",
+	"gopls",
+	"templ",
 	-- "mypy",
 	-- "jedi-language-server",
 }

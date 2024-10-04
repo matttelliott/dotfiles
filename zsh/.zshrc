@@ -39,3 +39,5 @@ if [ -f "/Users/matt/.local/share/rtx/installs/python/mambaforge/etc/profile.d/m
 fi
 # <<< conda initialize <<<
 
+export RTX_HIDE_OUTDATED_BUILD=1
+export __RTX_HIDE_OUTDATED_BUILD=1

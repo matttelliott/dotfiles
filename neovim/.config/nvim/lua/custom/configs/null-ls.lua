@@ -23,6 +23,8 @@ local sources = {
 
   -- python
   b.formatting.black,
+
+  b.formatting.gofumpt,
 }
 
 null_ls.setup {
