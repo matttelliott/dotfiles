@@ -139,18 +139,19 @@ bash prompt/setup.sh
 eval "$(starship init bash)"
 
 
-exit 0
 
 # RTX Language Manager
-bash rtx-cli/setup.sh
-eval "$(rtx activate bash)"
+# bash rtx-cli/setup.sh
+# eval "$(rtx activate bash)"
 
 # Golang
 bash golang/setup.sh
-eval "$(rtx hook-env)"
+# eval "$(rtx hook-env)"
 export PATH=$PATH:$HOME/go/bin
 go install github.com/charmbracelet/gum@latest
 gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
+
+exit 0
 
 # Other Languages
 
