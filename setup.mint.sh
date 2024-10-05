@@ -145,7 +145,7 @@ eval "$(starship init bash)"
 # eval "$(rtx activate bash)"
 
 # Golang
-bash golang/setup.sh
+bash golang/setup.mint.sh
 # eval "$(rtx hook-env)"
 export PATH=$PATH:$HOME/go/bin
 go install github.com/charmbracelet/gum@latest
