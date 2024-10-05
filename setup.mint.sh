@@ -139,6 +139,8 @@ bash prompt/setup.sh
 eval "$(starship init bash)"
 
 
+exit 0
+
 # RTX Language Manager
 bash rtx-cli/setup.sh
 eval "$(rtx activate bash)"
@@ -173,7 +175,7 @@ bash neovim/setup.sh
 cd $dotfilesRepoDir
 bash bat/setup.sh
 alias cat=bat
-bash zellij/setup.sh
+# bash zellij/setup.sh
 bash mprocs/setup.sh
 bash gitui/setup.sh
 bash zoxide/setup.sh
