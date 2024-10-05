@@ -65,6 +65,7 @@ sudo apt upgrade -y
 sudo apt install -y \
   git \
   stow \
+  tmux \
   curl \
   build-essential \
   pkg-config \
@@ -135,6 +136,7 @@ export PATH=$PATH:$HOME/.cargo/bin
 cd $dotfilesRepoDir
 bash zsh/setup.debian.sh
 bash fonts/setup.debian.sh
+bash tmux/setup.debian.sh
 bash prompt/setup.sh
 eval "$(starship init bash)"
 
