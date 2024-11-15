@@ -53,6 +53,9 @@ done
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 export PATH=$PATH:/opt/homebrew/bin
 
+echo $REPO
+echo $dotfilesRepoDir
+echo $PATH
 
 # sudo chown -R $(whoami) /usr/local/var/homebrew
 
@@ -78,13 +81,21 @@ brew install \
   stow \
   cmake
 
+pwd
+ls
 git clone $REPO $dotfilesRepoDir
+
+pwd
+ls
 
 cd $dotfilesRepoDir
 pwd
+ls
 bash homebrew/setup.mac.sh
 bash git/setup.mac.sh
 bash stow/setup.mac.sh
+pwd
+ls
 
 # # Homebrew CLI tools
 # # ===
