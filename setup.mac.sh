@@ -100,46 +100,46 @@ ls
 # Homebrew CLI tools
 # ===
 
-# Rust
-cd $dotfilesRepoDir
-bash rust/setup.sh
-source "$HOME/.cargo/env"
-export PATH=$PATH:$HOME/.cargo/bin
-
-# Terminal environment
-# ===
-cd $dotfilesRepoDir
-bash zsh/setup.mac.sh
-bash fonts/setup.mac.sh
-bash prompt/setup.mac.sh
-
-# RTX Language Manager
-cd $dotfilesRepoDir
-bash rtx-cli/setup.sh
-eval "$(rtx activate bash)"
-
-# Golang
-cd $dotfilesRepoDir
-bash golang/setup.sh
-eval "$(rtx hook-env)"
-export PATH=$PATH:$HOME/go/bin
-go install github.com/charmbracelet/gum@latest
-gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
-
-# Other Languages
-cd $dotfilesRepoDir
-bash nodejs/setup.sh
-bash python/setup.sh
-# bash lua/setup.sh
-# bash ruby/setup.sh
-# bash php/setup.sh
-
-eval "$(rtx hook-env)"
-
-# Neovim
-# ===
-cd $dotfilesRepoDir
-bash neovim/setup.sh
+# # Rust
+# cd $dotfilesRepoDir
+# bash rust/setup.sh
+# source "$HOME/.cargo/env"
+# export PATH=$PATH:$HOME/.cargo/bin
+#
+# # Terminal environment
+# # ===
+# cd $dotfilesRepoDir
+# bash zsh/setup.mac.sh
+# bash fonts/setup.mac.sh
+# bash prompt/setup.mac.sh
+#
+# # RTX Language Manager
+# cd $dotfilesRepoDir
+# bash rtx-cli/setup.sh
+# eval "$(rtx activate bash)"
+#
+# # Golang
+# cd $dotfilesRepoDir
+# bash golang/setup.sh
+# eval "$(rtx hook-env)"
+# export PATH=$PATH:$HOME/go/bin
+# go install github.com/charmbracelet/gum@latest
+# gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
+#
+# # Other Languages
+# cd $dotfilesRepoDir
+# bash nodejs/setup.sh
+# bash python/setup.sh
+# # bash lua/setup.sh
+# # bash ruby/setup.sh
+# # bash php/setup.sh
+#
+# eval "$(rtx hook-env)"
+#
+# # Neovim
+# # ===
+# cd $dotfilesRepoDir
+# bash neovim/setup.sh
 # # Rust CLI Apps
 # # ===
 # cd $dotfilesRepoDir
@@ -233,4 +233,4 @@ bash neovim/setup.sh
 # bash wiki/setup.mac.sh
 # # bash tf2/setup.mac.sh
 # # bash spotify/setup.mac.sh
-# echo "DONE!"
+echo "DONE!"
