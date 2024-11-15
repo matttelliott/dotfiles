@@ -68,7 +68,6 @@ export PATH=$PATH:/opt/homebrew/bin
 # Install updates
 # ===
 sudo softwareupdate --install-rosetta --agree-to-license
-brew tap homebrew/cask-versions
 brew update
 
 
@@ -86,9 +85,7 @@ pwd
 bash homebrew/setup.mac.sh
 bash git/setup.mac.sh
 bash stow/setup.mac.sh
-cd $HOME
 
-#
 # # Homebrew CLI tools
 # # ===
 #
