@@ -78,14 +78,13 @@ brew install \
   stow \
   cmake
 
-# Clone Repo
-# ===
 git clone $REPO $dotfilesRepoDir
-cd $HOME/dotfiles
 
+cd $dotfilesRepoDir
 bash homebrew/setup.mac.sh
 bash git/setup.mac.sh
 bash stow/setup.mac.sh
+cd $HOME
 
 #
 # # Homebrew CLI tools
