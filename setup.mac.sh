@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+set -v
 # This script requires a user with sudo priviliges to set up dependencies with homebrew
 
 
@@ -81,6 +82,7 @@ brew install \
 git clone $REPO $dotfilesRepoDir
 
 cd $dotfilesRepoDir
+pwd
 bash homebrew/setup.mac.sh
 bash git/setup.mac.sh
 bash stow/setup.mac.sh
