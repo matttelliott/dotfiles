@@ -178,7 +178,7 @@ bash bin/setup.sh
 
 
 bash sqlite/setup.mac.sh
-bash postgres/setup.mac.sh
+# bash postgres/setup.mac.sh
 
 bash mac/setup.mac.sh
 bash iterm/setup.mac.sh
