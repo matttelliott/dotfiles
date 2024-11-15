@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bat golang/README.md
-stow --no-folding golang
-brew install golang
+bat gum/README.md
+stow --no-folding gum
+brew install gum

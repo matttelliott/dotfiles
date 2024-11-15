@@ -85,22 +85,14 @@ brew install \
   stow \
   cmake
 
-pwd
-ls
 git clone $REPO $dotfilesRepoDir
 
-pwd
-ls
 
 cd $dotfilesRepoDir
-pwd
-ls
 bash homebrew/setup.mac.sh
 bash git/setup.mac.sh
 bash stow/setup.mac.sh
 bash asdf/setup.mac.sh
-pwd
-ls
 
 # Terminal environment
 # ===
@@ -108,6 +100,7 @@ cd $dotfilesRepoDir
 bash zsh/setup.mac.sh
 bash fonts/setup.mac.sh
 bash prompt/setup.mac.sh
+bash gum/setup.mac.sh
 
 
 # Neovim
@@ -120,11 +113,6 @@ bash neovim/setup.mac.sh
 # bash rust/setup.sh
 # source "$HOME/.cargo/env"
 # export PATH=$PATH:$HOME/.cargo/bin
-#
-# # RTX Language Manager
-# cd $dotfilesRepoDir
-# bash rtx-cli/setup.sh
-# eval "$(rtx activate bash)"
 #
 # # Golang
 # cd $dotfilesRepoDir
