@@ -35,7 +35,7 @@ done 2>/dev/null &
 # ===
 cd "$HOME"
 
-date=$(date -I seconds)
+date=$(date -Iseconds)
 mv $HOME/dotfiles $HOME/dotfiles-$date
 mv $HOME/.local $HOME/.local-$date
 mv $HOME/.config $HOME/.config-$date
