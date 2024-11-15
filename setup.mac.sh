@@ -73,6 +73,10 @@ echo $PATH
 sudo softwareupdate --install-rosetta --agree-to-license
 brew update
 
+# System Settings
+# ===
+bash mac/setup.mac.sh
+
 
 # Install Core dependencies
 # ===
@@ -193,7 +197,6 @@ bash neovim/setup.mac.sh
 # bash sqlite/setup.mac.sh
 # # bash postgres/setup.mac.sh
 #
-# bash mac/setup.mac.sh
 # bash iterm/setup.mac.sh
 # bash 1password/setup.mac.sh
 # bash spectacle/setup.mac.sh
