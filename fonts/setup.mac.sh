@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 
-
-brew tap homebrew/cask-fonts
 brew install --cask font-inconsolata
 brew install --cask font-hack-nerd-font
 brew install --cask font-dejavu-sans-mono-for-powerline

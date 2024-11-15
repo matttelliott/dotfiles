@@ -94,24 +94,22 @@ ls
 bash homebrew/setup.mac.sh
 bash git/setup.mac.sh
 bash stow/setup.mac.sh
+bash asdf/setup.mac.sh
 pwd
 ls
 
-# Homebrew CLI tools
+# Terminal environment
 # ===
+cd $dotfilesRepoDir
+bash zsh/setup.mac.sh
+bash fonts/setup.mac.sh
+bash prompt/setup.mac.sh
 
 # # Rust
 # cd $dotfilesRepoDir
 # bash rust/setup.sh
 # source "$HOME/.cargo/env"
 # export PATH=$PATH:$HOME/.cargo/bin
-#
-# # Terminal environment
-# # ===
-# cd $dotfilesRepoDir
-# bash zsh/setup.mac.sh
-# bash fonts/setup.mac.sh
-# bash prompt/setup.mac.sh
 #
 # # RTX Language Manager
 # cd $dotfilesRepoDir

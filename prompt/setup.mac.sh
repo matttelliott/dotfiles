@@ -1,3 +1,3 @@
 #!/usr/bin/env bash cd "$HOME/dotfiles"
-cargo install starship
+brew install starship
 stow --no-folding prompt
