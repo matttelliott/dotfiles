@@ -218,5 +218,5 @@ bash kubernetes/setup.mac.sh
 # bash julia/setup.mac.sh
 bash wiki/setup.mac.sh
 # bash tf2/setup.mac.sh
-bash spotify/setup.mac.sh
+# bash spotify/setup.mac.sh
 echo "DONE!"
