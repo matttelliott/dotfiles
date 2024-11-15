@@ -41,3 +41,7 @@ fi
 
 export RTX_HIDE_OUTDATED_BUILD=1
 export __RTX_HIDE_OUTDATED_BUILD=1
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)

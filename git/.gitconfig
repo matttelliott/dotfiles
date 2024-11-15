@@ -6,3 +6,5 @@
 [pull]
 	rebase = false
 
+[http]
+	sslVerify = true
