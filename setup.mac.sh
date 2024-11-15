@@ -105,6 +105,12 @@ bash zsh/setup.mac.sh
 bash fonts/setup.mac.sh
 bash prompt/setup.mac.sh
 
+
+# Neovim
+# ===
+cd $dotfilesRepoDir
+bash neovim/setup.mac.sh
+
 # # Rust
 # cd $dotfilesRepoDir
 # bash rust/setup.sh
@@ -133,11 +139,6 @@ bash prompt/setup.mac.sh
 # # bash php/setup.sh
 #
 # eval "$(rtx hook-env)"
-#
-# # Neovim
-# # ===
-# cd $dotfilesRepoDir
-# bash neovim/setup.sh
 # # Rust CLI Apps
 # # ===
 # cd $dotfilesRepoDir
