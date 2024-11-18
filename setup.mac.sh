@@ -106,7 +106,7 @@ bash gum/setup.mac.sh
 # ===
 cd $dotfilesRepoDir
 bash nodejs/setup.sh
-# bash lua/setup.sh
+bash lua/setup.sh
 # bash python/setup.sh
 # bash golang/setup.sh
 # bash ruby/setup.sh
