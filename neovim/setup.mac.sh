@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bat neovim/README.md
+cat neovim/README.md
 rm -rf $HOME/.local/share/nvim
 rm -rf $HOME/.local/state/nvim
 stow --no-folding neovim

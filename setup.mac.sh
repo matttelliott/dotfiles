@@ -102,11 +102,26 @@ bash fonts/setup.mac.sh
 bash prompt/setup.mac.sh
 bash gum/setup.mac.sh
 
+# Programming Languages
+# ===
+cd $dotfilesRepoDir
+bash nodejs/setup.sh
+# bash lua/setup.sh
+# bash python/setup.sh
+# bash golang/setup.sh
+# bash ruby/setup.sh
+# bash php/setup.sh
+
 
 # Neovim
 # ===
 cd $dotfilesRepoDir
 bash neovim/setup.mac.sh
+
+# # My CLI Apps
+# # ===
+# cd $dotfilesRepoDir
+# bash bin/setup.sh
 
 # # Rust
 # cd $dotfilesRepoDir
@@ -122,13 +137,6 @@ bash neovim/setup.mac.sh
 # go install github.com/charmbracelet/gum@latest
 # gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
 #
-# # Other Languages
-# cd $dotfilesRepoDir
-# bash nodejs/setup.sh
-# bash python/setup.sh
-# # bash lua/setup.sh
-# # bash ruby/setup.sh
-# # bash php/setup.sh
 #
 # eval "$(rtx hook-env)"
 # # Rust CLI Apps
@@ -163,18 +171,12 @@ bash neovim/setup.mac.sh
 # bash bpytop/setup.sh
 # bash cowsay/setup.sh
 #
-# # My CLI Apps
-# # ===
-# cd $dotfilesRepoDir
-# bash bin/setup.sh
-#
 #
 # # bash svn/setup.mac.sh
 # # bash tmux/setup.mac.sh
 # # bash cron/setup.mac.sh
 #
 # # bash wget/setup.mac.sh
-# # bash trash/setup.mac.sh
 # # bash clipboard/setup.mac.sh
 # # bash ag/setup.mac.sh
 # # bash vim/setup.mac.sh
