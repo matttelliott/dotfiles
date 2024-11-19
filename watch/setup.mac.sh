@@ -3,4 +3,3 @@ cd "$HOME/dotfiles"
 cat watch/README.md
 brew install watch
 stow --no-folding watch
-exit 0

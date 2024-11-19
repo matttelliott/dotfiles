@@ -5,4 +5,3 @@ brew install eloston-chromium # degoogled chromium
 brew install google-chrome
 brew install google-chrome@canary
 stow --no-folding chromium
-exit 0

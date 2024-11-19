@@ -5,4 +5,3 @@ asdf install golang latest
 asdf global golang latest
 asdf shell golang latest
 stow --no-folding golang
-exit 0

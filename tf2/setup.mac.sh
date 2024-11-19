@@ -2,4 +2,3 @@
 cd "$HOME/dotfiles"
 bat tf2/README.md
 stow --no-folding tf2
-exit 0

@@ -3,4 +3,3 @@ cd "$HOME/dotfiles"
 cat vscodium/README.md
 stow --no-folding vscodium
 brew install vscodium
-exit 0

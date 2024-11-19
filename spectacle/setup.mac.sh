@@ -4,4 +4,3 @@ cd "$HOME/dotfiles"
 bat spectacle/README.md
 stow --no-folding spectacle
 brew install spectacle
-exit 0
