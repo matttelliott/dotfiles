@@ -28,7 +28,7 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until bootstrap has finished
 while true; do
 	sudo -n true
-	sleep 10
+	sleep 100
 	kill -0 "$$" || exit
 done 2>/dev/null &
 
