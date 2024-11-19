@@ -77,115 +77,115 @@ cd $dotfilesRepoDir
 
 # System Setup
 # ===
-bash mac/setup.mac.sh
-bash homebrew/setup.mac.sh
-bash git/setup.mac.sh
-bash stow/setup.mac.sh
-bash asdf/setup.mac.sh
-# bash clipboard/setup.mac.sh
+source mac/setup.mac.sh
+source homebrew/setup.mac.sh
+source git/setup.mac.sh
+source stow/setup.mac.sh
+source asdf/setup.mac.sh
+# source clipboard/setup.mac.sh
 
 # Terminal environment
 # ===
 cd $dotfilesRepoDir
-bash iterm/setup.mac.sh
-bash zsh/setup.mac.sh
-bash fonts/setup.mac.sh
-bash prompt/setup.mac.sh
-bash gum/setup.mac.sh
-bash tmux/setup.mac.sh
-bash cron/setup.mac.sh
+source iterm/setup.mac.sh
+source zsh/setup.mac.sh
+source fonts/setup.mac.sh
+source prompt/setup.mac.sh
+source gum/setup.mac.sh
+source tmux/setup.mac.sh
+source cron/setup.mac.sh
 
 # Programming Languages
 # ===
 cd $dotfilesRepoDir
-bash nodejs/setup.sh
-bash lua/setup.mac.sh
-bash python/setup.sh
-bash golang/setup.sh
-bash rust/setup.sh
-bash shfmt/setup.mac.sh
+source nodejs/setup.sh
+source lua/setup.mac.sh
+source python/setup.sh
+source golang/setup.sh
+source rust/setup.sh
+source shfmt/setup.mac.sh
 
 
 # Neovim
 # ===
 cd $dotfilesRepoDir
-bash neovim/setup.mac.sh
+source neovim/setup.mac.sh
 
 
 echo 'installed neovim/setup.mac.sh'
 
 # Containers
 # ===
-bash docker/setup.mac.sh
-bash kubernetes/setup.mac.sh
+source docker/setup.mac.sh
+source kubernetes/setup.mac.sh
 
 # Databases
 # ===
-bash sqlite/setup.mac.sh
-bash postgres/setup.mac.sh
+source sqlite/setup.mac.sh
+source postgres/setup.mac.sh
 
 # My CLI Tools
 # ===
 cd $dotfilesRepoDir
-bash bin/setup.sh
+source bin/setup.sh
 
 # Homebrew CLI Tools
 # ===
 cd $dotfilesRepoDir
-bash bat/setup.mac.sh
+source bat/setup.mac.sh
 alias cat=bat
-bash mprocs/setup.mac.sh
-bash zoxide/setup.mac.sh
-bash lsd/setup.mac.sh
-bash ripgrep/setup.mac.sh
-bash fd/setup.mac.sh
-bash sd/setup.mac.sh
-bash fzf/setup.mac.sh
-bash lazygit/setup.mac.sh
-bash jq/setup.mac.sh
-bash youtube-dl/setup.mac.sh
-bash bpytop/setup.mac.sh
-bash cowsay/setup.mac.sh
-bash neofetch/setup.mac.sh
-bash wget/setup.mac.sh
-bash ag/setup.mac.sh
-bash vim/setup.mac.sh
-bash asciiquarium/setup.mac.sh
-bash entr/setup.mac.sh
-bash vifm/setup.mac.sh
-bash htop/setup.mac.sh
-bash pandoc/setup.mac.sh
-bash w3m/setup.mac.sh
-bash watch/setup.mac.sh
-bash ffmpeg/setup.mac.sh
-bash imagemagick/setup.mac.sh
-bash ranger/setup.mac.sh
-bash nmap/setup.mac.sh
-bash lolcat/setup.mac.sh
+source mprocs/setup.mac.sh
+source zoxide/setup.mac.sh
+source lsd/setup.mac.sh
+source ripgrep/setup.mac.sh
+source fd/setup.mac.sh
+source sd/setup.mac.sh
+source fzf/setup.mac.sh
+source lazygit/setup.mac.sh
+source jq/setup.mac.sh
+source youtube-dl/setup.mac.sh
+source bpytop/setup.mac.sh
+source cowsay/setup.mac.sh
+source neofetch/setup.mac.sh
+source wget/setup.mac.sh
+source ag/setup.mac.sh
+source vim/setup.mac.sh
+source asciiquarium/setup.mac.sh
+source entr/setup.mac.sh
+source vifm/setup.mac.sh
+source htop/setup.mac.sh
+source pandoc/setup.mac.sh
+source w3m/setup.mac.sh
+source watch/setup.mac.sh
+source ffmpeg/setup.mac.sh
+source imagemagick/setup.mac.sh
+source ranger/setup.mac.sh
+source nmap/setup.mac.sh
+source lolcat/setup.mac.sh
 
 # Homebrew Apps
 # ===
-bash mpv/setup.mac.sh
-bash vlc/setup.mac.sh
-bash obsidian/setup.mac.sh
-bash vscodium/setup.mac.sh
-bash keepass/setup.mac.sh
-bash 1password/setup.mac.sh
-bash virtualbox/setup.mac.sh
+source mpv/setup.mac.sh
+source vlc/setup.mac.sh
+source obsidian/setup.mac.sh
+source vscodium/setup.mac.sh
+source keepass/setup.mac.sh
+source 1password/setup.mac.sh
+source virtualbox/setup.mac.sh
 
 # Browsers
 # ===
-bash chromium/setup.mac.sh
-bash firefox/setup.mac.sh
-bash vivaldi/setup.mac.sh
-bash opera/setup.mac.sh
+source chromium/setup.mac.sh
+source firefox/setup.mac.sh
+source vivaldi/setup.mac.sh
+source opera/setup.mac.sh
 
-# bash svn/setup.mac.sh
-# bash github/setup.mac.sh
-# bash spectacle/setup.mac.sh
-# bash vagrant/setup.mac.sh
-# bash julia/setup.mac.sh
-# bash wiki/setup.mac.sh
-# bash tf2/setup.mac.sh
-# bash spotify/setup.mac.sh
+# source svn/setup.mac.sh
+# source github/setup.mac.sh
+# source spectacle/setup.mac.sh
+# source vagrant/setup.mac.sh
+# source julia/setup.mac.sh
+# source wiki/setup.mac.sh
+# source tf2/setup.mac.sh
+# source spotify/setup.mac.sh
 echo "DONE!"
