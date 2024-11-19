@@ -1,7 +1,17 @@
 #!/usr/bin/env bash
-
 set -v
+
 # This script requires a user with sudo priviliges to set up dependencies with homebrew
+
+# Ask for the administrator password upfront
+# sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until bootstrap has finished
+# while true; do
+# 	sudo -n true
+# 	sleep 100
+# 	kill -0 "$$" || exit
+# done 2>/dev/null &
 
 
 dotfilesRepoDir="$HOME/dotfiles"
@@ -20,16 +30,6 @@ REPO=https://github.com/matttelliott/dotfiles
 # Because Git submodule commands cannot operate without a work tree, they must
 # be run from within $HOME (assuming this is the root of your dotfiles)
 cd "$HOME"
-
-# Ask for the administrator password upfront
-sudo -v
-
-# Keep-alive: update existing `sudo` time stamp until bootstrap has finished
-# while true; do
-# 	sudo -n true
-# 	sleep 100
-# 	kill -0 "$$" || exit
-# done 2>/dev/null &
 
 # Backup files
 # ===
@@ -76,113 +76,113 @@ cd $dotfilesRepoDir
 
 # System Setup
 # ===
-source mac/setup.mac.sh || true
-source homebrew/setup.mac.sh || true
-source git/setup.mac.sh || true
-source stow/setup.mac.sh || true
-source asdf/setup.mac.sh || true
-# source clipboard/setup.mac.sh || true
+./mac/setup.mac.sh || true
+./homebrew/setup.mac.sh || true
+./git/setup.mac.sh || true
+./stow/setup.mac.sh || true
+./asdf/setup.mac.sh || true
+# ./clipboard/setup.mac.sh || true
 
 # Terminal environment
 # ===
 cd $dotfilesRepoDir
-source iterm/setup.mac.sh || true
-source zsh/setup.mac.sh || true
-source fonts/setup.mac.sh || true
-source prompt/setup.mac.sh || true
-source gum/setup.mac.sh || true
-source tmux/setup.mac.sh || true
-source cron/setup.mac.sh || true
+./iterm/setup.mac.sh || true
+./zsh/setup.mac.sh || true
+./fonts/setup.mac.sh || true
+./prompt/setup.mac.sh || true
+./gum/setup.mac.sh || true
+./tmux/setup.mac.sh || true
+./cron/setup.mac.sh || true
 
 # Programming Languages
 # ===
 cd $dotfilesRepoDir
-source nodejs/setup.sh || true
-source lua/setup.mac.sh || true
-source python/setup.sh || true
-source golang/setup.sh || true
-source rust/setup.sh || true
-source shfmt/setup.mac.sh || true
+./nodejs/setup.sh || true
+./lua/setup.mac.sh || true
+./python/setup.sh || true
+./golang/setup.sh || true
+./rust/setup.sh || true
+./shfmt/setup.mac.sh || true
 
 
 # Neovim
 # ===
 cd $dotfilesRepoDir
-source neovim/setup.mac.sh || true
+./neovim/setup.mac.sh || true
 
 
 # Containers
 # ===
-source docker/setup.mac.sh || true
-source kubernetes/setup.mac.sh || true
+./docker/setup.mac.sh || true
+./kubernetes/setup.mac.sh || true
 
 # Databases
 # ===
-source sqlite/setup.mac.sh || true
-source postgres/setup.mac.sh || true
+./sqlite/setup.mac.sh || true
+./postgres/setup.mac.sh || true
 
 # My CLI Tools
 # ===
 cd $dotfilesRepoDir
-source bin/setup.sh || true
+./bin/setup.sh || true
 
 # Homebrew CLI Tools
 # ===
 cd $dotfilesRepoDir
-source bat/setup.mac.sh || true
+./bat/setup.mac.sh || true
 alias cat=bat
-source mprocs/setup.mac.sh || true
-source zoxide/setup.mac.sh || true
-source lsd/setup.mac.sh || true
-source ripgrep/setup.mac.sh || true
-source fd/setup.mac.sh || true
-source sd/setup.mac.sh || true
-source fzf/setup.mac.sh || true
-source lazygit/setup.mac.sh || true
-source jq/setup.mac.sh || true
-source youtube-dl/setup.mac.sh || true
-source bpytop/setup.mac.sh || true
-source cowsay/setup.mac.sh || true
-source neofetch/setup.mac.sh || true
-source wget/setup.mac.sh || true
-source ag/setup.mac.sh || true
-source vim/setup.mac.sh || true
-source asciiquarium/setup.mac.sh || true
-source entr/setup.mac.sh || true
-source vifm/setup.mac.sh || true
-source htop/setup.mac.sh || true
-source pandoc/setup.mac.sh || true
-source w3m/setup.mac.sh || true
-source watch/setup.mac.sh || true
-source ffmpeg/setup.mac.sh || true
-source imagemagick/setup.mac.sh || true
-source ranger/setup.mac.sh || true
-source nmap/setup.mac.sh || true
-source lolcat/setup.mac.sh || true
+./mprocs/setup.mac.sh || true
+./zoxide/setup.mac.sh || true
+./lsd/setup.mac.sh || true
+./ripgrep/setup.mac.sh || true
+./fd/setup.mac.sh || true
+./sd/setup.mac.sh || true
+./fzf/setup.mac.sh || true
+./lazygit/setup.mac.sh || true
+./jq/setup.mac.sh || true
+./youtube-dl/setup.mac.sh || true
+./bpytop/setup.mac.sh || true
+./cowsay/setup.mac.sh || true
+./neofetch/setup.mac.sh || true
+./wget/setup.mac.sh || true
+./ag/setup.mac.sh || true
+./vim/setup.mac.sh || true
+./asciiquarium/setup.mac.sh || true
+./entr/setup.mac.sh || true
+./vifm/setup.mac.sh || true
+./htop/setup.mac.sh || true
+./pandoc/setup.mac.sh || true
+./w3m/setup.mac.sh || true
+./watch/setup.mac.sh || true
+./ffmpeg/setup.mac.sh || true
+./imagemagick/setup.mac.sh || true
+./ranger/setup.mac.sh || true
+./nmap/setup.mac.sh || true
+./lolcat/setup.mac.sh || true
 
 # Homebrew Apps
 # ===
-source mpv/setup.mac.sh || true
-source vlc/setup.mac.sh || true
-source obsidian/setup.mac.sh || true
-source vscodium/setup.mac.sh || true
-source keepass/setup.mac.sh || true
-source 1password/setup.mac.sh || true
-source virtualbox/setup.mac.sh || true
+./mpv/setup.mac.sh || true
+./vlc/setup.mac.sh || true
+./obsidian/setup.mac.sh || true
+./vscodium/setup.mac.sh || true
+./keepass/setup.mac.sh || true
+./1password/setup.mac.sh || true
+./virtualbox/setup.mac.sh || true
 
 # Browsers
 # ===
-source chromium/setup.mac.sh || true
-source firefox/setup.mac.sh || true
-source vivaldi/setup.mac.sh || true
-source opera/setup.mac.sh || true
+./chromium/setup.mac.sh || true
+./firefox/setup.mac.sh || true
+./vivaldi/setup.mac.sh || true
+./opera/setup.mac.sh || true
 
-# source svn/setup.mac.sh || true
-# source github/setup.mac.sh || true
-# source spectacle/setup.mac.sh || true
-# source vagrant/setup.mac.sh || true
-# source julia/setup.mac.sh || true
-# source wiki/setup.mac.sh || true
-# source tf2/setup.mac.sh || true
-# source spotify/setup.mac.sh || true
+# ./svn/setup.mac.sh || true
+# ./github/setup.mac.sh || true
+# ./spectacle/setup.mac.sh || true
+# ./vagrant/setup.mac.sh || true
+# ./julia/setup.mac.sh || true
+# ./wiki/setup.mac.sh || true
+# ./tf2/setup.mac.sh || true
+# ./spotify/setup.mac.sh || true
 echo "DONE!"
