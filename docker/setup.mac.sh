@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+echo 'docker/seup.mac.sh'
 cd "$HOME/dotfiles"
 cat docker/README.md
 stow --no-folding docker

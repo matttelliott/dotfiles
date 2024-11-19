@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
+echo 'kubernetes/setup.mac.sh'
 cd "$HOME/dotfiles"
-bat kubernetes/README.md
+cat kubernetes/README.md
 brew install kubectl
 brew install minikube 
 brew install kubernetes-helm
