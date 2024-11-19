@@ -93,7 +93,7 @@ bash homebrew/setup.mac.sh
 bash git/setup.mac.sh
 bash stow/setup.mac.sh
 bash asdf/setup.mac.sh
-bash clipboard/setup.mac.sh
+# bash clipboard/setup.mac.sh
 
 # Terminal environment
 # ===
@@ -120,6 +120,17 @@ bash shfmt/setup.mac.sh
 # ===
 cd $dotfilesRepoDir
 bash neovim/setup.mac.sh
+
+
+# Containers
+# ===
+bash docker/setup.mac.sh
+bash kubernetes/setup.mac.sh
+
+# Databases
+# ===
+bash sqlite/setup.mac.sh
+bash postgres/setup.mac.sh
 
 # My CLI Tools
 # ===
@@ -160,16 +171,8 @@ bash ranger/setup.mac.sh
 bash nmap/setup.mac.sh
 bash lolcat/setup.mac.sh
 
-# bash docker/setup.mac.sh
-# bash kubernetes/setup.mac.sh
-
 # # bash svn/setup.mac.sh
-#
 # # bash github/setup.mac.sh
-#
-#
-# bash sqlite/setup.mac.sh
-# # bash postgres/setup.mac.sh
 #
 # bash iterm/setup.mac.sh
 # bash 1password/setup.mac.sh

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bat mac/README.md
+cat mac/README.md
 stow --no-folding mac
 cd $HOME
 bash .macos
