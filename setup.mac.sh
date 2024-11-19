@@ -112,7 +112,7 @@ cd $dotfilesRepoDir
 bash neovim/setup.mac.sh
 
 
-echo 'installed neovim'
+echo 'installed neovim/setup.mac.sh'
 
 # Containers
 # ===

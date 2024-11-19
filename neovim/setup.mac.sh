@@ -7,4 +7,6 @@ stow --no-folding neovim
 rm -rf $HOME/.local/share/nvim
 rm -rf $HOME/.local/state/nvim
 brew install neovim
+echo 'install neovim packages'
 nvim +PackerSync +qa!
+echo 'installed neovim'
