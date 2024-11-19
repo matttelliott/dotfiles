@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bat stow/README.md
+cat stow/README.md
 brew install stow
 stow --no-folding stow

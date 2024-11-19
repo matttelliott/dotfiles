@@ -4,11 +4,15 @@
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
-osascript -e 'tell application "System Preferences" to quit'
+# osascript -e 'tell application "System Preferences" to quit'
 
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
+
+# Map Caps Lock key to Left Control key
+# https://developer.apple.com/library/content/technotes/tn2450/_index.html
+hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x7000000E0}]}'
 
 # Set computer name (as done via System Preferences → Sharing)
 #sudo scutil --set ComputerName "0x6D746873"
@@ -17,7 +21,7 @@ osascript -e 'tell application "System Preferences" to quit'
 #sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "0x6D746873"
 
 # Set standby delay to 24 hours (default is 1 hour)
-sudo pmset -a standbydelay 86400
+# sudo pmset -a standbydelay 86400
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
@@ -94,7 +98,7 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 sudo systemsetup -setrestartfreeze on
 
 # Never go into computer sleep mode
-sudo systemsetup -setcomputersleep Off > /dev/null
+# sudo systemsetup -setcomputersleep Off > /dev/null
 
 # Disable Notification Center and remove the menu bar icon
 launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
@@ -125,7 +129,7 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 ###############################################################################
 
 # Disable hibernation (speeds up entering sleep mode)
-sudo pmset -a hibernatemode 0
+# sudo pmset -a hibernatemode 0
 
 # Remove the sleep image file to save disk space
 # sudo rm /private/var/vm/sleepimage
@@ -150,7 +154,7 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClic
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
 # Enable “natural” (Lion-style) scrolling
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
+# defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
@@ -181,17 +185,13 @@ defaults write NSGlobalDomain AppleMeasurementUnits -string "Inches"
 defaults write NSGlobalDomain AppleMetricUnits -bool false
 
 # Show language menu in the top right corner of the boot screen
-sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
+# sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
 
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
 # sudo systemsetup -settimezone "Europe/Brussels" > /dev/null
 
 # Stop iTunes from responding to the keyboard media keys
 launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
-
-# Map Caps Lock key to Left Control key
-# https://developer.apple.com/library/content/technotes/tn2450/_index.html
-hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x7000000E0}]}'
 
 ###############################################################################
 # Screen                                                                      #

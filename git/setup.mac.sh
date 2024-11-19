@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bat git/README.md
+cat git/README.md
 stow --no-folding git
 brew install git
