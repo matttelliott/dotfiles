@@ -67,7 +67,8 @@ brew update
 brew install \
   git \
   stow \
-  cmake
+  cmake \
+  asdf
 
 git clone $REPO $dotfilesRepoDir
 
