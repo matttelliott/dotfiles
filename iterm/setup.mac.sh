@@ -2,7 +2,7 @@
 rm -rf ~/.iterm2
 rm -rf ~/.config/iterm2
 cd "$HOME/dotfiles"
-bat iterm/README.md
+cat iterm/README.md
 brew install iterm2
 stow --no-folding iterm
 # Specify the preferences directory

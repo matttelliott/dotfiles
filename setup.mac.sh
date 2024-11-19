@@ -98,6 +98,7 @@ bash asdf/setup.mac.sh
 # Terminal environment
 # ===
 cd $dotfilesRepoDir
+bash iterm/setup.mac.sh
 bash zsh/setup.mac.sh
 bash fonts/setup.mac.sh
 bash prompt/setup.mac.sh
@@ -174,7 +175,6 @@ bash lolcat/setup.mac.sh
 # # bash svn/setup.mac.sh
 # # bash github/setup.mac.sh
 #
-# bash iterm/setup.mac.sh
 # bash 1password/setup.mac.sh
 # bash spectacle/setup.mac.sh
 #
