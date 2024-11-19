@@ -2,4 +2,4 @@
 cd "$HOME/dotfiles"
 cat gum/README.md
 stow --no-folding gum
-brew install gum
+brew install gum || true

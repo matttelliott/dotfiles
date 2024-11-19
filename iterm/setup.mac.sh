@@ -2,7 +2,7 @@
 set -v
 cd "$HOME/dotfiles"
 cat iterm/README.md
-brew install iterm2
+brew install iterm2 || true
 rm -rf ~/.iterm2
 rm -rf ~/.config/iterm2/AppSupport
 rm -rf ~/.config/iterm2

@@ -2,4 +2,4 @@
 cd "$HOME/dotfiles"
 cat git/README.md
 stow --no-folding git
-brew install git
+brew install git || true

@@ -2,4 +2,4 @@
 cd "$HOME/dotfiles"
 cat asdf/README.md
 stow --no-folding asdf
-brew install asdf
+brew install asdf || true
