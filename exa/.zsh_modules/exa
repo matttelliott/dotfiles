@@ -1,5 +1,0 @@
-#!/usr/bin/env zsh
-alias l='exa -lahg --git -s name'
-alias lm='exa -lahg --git -s modified'
-alias ls='exa'
-alias lst='exa -laghT --git -s name'

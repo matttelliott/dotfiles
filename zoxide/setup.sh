@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-cargo install zoxide
+cat zoxide/README.md
+brew install zoxide
 stow --no-folding zoxide

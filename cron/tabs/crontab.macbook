@@ -30,17 +30,17 @@
 # # autocommit wiki changes
 # every 10 minutes . Go to _wiki_ dir, commit changes, make/reestablish hard
 # links to wiki files, commit new changes, and push to remote
-*/10 * * * * cd ~/_wiki_ && ./sync
+# */10 * * * * cd ~/_wiki_ && ./sync
 
 # # autocommit .dotfiles changes
 # every 5 minutes . Go to home dir, commit dotfiles changes, and push to remote
 # TODO: figure out why yadm isn't recongnized in path
 # TODO: update config with credentials to allow git push to gitlab
-*/5 * * * * cd ~/dotfiles/cron/jobs/ && ./sync-dotfiles
+# */5 * * * * cd ~/dotfiles/cron/jobs/ && ./sync-dotfiles
 
 # every minute update crontab with this file 
 # TODO: this doesnt seem to work, need to find a new way to sync these files
-*/1 * * * * crontab ~/dotfiles/cron/tabs/crontab.macbook
+# */1 * * * * crontab ~/dotfiles/cron/tabs/crontab.macbook
 
 # sync icloud every 15 min
-*/15 * * * * cd ~/dotfiles/cron/jobs/ && ./sync-icloud
+# */15 * * * * cd ~/dotfiles/cron/jobs/ && ./sync-icloud

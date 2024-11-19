@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bat vim/README.md
+cat vim/README.md
 stow --no-folding vim
 brew install vim
 

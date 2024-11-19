@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bat ripgrep/README.md
-stow --no-folding ripgrep
+cat ripgrep/README.md
 brew install ripgrep
+stow --no-folding ripgrep

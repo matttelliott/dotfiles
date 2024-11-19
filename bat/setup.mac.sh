@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 brew install bat
-bat bat/README.md
+alias cat=bat
 stow --no-folding bat

@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bat clipboard/README.md
+cat clipboard/README.md
 stow --no-folding clipboard

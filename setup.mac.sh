@@ -73,10 +73,6 @@ echo $PATH
 sudo softwareupdate --install-rosetta --agree-to-license
 brew update
 
-# System Settings
-# ===
-bash mac/setup.mac.sh
-
 
 # Install Core dependencies
 # ===
@@ -89,10 +85,15 @@ git clone $REPO $dotfilesRepoDir
 
 
 cd $dotfilesRepoDir
+
+# System Setup
+# ===
+bash mac/setup.mac.sh
 bash homebrew/setup.mac.sh
 bash git/setup.mac.sh
 bash stow/setup.mac.sh
 bash asdf/setup.mac.sh
+bash clipboard/setup.mac.sh
 
 # Terminal environment
 # ===
@@ -101,15 +102,18 @@ bash zsh/setup.mac.sh
 bash fonts/setup.mac.sh
 bash prompt/setup.mac.sh
 bash gum/setup.mac.sh
+bash tmux/setup.mac.sh
+bash cron/setup.mac.sh
 
 # Programming Languages
 # ===
 cd $dotfilesRepoDir
 bash nodejs/setup.sh
-bash lua/setup.sh
+bash lua/setup.mac.sh
 bash python/setup.sh
 bash golang/setup.sh
 bash rust/setup.sh
+bash shfmt/setup.mac.sh
 
 
 # Neovim
@@ -117,69 +121,50 @@ bash rust/setup.sh
 cd $dotfilesRepoDir
 bash neovim/setup.mac.sh
 
-# # My CLI Apps
-# # ===
-# cd $dotfilesRepoDir
-# bash bin/setup.sh
+# My CLI Tools
+# ===
+cd $dotfilesRepoDir
+bash bin/setup.sh
 
-# # Rust
-# cd $dotfilesRepoDir
-# bash rust/setup.sh
-# source "$HOME/.cargo/env"
-# export PATH=$PATH:$HOME/.cargo/bin
-#
-# # Golang
-# cd $dotfilesRepoDir
-# bash golang/setup.sh
-# eval "$(rtx hook-env)"
-# export PATH=$PATH:$HOME/go/bin
-# go install github.com/charmbracelet/gum@latest
-# gum style  --foreground 212 --border-foreground 212 --border double --align center --width 50 --margin "1 2" --padding "2 4" 'Bubble Gum (1¢)' 'So sweet and so fresh!'
-#
-#
-# eval "$(rtx hook-env)"
-# # Rust CLI Apps
-# # ===
-# cd $dotfilesRepoDir
-# bash bat/setup.sh
-# alias cat=bat
-# bash zellij/setup.sh
-# bash mprocs/setup.sh
-# bash gitui/setup.sh
-# bash zoxide/setup.sh
-# bash lsd/setup.sh
-# bash exa/setup.sh
-# bash ripgrep/setup.sh
-# bash fd/setup.sh
-# bash sd/setup.sh
-# bash nushell/setup.sh
-#
-# # GO CLI Apps
-# # ===
-# cd $dotfilesRepoDir
-# bash fzf/setup.sh
-# bash lazygit/setup.sh
-# bash jq/setup.sh
-# bash gum/setup.sh
-# bash shfmt/setup.debian.sh
-#
-# # Python CLI Apps
-# # ===
-# cd $dotfilesRepoDir
-# bash youtube-dl/setup.sh
-# bash bpytop/setup.sh
-# bash cowsay/setup.sh
-#
-#
+# Homebrew CLI Tools
+# ===
+cd $dotfilesRepoDir
+bash bat/setup.mac.sh
+alias cat=bat
+bash mprocs/setup.mac.sh
+bash zoxide/setup.mac.sh
+bash lsd/setup.mac.sh
+bash ripgrep/setup.mac.sh
+bash fd/setup.mac.sh
+bash sd/setup.mac.sh
+bash fzf/setup.mac.sh
+bash lazygit/setup.mac.sh
+bash jq/setup.mac.sh
+bash youtube-dl/setup.mac.sh
+bash bpytop/setup.mac.sh
+bash cowsay/setup.mac.sh
+bash neofetch/setup.mac.sh
+bash wget/setup.mac.sh
+bash ag/setup.mac.sh
+bash vim/setup.mac.sh
+bash asciiquarium/setup.mac.sh
+bash entr/setup.mac.sh
+bash vifm/setup.mac.sh
+bash htop/setup.mac.sh
+bash pandoc/setup.mac.sh
+bash w3m/setup.mac.sh
+bash watch/setup.mac.sh
+bash ffmpeg/setup.mac.sh
+bash imagemagick/setup.mac.sh
+bash ranger/setup.mac.sh
+bash nmap/setup.mac.sh
+bash lolcat/setup.mac.sh
+
+# bash docker/setup.mac.sh
+# bash kubernetes/setup.mac.sh
+
 # # bash svn/setup.mac.sh
-# # bash tmux/setup.mac.sh
-# # bash cron/setup.mac.sh
 #
-# # bash wget/setup.mac.sh
-# # bash clipboard/setup.mac.sh
-# # bash ag/setup.mac.sh
-# # bash vim/setup.mac.sh
-# # bash neofetch/setup.mac.sh
 # # bash github/setup.mac.sh
 #
 #
@@ -190,18 +175,6 @@ bash neovim/setup.mac.sh
 # bash 1password/setup.mac.sh
 # bash spectacle/setup.mac.sh
 #
-# bash asciiquarium/setup.mac.sh
-# bash entr/setup.mac.sh
-# bash vifm/setup.mac.sh
-# bash htop/setup.mac.sh
-# bash pandoc/setup.mac.sh
-# bash w3m/setup.mac.sh
-# bash watch/setup.mac.sh
-# bash ffmpeg/setup.mac.sh
-# bash imagemagick/setup.mac.sh
-# bash ranger/setup.mac.sh
-# bash nmap/setup.mac.sh
-# bash lolcat/setup.mac.sh
 #
 # bash mpv/setup.mac.sh
 # bash vlc/setup.mac.sh
@@ -215,8 +188,6 @@ bash neovim/setup.mac.sh
 #
 # # bash virtualbox/setup.mac.sh
 # # bash vagrant/setup.mac.sh
-# bash docker/setup.mac.sh
-# bash kubernetes/setup.mac.sh
 #
 #
 # ## Manual Install

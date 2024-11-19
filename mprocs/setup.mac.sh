@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bat rust/README.md
-stow --no-folding rust
-brew install rust
+cat mprocs/README.md
+brew install mprocs
+stow --no-folding mprocs

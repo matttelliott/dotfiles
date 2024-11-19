@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bat fd/README.md
-stow --no-folding fd
-brew install fd
+cat fd/README.md
+stow --no-folding sd
+brew install sd
