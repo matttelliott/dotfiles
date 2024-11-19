@@ -16,7 +16,6 @@ fi
 
 
 REPO=https://github.com/matttelliott/dotfiles
-curl $REPO/-/raw/master/WARNING.md | cat
 
 # Because Git submodule commands cannot operate without a work tree, they must
 # be run from within $HOME (assuming this is the root of your dotfiles)
@@ -26,11 +25,11 @@ cd "$HOME"
 sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until bootstrap has finished
-while true; do
-	sudo -n true
-	sleep 100
-	kill -0 "$$" || exit
-done 2>/dev/null &
+# while true; do
+# 	sudo -n true
+# 	sleep 100
+# 	kill -0 "$$" || exit
+# done 2>/dev/null &
 
 # Backup files
 # ===
