@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
+set -v
 cd "$HOME/dotfiles"
 cat iterm/README.md
 brew install iterm2
 rm -rf ~/.iterm2
+rm -rf ~/.config/iterm2/AppSupport
 rm -rf ~/.config/iterm2
 stow --no-folding iterm
 # Specify the preferences directory
