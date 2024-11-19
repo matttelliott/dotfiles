@@ -163,6 +163,20 @@ bash ranger/setup.mac.sh
 bash nmap/setup.mac.sh
 bash lolcat/setup.mac.sh
 
+# Homebrew Apps
+# ===
+bash mpv/setup.mac.sh
+bash vlc/setup.mac.sh
+bash obsidian/setup.mac.sh
+bash vscodium/setup.mac.sh
+
+# Browsers
+# ===
+bash chromium/setup.mac.sh
+bash firefox/setup.mac.sh
+bash vivaldi/setup.mac.sh
+bash opera/setup.mac.sh
+
 # # bash svn/setup.mac.sh
 # # bash github/setup.mac.sh
 #
@@ -170,18 +184,10 @@ bash lolcat/setup.mac.sh
 # bash spectacle/setup.mac.sh
 #
 #
-# bash mpv/setup.mac.sh
-# bash vlc/setup.mac.sh
-# bash obsidian/setup.mac.sh
-# bash vscodium/setup.mac.sh
 #
-# bash chromium/setup.mac.sh
-# bash firefox/setup.mac.sh
-# bash vivaldi/setup.mac.sh
-# bash opera/setup.mac.sh
 #
-# # bash virtualbox/setup.mac.sh
-# # bash vagrant/setup.mac.sh
+# bash virtualbox/setup.mac.sh
+# bash vagrant/setup.mac.sh
 #
 #
 # ## Manual Install

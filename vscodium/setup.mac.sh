@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bat vscodium/README.md
+cat vscodium/README.md
 stow --no-folding vscodium
 brew install vscodium
