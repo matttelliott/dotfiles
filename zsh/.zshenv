@@ -70,4 +70,4 @@ fi
 for file in `ls -a $HOME/.zsh_env`; do
   source $HOME/.zsh_env/$file;
 done;
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
