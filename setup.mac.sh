@@ -169,6 +169,9 @@ bash mpv/setup.mac.sh
 bash vlc/setup.mac.sh
 bash obsidian/setup.mac.sh
 bash vscodium/setup.mac.sh
+bash keepass/setup.mac.sh
+bash 1password/setup.mac.sh
+bash virtualbox/setup.mac.sh
 
 # Browsers
 # ===
@@ -177,22 +180,12 @@ bash firefox/setup.mac.sh
 bash vivaldi/setup.mac.sh
 bash opera/setup.mac.sh
 
-# # bash svn/setup.mac.sh
-# # bash github/setup.mac.sh
-#
-# bash 1password/setup.mac.sh
+# bash svn/setup.mac.sh
+# bash github/setup.mac.sh
 # bash spectacle/setup.mac.sh
-#
-#
-#
-#
-# bash virtualbox/setup.mac.sh
 # bash vagrant/setup.mac.sh
-#
-#
-# ## Manual Install
-# # bash julia/setup.mac.sh
+# bash julia/setup.mac.sh
 # bash wiki/setup.mac.sh
-# # bash tf2/setup.mac.sh
-# # bash spotify/setup.mac.sh
+# bash tf2/setup.mac.sh
+# bash spotify/setup.mac.sh
 echo "DONE!"
