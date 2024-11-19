@@ -2,3 +2,4 @@
 cd "$HOME/dotfiles"
 cat clipboard/README.md
 stow --no-folding clipboard
+exit 0

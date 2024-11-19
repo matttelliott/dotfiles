@@ -9,3 +9,4 @@ brew install lua-language-server
 brew install stylua
 stow --no-folding lua
 
+exit 0

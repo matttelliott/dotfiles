@@ -4,3 +4,4 @@ asdf install rust latest
 asdf global rust latest
 asdf shell rust latest
 stow --no-folding rust
+exit 0

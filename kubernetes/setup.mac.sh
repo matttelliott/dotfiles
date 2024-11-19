@@ -7,3 +7,4 @@ brew install minikube
 brew install kubernetes-helm
 
 stow --no-folding kubernetes
+exit 0

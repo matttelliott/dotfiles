@@ -5,3 +5,4 @@ asdf install python latest
 asdf global python latest
 asdf shell python latest
 stow --no-folding python
+exit 0

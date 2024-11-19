@@ -12,3 +12,4 @@ brew install --cask font-fontawesome
 stow --no-folding fonts
 cp $HOME/.local/share/fonts/* /Library/Fonts/
 fc-cache -f -v
+exit 0

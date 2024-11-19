@@ -3,3 +3,4 @@ cd "$HOME/dotfiles"
 cat keepass/README.md
 stow --no-folding keepass
 brew install keepassxc
+exit 0
