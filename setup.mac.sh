@@ -76,115 +76,115 @@ cd $dotfilesRepoDir
 
 # System Setup
 # ===
-source mac/setup.mac.sh
-source homebrew/setup.mac.sh
-source git/setup.mac.sh
-source stow/setup.mac.sh
-source asdf/setup.mac.sh
-# source clipboard/setup.mac.sh
+source mac/setup.mac.sh || true
+source homebrew/setup.mac.sh || true
+source git/setup.mac.sh || true
+source stow/setup.mac.sh || true
+source asdf/setup.mac.sh || true
+# source clipboard/setup.mac.sh || true
 
 # Terminal environment
 # ===
 cd $dotfilesRepoDir
-source iterm/setup.mac.sh
-source zsh/setup.mac.sh
-source fonts/setup.mac.sh
-source prompt/setup.mac.sh
-source gum/setup.mac.sh
-source tmux/setup.mac.sh
-source cron/setup.mac.sh
+source iterm/setup.mac.sh || true
+source zsh/setup.mac.sh || true
+source fonts/setup.mac.sh || true
+source prompt/setup.mac.sh || true
+source gum/setup.mac.sh || true
+source tmux/setup.mac.sh || true
+source cron/setup.mac.sh || true
 
 # Programming Languages
 # ===
 cd $dotfilesRepoDir
-source nodejs/setup.sh
-source lua/setup.mac.sh
-source python/setup.sh
-source golang/setup.sh
-source rust/setup.sh
-source shfmt/setup.mac.sh
+source nodejs/setup.sh || true
+source lua/setup.mac.sh || true
+source python/setup.sh || true
+source golang/setup.sh || true
+source rust/setup.sh || true
+source shfmt/setup.mac.sh || true
 
 
 # Neovim
 # ===
 cd $dotfilesRepoDir
-source neovim/setup.mac.sh
+source neovim/setup.mac.sh || true
 
 
 echo 'installed neovim/setup.mac.sh'
 
 # Containers
 # ===
-source docker/setup.mac.sh
-source kubernetes/setup.mac.sh
+source docker/setup.mac.sh || true
+source kubernetes/setup.mac.sh || true
 
 # Databases
 # ===
-source sqlite/setup.mac.sh
-source postgres/setup.mac.sh
+source sqlite/setup.mac.sh || true
+source postgres/setup.mac.sh || true
 
 # My CLI Tools
 # ===
 cd $dotfilesRepoDir
-source bin/setup.sh
+source bin/setup.sh || true
 
 # Homebrew CLI Tools
 # ===
 cd $dotfilesRepoDir
-source bat/setup.mac.sh
+source bat/setup.mac.sh || true
 alias cat=bat
-source mprocs/setup.mac.sh
-source zoxide/setup.mac.sh
-source lsd/setup.mac.sh
-source ripgrep/setup.mac.sh
-source fd/setup.mac.sh
-source sd/setup.mac.sh
-source fzf/setup.mac.sh
-source lazygit/setup.mac.sh
-source jq/setup.mac.sh
-source youtube-dl/setup.mac.sh
-source bpytop/setup.mac.sh
-source cowsay/setup.mac.sh
-source neofetch/setup.mac.sh
-source wget/setup.mac.sh
-source ag/setup.mac.sh
-source vim/setup.mac.sh
-source asciiquarium/setup.mac.sh
-source entr/setup.mac.sh
-source vifm/setup.mac.sh
-source htop/setup.mac.sh
-source pandoc/setup.mac.sh
-source w3m/setup.mac.sh
-source watch/setup.mac.sh
-source ffmpeg/setup.mac.sh
-source imagemagick/setup.mac.sh
-source ranger/setup.mac.sh
-source nmap/setup.mac.sh
-source lolcat/setup.mac.sh
+source mprocs/setup.mac.sh || true
+source zoxide/setup.mac.sh || true
+source lsd/setup.mac.sh || true
+source ripgrep/setup.mac.sh || true
+source fd/setup.mac.sh || true
+source sd/setup.mac.sh || true
+source fzf/setup.mac.sh || true
+source lazygit/setup.mac.sh || true
+source jq/setup.mac.sh || true
+source youtube-dl/setup.mac.sh || true
+source bpytop/setup.mac.sh || true
+source cowsay/setup.mac.sh || true
+source neofetch/setup.mac.sh || true
+source wget/setup.mac.sh || true
+source ag/setup.mac.sh || true
+source vim/setup.mac.sh || true
+source asciiquarium/setup.mac.sh || true
+source entr/setup.mac.sh || true
+source vifm/setup.mac.sh || true
+source htop/setup.mac.sh || true
+source pandoc/setup.mac.sh || true
+source w3m/setup.mac.sh || true
+source watch/setup.mac.sh || true
+source ffmpeg/setup.mac.sh || true
+source imagemagick/setup.mac.sh || true
+source ranger/setup.mac.sh || true
+source nmap/setup.mac.sh || true
+source lolcat/setup.mac.sh || true
 
 # Homebrew Apps
 # ===
-source mpv/setup.mac.sh
-source vlc/setup.mac.sh
-source obsidian/setup.mac.sh
-source vscodium/setup.mac.sh
-source keepass/setup.mac.sh
-source 1password/setup.mac.sh
-source virtualbox/setup.mac.sh
+source mpv/setup.mac.sh || true
+source vlc/setup.mac.sh || true
+source obsidian/setup.mac.sh || true
+source vscodium/setup.mac.sh || true
+source keepass/setup.mac.sh || true
+source 1password/setup.mac.sh || true
+source virtualbox/setup.mac.sh || true
 
 # Browsers
 # ===
-source chromium/setup.mac.sh
-source firefox/setup.mac.sh
-source vivaldi/setup.mac.sh
-source opera/setup.mac.sh
+source chromium/setup.mac.sh || true
+source firefox/setup.mac.sh || true
+source vivaldi/setup.mac.sh || true
+source opera/setup.mac.sh || true
 
-# source svn/setup.mac.sh
-# source github/setup.mac.sh
-# source spectacle/setup.mac.sh
-# source vagrant/setup.mac.sh
-# source julia/setup.mac.sh
-# source wiki/setup.mac.sh
-# source tf2/setup.mac.sh
-# source spotify/setup.mac.sh
+# source svn/setup.mac.sh || true
+# source github/setup.mac.sh || true
+# source spectacle/setup.mac.sh || true
+# source vagrant/setup.mac.sh || true
+# source julia/setup.mac.sh || true
+# source wiki/setup.mac.sh || true
+# source tf2/setup.mac.sh || true
+# source spotify/setup.mac.sh || true
 echo "DONE!"
