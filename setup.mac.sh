@@ -119,6 +119,7 @@ cd $dotfilesRepoDir
 
 # Databases
 # ===
+./dbeaver/setup.mac.sh || true
 ./sqlite/setup.mac.sh || true
 ./postgres/setup.mac.sh || true
 
