@@ -55,24 +55,24 @@ export PATH=$PATH:/opt/homebrew/bin
 echo $REPO
 echo $dotfilesRepoDir
 echo $PATH
-
-# Install updates
-# ===
-sudo softwareupdate --install-rosetta --agree-to-license
-brew update
-
-
-# Install Core dependencies
-# ===
-brew install \
-  git \
-  stow \
-  cmake
-
-git clone $REPO $dotfilesRepoDir
-
-
-cd $dotfilesRepoDir
+#
+# # Install updates
+# # ===
+# sudo softwareupdate --install-rosetta --agree-to-license
+# brew update
+#
+#
+# # Install Core dependencies
+# # ===
+# brew install \
+#   git \
+#   stow \
+#   cmake
+#
+# git clone $REPO $dotfilesRepoDir
+#
+#
+# cd $dotfilesRepoDir
 #
 # # System Setup
 # # ===
