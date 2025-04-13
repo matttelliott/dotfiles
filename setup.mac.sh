@@ -37,13 +37,23 @@ cd "$HOME"
 cd "$HOME"
 
 date=$(date -Iseconds)
-mv $HOME/dotfiles $HOME/dotfiles-$date
-mv $HOME/.local $HOME/.local-$date
-mv $HOME/.config $HOME/.config-$date
-mv $HOME/.profile $HOME/.profile-$date
+if test -d "$HOME/dotfiles"; then
+  mv $HOME/dotfiles $HOME/dotfiles-$date
+fi
+if test -d "$HOME/.local"; then
+  mv $HOME/.local $HOME/.local-$date
+fi
+if test -d "$HOME/.config"; then
+  mv $HOME/.config $HOME/.config-$date
+fi
+if test -f "$HOME/.profile"; then
+  mv $HOME/.profile $HOME/.profile-$date
+fi
+
 for file in $(ls -lash | awk '{ print $10 }' | grep '^.z' | grep -v '\d\d\d\d-\d\d-\d\d'); do
 	mv $HOME/$file $HOME/$file-$date
 done
+
 for file in $(ls -lash | awk '{ print $10 }' | grep '^.bash' | grep -v '\d\d\d\d-\d\d-\d\d'); do
 	mv $HOME/$file $HOME/$file-$date
 done
