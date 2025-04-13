@@ -1,17 +1,18 @@
 #!/usr/bin/env bash
 set -v
+set -e
 
 # This script requires a user with sudo priviliges to set up dependencies with homebrew
 
 # Ask for the administrator password upfront
-# sudo -v
+sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until bootstrap has finished
-# while true; do
-# 	sudo -n true
-# 	sleep 100
-# 	kill -0 "$$" || exit
-# done 2>/dev/null &
+while true; do
+	sudo -n true
+	sleep 100
+	kill -0 "$$" || exit
+done 2>/dev/null &
 
 
 dotfilesRepoDir="$HOME/dotfiles"
