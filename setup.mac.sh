@@ -82,24 +82,24 @@ softwareupdate --install-rosetta --agree-to-license
   cmake
 
 git clone $REPO $dotfilesRepoDir
-#
-#
-# cd $dotfilesRepoDir
-#
-# # System Setup
-# # ===
-# ./mac/setup.mac.sh || true
-# ./homebrew/setup.mac.sh || true
-# ./git/setup.mac.sh || true
-# ./stow/setup.mac.sh || true
+
+
+
+# System Setup
+# ===
+cd $dotfilesRepoDir
+./mac/setup.mac.sh || true
+./homebrew/setup.mac.sh || true
+./git/setup.mac.sh || true
+./stow/setup.mac.sh || true
 # ./asdf/setup.mac.sh || true
-# # ./clipboard/setup.mac.sh || true
-#
-# # Terminal environment
-# # ===
-# cd $dotfilesRepoDir
+# ./clipboard/setup.mac.sh || true
+
+# Terminal environment
+# ===
+cd $dotfilesRepoDir
+./zsh/setup.mac.sh || true
 # ./iterm/setup.mac.sh || true
-# ./zsh/setup.mac.sh || true
 # ./fonts/setup.mac.sh || true
 # ./prompt/setup.mac.sh || true
 # ./gum/setup.mac.sh || true

@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-brew update || true
+brew update
 stow --no-folding homebrew
