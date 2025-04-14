@@ -25,7 +25,6 @@ else
   exit 1
 fi
 
-
 REPO=https://github.com/matttelliott/dotfiles
 
 # Because Git submodule commands cannot operate without a work tree, they must
@@ -73,7 +72,6 @@ echo $PATH
 softwareupdate --install-rosetta --agree-to-license
 /opt/homebrew/bin/brew update
 
-
 # Install Core dependencies
 # ===
 /opt/homebrew/bin/brew install \
@@ -83,71 +81,40 @@ softwareupdate --install-rosetta --agree-to-license
 
 git clone $REPO $dotfilesRepoDir
 
-
-
 # System Setup
 # ===
 cd $dotfilesRepoDir
-./mac/setup.mac.sh || true
-./homebrew/setup.mac.sh || true
-./git/setup.mac.sh || true
-./stow/setup.mac.sh || true
-# ./asdf/setup.mac.sh || true
-# ./clipboard/setup.mac.sh || true
+./mac/setup.mac.sh
+./homebrew/setup.mac.sh
+./git/setup.mac.sh
+./stow/setup.mac.sh
+# ./asdf/setup.mac.sh
+# ./clipboard/setup.mac.sh
 
 # Terminal environment
 # ===
 cd $dotfilesRepoDir
-./zsh/setup.mac.sh || true
-./tmux/setup.mac.sh || true
-./fonts/setup.mac.sh || true
-./prompt/setup.mac.sh || true
-./cron/setup.mac.sh || true
-#
-# # Programming Languages
-# # ===
-# cd $dotfilesRepoDir
-# ./nodejs/setup.sh || true
-# ./lua/setup.mac.sh || true
-# ./python/setup.sh || true
-# ./golang/setup.sh || true
-# ./rust/setup.sh || true
-# ./shfmt/setup.mac.sh || true
-#
-#
-# # Neovim
-# # ===
-# cd $dotfilesRepoDir
-# ./neovim/setup.mac.sh || true
-#
-#
-# # Containers
-# # ===
-# ./docker/setup.mac.sh || true
-# ./kubernetes/setup.mac.sh || true
-#
-# # Databases
-# # ===
-# ./dbeaver/setup.mac.sh || true
-# ./sqlite/setup.mac.sh || true
-# ./postgres/setup.mac.sh || true
-#
-# # My CLI Tools
-# # ===
-# cd $dotfilesRepoDir
-# ./bin/setup.sh || true
+./zsh/setup.mac.sh
+./tmux/setup.mac.sh
+./fonts/setup.mac.sh
+./prompt/setup.mac.sh
+./cron/setup.mac.sh
+
+# My CLI Tools
+# ===
+cd $dotfilesRepoDir
+./bin/setup.sh
 #
 # # Homebrew CLI Tools
 # # ===
 # cd $dotfilesRepoDir
-# ./bat/setup.mac.sh || true
-# alias cat=bat
+./bat/setup.mac.sh
+./lsd/setup.mac.sh
+./zoxide/setup.mac.sh
+./ripgrep/setup.mac.sh
+./fd/setup.mac.sh
+./sd/setup.mac.sh
 # ./mprocs/setup.mac.sh || true
-# ./zoxide/setup.mac.sh || true
-# ./lsd/setup.mac.sh || true
-# ./ripgrep/setup.mac.sh || true
-# ./fd/setup.mac.sh || true
-# ./sd/setup.mac.sh || true
 # ./fzf/setup.mac.sh || true
 # ./lazygit/setup.mac.sh || true
 # ./jq/setup.mac.sh || true
@@ -171,6 +138,33 @@ cd $dotfilesRepoDir
 # ./nmap/setup.mac.sh || true
 # ./lolcat/setup.mac.sh || true
 # ./gum/setup.mac.sh || true
+
+# # Programming Languages
+# # ===
+# cd $dotfilesRepoDir
+# ./nodejs/setup.sh || true
+# ./lua/setup.mac.sh || true
+# ./python/setup.sh || true
+# ./golang/setup.sh || true
+# ./rust/setup.sh || true
+# ./shfmt/setup.mac.sh || true
+#
+# # Neovim
+# # ===
+# cd $dotfilesRepoDir
+# ./neovim/setup.mac.sh || true
+#
+#
+# # Containers
+# # ===
+# ./docker/setup.mac.sh || true
+# ./kubernetes/setup.mac.sh || true
+#
+# # Databases
+# # ===
+# ./dbeaver/setup.mac.sh || true
+# ./sqlite/setup.mac.sh || true
+# ./postgres/setup.mac.sh || true
 #
 # # Homebrew Apps
 # # ===
