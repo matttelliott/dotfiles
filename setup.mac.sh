@@ -70,8 +70,8 @@ echo $PATH
 #
 # # Install updates
 # # ===
-# sudo softwareupdate --install-rosetta --agree-to-license
-# brew update
+sudo softwareupdate --install-rosetta --agree-to-license
+/opt/homebrew/bin/brew update
 #
 #
 # # Install Core dependencies
