@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
 
+cat fonts/README.md
 brew install --cask font-inconsolata
 brew install --cask font-hack-nerd-font
 brew install --cask font-dejavu-sans-mono-for-powerline
