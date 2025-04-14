@@ -24,7 +24,7 @@ hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x70
 # sudo pmset -a standbydelay 86400
 
 # Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
+nvram SystemAudioVolume=" "
 
 # Disable transparency in the menu bar and elsewhere on Yosemite
 # defaults write com.apple.universalaccess reduceTransparency -bool true
@@ -92,7 +92,7 @@ defaults write com.apple.helpviewer DevMode -bool true
 
 # Reveal IP address, hostname, OS version, etc. when clicking the clock
 # in the login window
-sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
 # Restart automatically if the computer freezes
 # sudo systemsetup -setrestartfreeze on
@@ -215,7 +215,7 @@ defaults write com.apple.screencapture disable-shadow -bool true
 defaults write NSGlobalDomain AppleFontSmoothing -int 1
 
 # Enable HiDPI display modes (requires restart)
-sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
 ###############################################################################
 # Finder                                                                      #
@@ -319,7 +319,7 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 chflags nohidden ~/Library
 
 # Show the /Volumes folder
-sudo chflags nohidden /Volumes
+chflags nohidden /Volumes
 
 # Remove Dropbox’s green checkmark icons in Finder
 file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
@@ -403,8 +403,8 @@ defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
 find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -delete
 
 # Add iOS & Watch Simulator to Launchpad
-sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
-sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator (Watch).app" "/Applications/Simulator (Watch).app"
+ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
+ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator (Watch).app" "/Applications/Simulator (Watch).app"
 
 # Add a spacer to the left side of the Dock (where the applications are)
 #defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
@@ -591,9 +591,9 @@ defaults write com.apple.spotlight orderedItems -array \
 # Load new settings before rebuilding the index
 killall mds > /dev/null 2>&1
 # Make sure indexing is enabled for the main volume
-sudo mdutil -i on / > /dev/null
+mdutil -i on / > /dev/null
 # Rebuild the index from scratch
-sudo mdutil -E / > /dev/null
+mdutil -E / > /dev/null
 
 ###############################################################################
 # Time Machine                                                                #
