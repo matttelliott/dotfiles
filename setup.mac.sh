@@ -107,15 +107,14 @@ cd $dotfilesRepoDir
 #
 # # Homebrew CLI Tools
 # # ===
-# cd $dotfilesRepoDir
+cd $dotfilesRepoDir
+./fzf/setup.mac.sh
 ./bat/setup.mac.sh
 ./lsd/setup.mac.sh
-./zoxide/setup.mac.sh
 ./ripgrep/setup.mac.sh
 ./fd/setup.mac.sh
 ./sd/setup.mac.sh
 # ./mprocs/setup.mac.sh || true
-# ./fzf/setup.mac.sh || true
 # ./lazygit/setup.mac.sh || true
 # ./jq/setup.mac.sh || true
 # ./youtube-dl/setup.mac.sh || true
