@@ -67,21 +67,21 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 echo $REPO
 echo $dotfilesRepoDir
 echo $PATH
-#
-# # Install updates
-# # ===
+
+# Install updates
+# ===
 softwareupdate --install-rosetta --agree-to-license
 /opt/homebrew/bin/brew update
-#
-#
-# # Install Core dependencies
-# # ===
-# brew install \
-#   git \
-#   stow \
-#   cmake
-#
-# git clone $REPO $dotfilesRepoDir
+
+
+# Install Core dependencies
+# ===
+/opt/homebrew/bin/brew install \
+  git \
+  stow \
+  cmake
+
+git clone $REPO $dotfilesRepoDir
 #
 #
 # cd $dotfilesRepoDir
