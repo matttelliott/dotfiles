@@ -99,12 +99,10 @@ cd $dotfilesRepoDir
 # ===
 cd $dotfilesRepoDir
 ./zsh/setup.mac.sh || true
-# ./iterm/setup.mac.sh || true
-# ./fonts/setup.mac.sh || true
-# ./prompt/setup.mac.sh || true
-# ./gum/setup.mac.sh || true
-# ./tmux/setup.mac.sh || true
-# ./cron/setup.mac.sh || true
+./tmux/setup.mac.sh || true
+./fonts/setup.mac.sh || true
+./prompt/setup.mac.sh || true
+./cron/setup.mac.sh || true
 #
 # # Programming Languages
 # # ===
@@ -172,9 +170,11 @@ cd $dotfilesRepoDir
 # ./ranger/setup.mac.sh || true
 # ./nmap/setup.mac.sh || true
 # ./lolcat/setup.mac.sh || true
+# ./gum/setup.mac.sh || true
 #
 # # Homebrew Apps
 # # ===
+# ./iterm/setup.mac.sh || true
 # ./mpv/setup.mac.sh || true
 # ./vlc/setup.mac.sh || true
 # ./obsidian/setup.mac.sh || true
