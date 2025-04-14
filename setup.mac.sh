@@ -8,11 +8,11 @@ set -e
 sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until bootstrap has finished
-while true; do
-	sudo -n true
-	sleep 100
-	kill -0 "$$" || exit
-done 2>/dev/null &
+# while true; do
+# 	sudo -n true
+# 	sleep 100
+# 	kill -0 "$$" || exit
+# done 2>/dev/null &
 
 
 dotfilesRepoDir="$HOME/dotfiles"
