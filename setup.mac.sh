@@ -14,7 +14,6 @@ sudo -v
 # 	kill -0 "$$" || exit
 # done 2>/dev/null &
 
-
 dotfilesRepoDir="$HOME/dotfiles"
 
 # check environment and set global env var
@@ -84,111 +83,111 @@ git clone $REPO $dotfilesRepoDir
 # System Setup
 # ===
 cd $dotfilesRepoDir
-./mac/setup.mac.sh
-./homebrew/setup.mac.sh
-./git/setup.mac.sh
-./stow/setup.mac.sh
-# ./asdf/setup.mac.sh
-# ./clipboard/setup.mac.sh
+source mac/setup.mac.sh
+source homebrew/setup.mac.sh
+source git/setup.mac.sh
+source stow/setup.mac.sh
+# source asdf/setup.mac.sh
+# source clipboard/setup.mac.sh
 
 # Terminal environment
 # ===
 cd $dotfilesRepoDir
-./zsh/setup.mac.sh
-./tmux/setup.mac.sh
-./fonts/setup.mac.sh
-./prompt/setup.mac.sh
-./cron/setup.mac.sh
+source zsh/setup.mac.sh
+source tmux/setup.mac.sh
+source fonts/setup.mac.sh
+source prompt/setup.mac.sh
+source cron/setup.mac.sh
 
 # My CLI Tools
 # ===
 cd $dotfilesRepoDir
-./bin/setup.sh
+source bin/setup.sh
 #
 # # Homebrew CLI Tools
 # # ===
 cd $dotfilesRepoDir
-./fzf/setup.mac.sh
-./bat/setup.mac.sh
-./lsd/setup.mac.sh
-./ripgrep/setup.mac.sh
-./fd/setup.mac.sh
-./sd/setup.mac.sh
-# ./mprocs/setup.mac.sh || true
-# ./lazygit/setup.mac.sh || true
-# ./jq/setup.mac.sh || true
-# ./youtube-dl/setup.mac.sh || true
-# ./bpytop/setup.mac.sh || true
-# ./cowsay/setup.mac.sh || true
-# ./neofetch/setup.mac.sh || true
-# ./wget/setup.mac.sh || true
-# ./ag/setup.mac.sh || true
-# ./vim/setup.mac.sh || true
-# ./asciiquarium/setup.mac.sh || true
-# ./entr/setup.mac.sh || true
-# ./vifm/setup.mac.sh || true
-# ./htop/setup.mac.sh || true
-# ./pandoc/setup.mac.sh || true
-# ./w3m/setup.mac.sh || true
-# ./watch/setup.mac.sh || true
-# ./ffmpeg/setup.mac.sh || true
-# ./imagemagick/setup.mac.sh || true
-# ./ranger/setup.mac.sh || true
-# ./nmap/setup.mac.sh || true
-# ./lolcat/setup.mac.sh || true
-# ./gum/setup.mac.sh || true
+source fzf/setup.mac.sh
+source bat/setup.mac.sh
+source lsd/setup.mac.sh
+source ripgrep/setup.mac.sh
+source fd/setup.mac.sh
+source sd/setup.mac.sh
+# source mprocs/setup.mac.sh || true
+# source lazygit/setup.mac.sh || true
+# source jq/setup.mac.sh || true
+# source youtube-dl/setup.mac.sh || true
+# source bpytop/setup.mac.sh || true
+# source cowsay/setup.mac.sh || true
+# source neofetch/setup.mac.sh || true
+# source wget/setup.mac.sh || true
+# source ag/setup.mac.sh || true
+# source vim/setup.mac.sh || true
+# source asciiquarium/setup.mac.sh || true
+# source entr/setup.mac.sh || true
+# source vifm/setup.mac.sh || true
+# source htop/setup.mac.sh || true
+# source pandoc/setup.mac.sh || true
+# source w3m/setup.mac.sh || true
+# source watch/setup.mac.sh || true
+# source ffmpeg/setup.mac.sh || true
+# source imagemagick/setup.mac.sh || true
+# source ranger/setup.mac.sh || true
+# source nmap/setup.mac.sh || true
+# source lolcat/setup.mac.sh || true
+# source gum/setup.mac.sh || true
 
 # # Programming Languages
 # # ===
 # cd $dotfilesRepoDir
-# ./nodejs/setup.sh || true
-# ./lua/setup.mac.sh || true
-# ./python/setup.sh || true
-# ./golang/setup.sh || true
-# ./rust/setup.sh || true
-# ./shfmt/setup.mac.sh || true
+# source nodejs/setup.sh || true
+# source lua/setup.mac.sh || true
+# source python/setup.sh || true
+# source golang/setup.sh || true
+# source rust/setup.sh || true
+# source shfmt/setup.mac.sh || true
 #
 # # Neovim
 # # ===
 # cd $dotfilesRepoDir
-# ./neovim/setup.mac.sh || true
+# source neovim/setup.mac.sh || true
 #
 #
 # # Containers
 # # ===
-# ./docker/setup.mac.sh || true
-# ./kubernetes/setup.mac.sh || true
+# source docker/setup.mac.sh || true
+# source kubernetes/setup.mac.sh || true
 #
 # # Databases
 # # ===
-# ./dbeaver/setup.mac.sh || true
-# ./sqlite/setup.mac.sh || true
-# ./postgres/setup.mac.sh || true
+# source dbeaver/setup.mac.sh || true
+# source sqlite/setup.mac.sh || true
+# source postgres/setup.mac.sh || true
 #
 # # Homebrew Apps
 # # ===
-# ./iterm/setup.mac.sh || true
-# ./mpv/setup.mac.sh || true
-# ./vlc/setup.mac.sh || true
-# ./obsidian/setup.mac.sh || true
-# ./vscodium/setup.mac.sh || true
-# ./keepass/setup.mac.sh || true
-# ./1password/setup.mac.sh || true
-# ./virtualbox/setup.mac.sh || true
+# source iterm/setup.mac.sh || true
+# source mpv/setup.mac.sh || true
+# source vlc/setup.mac.sh || true
+# source obsidian/setup.mac.sh || true
+# source vscodium/setup.mac.sh || true
+# source keepass/setup.mac.sh || true
+# source 1password/setup.mac.sh || true
+# source virtualbox/setup.mac.sh || true
 #
 # # Browsers
 # # ===
-# ./chromium/setup.mac.sh || true
-# ./firefox/setup.mac.sh || true
-# ./vivaldi/setup.mac.sh || true
-# ./opera/setup.mac.sh || true
+# source chromium/setup.mac.sh || true
+# source firefox/setup.mac.sh || true
+# source vivaldi/setup.mac.sh || true
+# source opera/setup.mac.sh || true
 #
-# # ./svn/setup.mac.sh || true
-# # ./github/setup.mac.sh || true
-# # ./spectacle/setup.mac.sh || true
-# # ./vagrant/setup.mac.sh || true
-# # ./julia/setup.mac.sh || true
-# # ./wiki/setup.mac.sh || true
-# # ./tf2/setup.mac.sh || true
-# # ./spotify/setup.mac.sh || true
+# # source svn/setup.mac.sh || true
+# # source github/setup.mac.sh || true
+# # source spectacle/setup.mac.sh || true
+# # source vagrant/setup.mac.sh || true
+# # source julia/setup.mac.sh || true
+# # source wiki/setup.mac.sh || true
+# # source tf2/setup.mac.sh || true
+# # source spotify/setup.mac.sh || true
 # echo "DONE!"
