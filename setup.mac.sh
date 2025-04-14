@@ -70,7 +70,7 @@ echo $PATH
 #
 # # Install updates
 # # ===
-sudo softwareupdate --install-rosetta --agree-to-license
+softwareupdate --install-rosetta --agree-to-license
 /opt/homebrew/bin/brew update
 #
 #
