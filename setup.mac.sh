@@ -136,57 +136,58 @@ bash $dotfilesRepoDir/lolcat/setup.mac.sh
 bash $dotfilesRepoDir/gum/setup.mac.sh
 # bash $dotfilesRepoDir/ag/setup.mac.sh
 
-# # Programming Languages
-# # ===
-# cd $dotfilesRepoDir
-# bash $dotfilesRepoDir/nodejs/setup.sh || true
-# bash $dotfilesRepoDir/lua/setup.mac.sh || true
-# bash $dotfilesRepoDir/python/setup.sh || true
-# bash $dotfilesRepoDir/golang/setup.sh || true
-# bash $dotfilesRepoDir/rust/setup.sh || true
-# bash $dotfilesRepoDir/shfmt/setup.mac.sh || true
+# Neovim
+# ===
+cd $dotfilesRepoDir
+bash $dotfilesRepoDir/neovim/setup.mac.sh
+
+# Programming Languages
+# ===
+cd $dotfilesRepoDir
+# bash $dotfilesRepoDir/lua/setup.mac.sh
+# bash $dotfilesRepoDir/nodejs/setup.sh
+# bash $dotfilesRepoDir/python/setup.sh
+# bash $dotfilesRepoDir/golang/setup.sh
+# bash $dotfilesRepoDir/rust/setup.sh
+# bash $dotfilesRepoDir/shfmt/setup.mac.sh
 #
-# # Neovim
-# # ===
-# cd $dotfilesRepoDir
-# bash $dotfilesRepoDir/neovim/setup.mac.sh || true
 #
 #
 # # Containers
 # # ===
-# bash $dotfilesRepoDir/docker/setup.mac.sh || true
-# bash $dotfilesRepoDir/kubernetes/setup.mac.sh || true
+# bash $dotfilesRepoDir/docker/setup.mac.sh
+# bash $dotfilesRepoDir/kubernetes/setup.mac.sh
 #
 # # Databases
 # # ===
-# bash $dotfilesRepoDir/dbeaver/setup.mac.sh || true
-# bash $dotfilesRepoDir/sqlite/setup.mac.sh || true
-# bash $dotfilesRepoDir/postgres/setup.mac.sh || true
+# bash $dotfilesRepoDir/dbeaver/setup.mac.sh
+# bash $dotfilesRepoDir/sqlite/setup.mac.sh
+# bash $dotfilesRepoDir/postgres/setup.mac.sh
 #
 # # Homebrew Apps
 # # ===
-# bash $dotfilesRepoDir/iterm/setup.mac.sh || true
-# bash $dotfilesRepoDir/mpv/setup.mac.sh || true
-# bash $dotfilesRepoDir/vlc/setup.mac.sh || true
-# bash $dotfilesRepoDir/obsidian/setup.mac.sh || true
-# bash $dotfilesRepoDir/vscodium/setup.mac.sh || true
-# bash $dotfilesRepoDir/keepass/setup.mac.sh || true
-# bash $dotfilesRepoDir/1password/setup.mac.sh || true
-# bash $dotfilesRepoDir/virtualbox/setup.mac.sh || true
+# bash $dotfilesRepoDir/iterm/setup.mac.sh
+# bash $dotfilesRepoDir/mpv/setup.mac.sh
+# bash $dotfilesRepoDir/vlc/setup.mac.sh
+# bash $dotfilesRepoDir/obsidian/setup.mac.sh
+# bash $dotfilesRepoDir/vscodium/setup.mac.sh
+# bash $dotfilesRepoDir/keepass/setup.mac.sh
+# bash $dotfilesRepoDir/1password/setup.mac.sh
+# bash $dotfilesRepoDir/virtualbox/setup.mac.sh
 #
 # # Browsers
 # # ===
-# bash $dotfilesRepoDir/chromium/setup.mac.sh || true
-# bash $dotfilesRepoDir/firefox/setup.mac.sh || true
-# bash $dotfilesRepoDir/vivaldi/setup.mac.sh || true
-# bash $dotfilesRepoDir/opera/setup.mac.sh || true
+# bash $dotfilesRepoDir/chromium/setup.mac.sh
+# bash $dotfilesRepoDir/firefox/setup.mac.sh
+# bash $dotfilesRepoDir/vivaldi/setup.mac.sh
+# bash $dotfilesRepoDir/opera/setup.mac.sh
 #
-# # bash $dotfilesRepoDir/svn/setup.mac.sh || true
-# # bash $dotfilesRepoDir/github/setup.mac.sh || true
-# # bash $dotfilesRepoDir/spectacle/setup.mac.sh || true
-# # bash $dotfilesRepoDir/vagrant/setup.mac.sh || true
-# # bash $dotfilesRepoDir/julia/setup.mac.sh || true
-# # bash $dotfilesRepoDir/wiki/setup.mac.sh || true
-# # bash $dotfilesRepoDir/tf2/setup.mac.sh || true
-# # bash $dotfilesRepoDir/spotify/setup.mac.sh || true
-# echo "DONE!"
+# # bash $dotfilesRepoDir/svn/setup.mac.sh
+# # bash $dotfilesRepoDir/github/setup.mac.sh
+# # bash $dotfilesRepoDir/spectacle/setup.mac.sh
+# # bash $dotfilesRepoDir/vagrant/setup.mac.sh
+# # bash $dotfilesRepoDir/julia/setup.mac.sh
+# # bash $dotfilesRepoDir/wiki/setup.mac.sh
+# # bash $dotfilesRepoDir/tf2/setup.mac.sh
+# # bash $dotfilesRepoDir/spotify/setup.mac.sh
+echo "DONE!"
