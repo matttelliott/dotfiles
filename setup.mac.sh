@@ -18,9 +18,9 @@ dotfilesRepoDir="$HOME/dotfiles"
 
 # check environment and set global env var
 if [ $(sw_vers -productName) = 'macOS' ]; then
-  echo 'macOS dotfiles setup';
+  echo 'macOS dotfiles setup'
 else
-  echo 'Error: Running macOS dotfiles setup on non-macOS device.';
+  echo 'Error: Running macOS dotfiles setup on non-macOS device.'
   exit 1
 fi
 
@@ -49,11 +49,11 @@ if test -f "$HOME/.profile"; then
 fi
 
 for file in $(ls -lash | awk '{ print $10 }' | grep '^.z' | grep -v '\d\d\d\d-\d\d-\d\d'); do
-	mv $HOME/$file $HOME/$file-$date
+  mv $HOME/$file $HOME/$file-$date
 done
 
 for file in $(ls -lash | awk '{ print $10 }' | grep '^.bash' | grep -v '\d\d\d\d-\d\d-\d\d'); do
-	mv $HOME/$file $HOME/$file-$date
+  mv $HOME/$file $HOME/$file-$date
 done
 
 # Install homebrew package manager
@@ -163,17 +163,17 @@ cd $dotfilesRepoDir
 # bash $dotfilesRepoDir/dbeaver/setup.mac.sh
 # bash $dotfilesRepoDir/sqlite/setup.mac.sh
 # bash $dotfilesRepoDir/postgres/setup.mac.sh
-#
-# # Homebrew Apps
-# # ===
-# bash $dotfilesRepoDir/iterm/setup.mac.sh
-# bash $dotfilesRepoDir/mpv/setup.mac.sh
-# bash $dotfilesRepoDir/vlc/setup.mac.sh
-# bash $dotfilesRepoDir/obsidian/setup.mac.sh
-# bash $dotfilesRepoDir/vscodium/setup.mac.sh
-# bash $dotfilesRepoDir/keepass/setup.mac.sh
-# bash $dotfilesRepoDir/1password/setup.mac.sh
-# bash $dotfilesRepoDir/virtualbox/setup.mac.sh
+
+# Homebrew Apps
+# ===
+bash $dotfilesRepoDir/iterm/setup.mac.sh
+bash $dotfilesRepoDir/mpv/setup.mac.sh
+bash $dotfilesRepoDir/vlc/setup.mac.sh
+bash $dotfilesRepoDir/obsidian/setup.mac.sh
+bash $dotfilesRepoDir/vscodium/setup.mac.sh
+bash $dotfilesRepoDir/keepass/setup.mac.sh
+bash $dotfilesRepoDir/1password/setup.mac.sh
+bash $dotfilesRepoDir/virtualbox/setup.mac.sh
 #
 # # Browsers
 # # ===
