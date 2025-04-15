@@ -144,25 +144,23 @@ bash $dotfilesRepoDir/neovim/setup.mac.sh
 # Programming Languages
 # ===
 cd $dotfilesRepoDir
-# bash $dotfilesRepoDir/lua/setup.mac.sh
-# bash $dotfilesRepoDir/nodejs/setup.sh
+bash $dotfilesRepoDir/lua/setup.mac.sh
+bash $dotfilesRepoDir/nodejs/setup.sh
 # bash $dotfilesRepoDir/python/setup.sh
 # bash $dotfilesRepoDir/golang/setup.sh
 # bash $dotfilesRepoDir/rust/setup.sh
 # bash $dotfilesRepoDir/shfmt/setup.mac.sh
-#
-#
-#
-# # Containers
-# # ===
-# bash $dotfilesRepoDir/docker/setup.mac.sh
-# bash $dotfilesRepoDir/kubernetes/setup.mac.sh
-#
-# # Databases
-# # ===
-# bash $dotfilesRepoDir/dbeaver/setup.mac.sh
-# bash $dotfilesRepoDir/sqlite/setup.mac.sh
-# bash $dotfilesRepoDir/postgres/setup.mac.sh
+
+# Containers
+# ===
+bash $dotfilesRepoDir/docker/setup.mac.sh
+bash $dotfilesRepoDir/kubernetes/setup.mac.sh
+
+# Databases
+# ===
+bash $dotfilesRepoDir/dbeaver/setup.mac.sh
+bash $dotfilesRepoDir/sqlite/setup.mac.sh
+bash $dotfilesRepoDir/postgres/setup.mac.sh
 
 # Homebrew Apps
 # ===
@@ -182,13 +180,13 @@ bash $dotfilesRepoDir/firefox/setup.mac.sh
 bash $dotfilesRepoDir/vivaldi/setup.mac.sh
 bash $dotfilesRepoDir/opera/setup.mac.sh
 bash $dotfilesRepoDir/orion/setup.mac.sh
-#
-# # bash $dotfilesRepoDir/svn/setup.mac.sh
-# # bash $dotfilesRepoDir/github/setup.mac.sh
-# # bash $dotfilesRepoDir/spectacle/setup.mac.sh
-# # bash $dotfilesRepoDir/vagrant/setup.mac.sh
-# # bash $dotfilesRepoDir/julia/setup.mac.sh
-# # bash $dotfilesRepoDir/wiki/setup.mac.sh
-# # bash $dotfilesRepoDir/tf2/setup.mac.sh
-# # bash $dotfilesRepoDir/spotify/setup.mac.sh
+
+# bash $dotfilesRepoDir/svn/setup.mac.sh
+# bash $dotfilesRepoDir/github/setup.mac.sh
+# bash $dotfilesRepoDir/spectacle/setup.mac.sh
+# bash $dotfilesRepoDir/vagrant/setup.mac.sh
+# bash $dotfilesRepoDir/julia/setup.mac.sh
+# bash $dotfilesRepoDir/wiki/setup.mac.sh
+# bash $dotfilesRepoDir/tf2/setup.mac.sh
+# bash $dotfilesRepoDir/spotify/setup.mac.sh
 echo "DONE!"
