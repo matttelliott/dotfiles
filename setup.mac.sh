@@ -174,13 +174,14 @@ bash $dotfilesRepoDir/vscodium/setup.mac.sh
 bash $dotfilesRepoDir/keepass/setup.mac.sh
 bash $dotfilesRepoDir/1password/setup.mac.sh
 bash $dotfilesRepoDir/virtualbox/setup.mac.sh
-#
-# # Browsers
-# # ===
-# bash $dotfilesRepoDir/chromium/setup.mac.sh
-# bash $dotfilesRepoDir/firefox/setup.mac.sh
-# bash $dotfilesRepoDir/vivaldi/setup.mac.sh
-# bash $dotfilesRepoDir/opera/setup.mac.sh
+
+# Browsers
+# ===
+bash $dotfilesRepoDir/chromium/setup.mac.sh
+bash $dotfilesRepoDir/firefox/setup.mac.sh
+bash $dotfilesRepoDir/vivaldi/setup.mac.sh
+bash $dotfilesRepoDir/opera/setup.mac.sh
+bash $dotfilesRepoDir/orion/setup.mac.sh
 #
 # # bash $dotfilesRepoDir/svn/setup.mac.sh
 # # bash $dotfilesRepoDir/github/setup.mac.sh
