@@ -1,6 +1,7 @@
 [user]
-	email = matt@matt-elliott.me
-	name = Matt Elliott
+	email = matt@matttelliott.com
+	name = Matt T Elliott
+	signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCTYHnedXgtRbjwED6cxOlWOaDYzQ5LQK+8OFmMBeurC2O23GTvuNxb/aRcXdrahDRA8OU/VJi1Nvc/NxQRE6oyKxHxgGHJrFZvRWg1nhTwmlWghAusFDFirLFXInUodOuMIBIRtBs3dEnqCdSM2viRrX/SoLcCf8ustbWQikk/+wtEiqbv0eaOcaE1ecb120OJP4L1EpjiJHyP+V+vrIbJMM/OaMbganL5zwyosXqQmgoqm9ZKqLwNncK8quxRno+5GnZwENUnK7QkJgJZv8etfISZQ2ZfPDEifB/K+Qs7vtqEyPW1gR4XQUg2d4E6fHT1DCRM+9u2Fxo2CHW0/bAYPWKRxUAKgmE7dO/GTesZsW1mw24w/JkdaR0KkGldh6qmp7BwP1MKzmWV9ezLmL0cHuN9CziHC2uDChqLiTQfbLc24klQkDykER3fCpaU+Dj08k76zaRNHhSoWbWFOlFEdDOyPvoMuoPiwSFtKn9ed7dS68w74oQQE6nzrvw6ZpE=
 [init]
 	defaultBranch = master
 [pull]
@@ -8,3 +9,9 @@
 
 [http]
 	sslVerify = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
