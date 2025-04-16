@@ -172,6 +172,7 @@ bash $dotfilesRepoDir/vscodium/setup.mac.sh
 bash $dotfilesRepoDir/keepass/setup.mac.sh
 bash $dotfilesRepoDir/1password/setup.mac.sh
 bash $dotfilesRepoDir/virtualbox/setup.mac.sh
+bash $dotfilesRepoDir/utm/setup.mac.sh
 
 # Browsers
 # ===
