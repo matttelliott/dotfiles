@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 cd "$HOME/dotfiles"
-bat golang/README.md
-stow --no-folding golang
+cat golang/README.md
 brew install golang
+stow --no-folding golang

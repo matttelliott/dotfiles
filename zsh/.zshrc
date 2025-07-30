@@ -45,3 +45,8 @@ done;
 
 # Load Angular CLI autocompletion.
 # source <(ng completion script)
+
+. "$HOME/.local/share/../bin/env"
+
+# Added by Windsurf
+export PATH="/Users/matt/.codeium/windsurf/bin:$PATH"

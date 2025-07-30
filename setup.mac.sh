@@ -134,7 +134,9 @@ bash $dotfilesRepoDir/ranger/setup.mac.sh
 bash $dotfilesRepoDir/nmap/setup.mac.sh
 bash $dotfilesRepoDir/lolcat/setup.mac.sh
 bash $dotfilesRepoDir/gum/setup.mac.sh
+bash $dotfilesRepoDir/ast-grep/setup.mac.sh
 # bash $dotfilesRepoDir/ag/setup.mac.sh
+# bash $dotfilesRepoDir/mermaid/setup.mac.sh
 
 # Neovim
 # ===
@@ -146,9 +148,9 @@ bash $dotfilesRepoDir/neovim/setup.mac.sh
 cd $dotfilesRepoDir
 bash $dotfilesRepoDir/lua/setup.mac.sh
 bash $dotfilesRepoDir/nodejs/setup.sh
-# bash $dotfilesRepoDir/python/setup.sh
+bash $dotfilesRepoDir/python/setup.sh
+bash $dotfilesRepoDir/rust/setup.sh
 # bash $dotfilesRepoDir/golang/setup.sh
-# bash $dotfilesRepoDir/rust/setup.sh
 # bash $dotfilesRepoDir/shfmt/setup.mac.sh
 
 # Containers
